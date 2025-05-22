@@ -1,0 +1,76 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  893de38d-5ba4-47ee-8012-b6e1febaa953:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-28T18:27:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 51b9c267-681d-43f1-928e-1a41271b661d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-03-28T18:29:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 4dd4ab7b-338e-4230-8d96-fcfb8e477941
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1af91b62-6488-4330-b737-bb501843b93a
+        userCondition: null
+fs: hardDiskAnsgar
+handle: testseiteEins
+name: 'Testseite Eins'
+sortOrder: 4
+subpath: testseite_eins
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+transformFs: ''
+transformSubpath: testseite_eins

@@ -1,0 +1,20 @@
+description: null
+handle: kunden
+name: Kunden
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accesssitewhensystemisoff
+  - 'createentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'deleteentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'deletepeerentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'deletepeerentrydrafts:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'editglobalset:712111ed-890c-4750-a3b1-c4f72baa0bca' # Social Media
+  - 'editglobalset:71bceb4f-93f1-4da7-af88-1db4d70c5b6d' # Kontaktdaten
+  - 'editglobalset:c77e8b96-46ce-423b-8c01-8e8eb96c096f' # Design
+  - 'saveentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'savepeerentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'savepeerentrydrafts:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'viewentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'viewpeerentries:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten
+  - 'viewpeerentrydrafts:459d94e2-e90b-4576-b114-4f63180d2ab0' # Seiten

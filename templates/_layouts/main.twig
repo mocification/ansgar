@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de">
+    
+	{% include '_layouts/head.twig' %}
+
+	{% switch design.theme.value %}
+
+		{% case "cafe" %}
+			{% set bodyClass = 'stretched overlay-menu dark' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+			
+		{% case "cleaner" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-circle bg-color h-bg-dark' %}
+
+		{% case "crowdfunding" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'bi-arrow-up' %}
+
+		{% case "finance" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-double-up bg-color h-bg-color-2 shadow rounded-circle' %}
+
+		{% case "football-club" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-circle' %}
+
+		{% case "freelancer" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-double-up bg-white text-dark rounded-circle shadow' %}
+
+		{% case "furniture" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'bg-color op-07 h-op-1' %}
+
+		{% case "home" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-circle' %}
+
+		{% case "insurance" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-double-up' %}
+
+		{% case "integro" %}
+			{% set bodyClass = 'stretched dark' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+
+		{% case "kindergarten" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'bi-hand-index fs-5 rounded-circle' %}
+
+		{% case "landing-2-dark" %}
+			{% set bodyClass = 'stretched dark' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+
+		{% case "medical" %}
+			{% set bodyClass = 'stretched page-transition' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-circle' %}
+
+		{% case "photographer" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up bg-color' %}
+
+		{% case "photographer-dark" %}
+			{% set bodyClass = 'stretched dark' %}
+			{% set goToTopClass = 'uil uil-angle-up bg-color' %}
+
+		{% case "podcasts" %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-6' %}
+
+		{% case "portfolio-3" %}
+			{% set bodyClass = 'stretched side-header' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+
+		{% case "restaurant" %}
+			{% set bodyClass = 'stretched sticky-footer page-transition' %}
+			{% set goToTopClass = 'bi-arrow-up' %}
+
+		{% case "saas-2" %}	
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up rounded-circle bg-color h-bg-dark' %}
+
+		{% case "therapy" %}
+			{% set bodyClass = 'stretched page-transition' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+
+		{% default %}
+			{% set bodyClass = 'stretched' %}
+			{% set goToTopClass = 'uil uil-angle-up' %}
+
+	{% endswitch %}
+
+	<body class="{{ bodyClass }}">
+
+		<!-- Document Wrapper
+		============================================= -->
+		<div id="wrapper">
+
+			<!-- Header
+			============================================= -->
+			{% include '_layouts/header.twig' %}
+			<!-- #header end -->
+
+			<!-- Content
+			============================================= -->
+			{% block content %}
+
+			{% endblock %}
+			<!-- #content end -->
+
+			{% include '_layouts/footer.twig' %}
+		</div><!-- #wrapper end -->
+
+		<!-- Go To Top
+		============================================= -->
+		<div id="gotoTop" class="{{ goToTopClass }}"></div>
+
+		<!-- JavaScripts
+		============================================= -->
+		{% include '_layouts/scripts.twig' %}
+
+	</body>
+
+</html>

@@ -1,0 +1,9 @@
+baseUrl: $TESTSEITE_ONE
+enabled: '1'
+handle: testseiteEins
+hasUrls: true
+language: de
+name: 'Testseite 01'
+primary: false
+siteGroup: 819b6ce6-402f-4084-bb7d-c1d2f8792ded # Kunden
+sortOrder: 2

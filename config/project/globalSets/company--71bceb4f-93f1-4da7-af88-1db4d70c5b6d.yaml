@@ -1,0 +1,199 @@
+fieldLayouts:
+  5c8a0563-f835-4ecd-91cf-a7dfbf70c3c3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            heading: Inhaber
+            type: craft\fieldlayoutelements\Heading
+            uid: 13e79c0d-0a52-4742-b161-cf732a19e792
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: companyName
+            includeInCards: false
+            instructions: null
+            label: Firmenname
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e9b8418-836a-4928-8e53-f15353b4e2e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: companyName2
+            includeInCards: false
+            instructions: null
+            label: Name
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90334024-0e51-42e0-aca1-fbe7248cde37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            heading: Adresse
+            type: craft\fieldlayoutelements\Heading
+            uid: 1d6d6c4e-41fc-404b-b761-9cf267389c6c
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: street
+            includeInCards: false
+            instructions: null
+            label: Straße
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d316a03d-0861-4a9e-a36c-53c162909fea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: d5bb6513-9cb6-465b-a500-a9b1fde5c26d # Land
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fbaf04df-38e5-4e59-ac85-fccf997d195c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: zipCode
+            includeInCards: false
+            instructions: null
+            label: PLZ
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18702717-8576-4415-a08a-caa7c1341d92
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: city
+            includeInCards: false
+            instructions: null
+            label: Ort/Stadt
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7425f689-1126-4e1e-8949-d92c293a3c58
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 482da9a2-034b-438f-9127-14b3c90fe30a
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: ustID
+            includeInCards: false
+            instructions: null
+            label: 'Umsatzsteuer-Identifikationsnummer:'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d612769-c067-4f47-9d2d-e221b8fff0c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            heading: Kontaktdaten
+            type: craft\fieldlayoutelements\Heading
+            uid: a7a50403-7c97-4f84-8186-f7c2b19c75e2
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: phone
+            includeInCards: false
+            instructions: null
+            label: Telefon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b552470-2f3e-43f8-9aa0-922d7303b6d3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: mail
+            includeInCards: false
+            instructions: null
+            label: E-Mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08f00e7d-43cd-48ec-b4dd-fb20387883b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:29:29+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: web
+            includeInCards: false
+            instructions: null
+            label: Webadresse
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5150122-056d-4a73-a5b8-83fb1dee4c3c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Adresse
+        uid: 42eaf282-f2af-498b-8d93-ee5d658470d7
+        userCondition: null
+handle: company
+name: Kontaktdaten
+sortOrder: 1

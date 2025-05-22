@@ -1,0 +1,10 @@
+{% set logo = design.logo.one() %}
+{% if logo %}
+    <!-- Logo
+    ============================================= -->
+    <div id="logo">
+        <a href="{{ siteUrl }}">
+            <img class="logo-default" src="{{ logo.getUrl() }}" alt="{{ siteName }}">
+        </a>
+    </div><!-- #logo end -->
+{% endif %}

@@ -1,0 +1,396 @@
+columnSuffix: null
+handle: layoutShapeDividers
+instructions: null
+name: Trennform
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Keine Trennform'
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Valley-2
+        -
+          - value
+          - valley2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Valley-3
+        -
+          - value
+          - valley3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mountain
+        -
+          - value
+          - mountain
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mountain-2
+        -
+          - value
+          - mountain2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mountain-3
+        -
+          - value
+          - mountain3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mountain-4
+        -
+          - value
+          - mountain4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Plataeu
+        -
+          - value
+          - plataeu
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Plataeu-2
+        -
+          - value
+          - plataeu2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hills
+        -
+          - value
+          - hills
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hills-2
+        -
+          - value
+          - hills2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hills-3
+        -
+          - value
+          - hills3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hills-4
+        -
+          - value
+          - hills4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cloud
+        -
+          - value
+          - cloud
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cloud-2
+        -
+          - value
+          - cloud2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cloud-3
+        -
+          - value
+          - cloud3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave
+        -
+          - value
+          - wave
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave-2
+        -
+          - value
+          - wave2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave-3
+        -
+          - value
+          - wave3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave-4
+        -
+          - value
+          - wave4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave-5
+        -
+          - value
+          - wave5
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wave-6
+        -
+          - value
+          - wave6
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Slant
+        -
+          - value
+          - slant
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Slant-2
+        -
+          - value
+          - slant2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Slant-3
+        -
+          - value
+          - slant3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rounded
+        -
+          - value
+          - rounded
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rounded-2
+        -
+          - value
+          - rounded2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rounded-3
+        -
+          - value
+          - rounded3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rounded-4
+        -
+          - value
+          - rounded4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rounded-5
+        -
+          - value
+          - rounded5
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Triangle
+        -
+          - value
+          - triangle
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Drops
+        -
+          - value
+          - drops
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Illusion
+        -
+          - value
+          - illusion
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Zigzag
+        -
+          - value
+          - zigzag
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cliff
+        -
+          - value
+          - cliff
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

@@ -1,0 +1,110 @@
+<footer id="footer" class="dark">
+    <div class="container">
+        <!-- Footer Widgets
+        ============================================= -->
+        <div class="footer-widgets-wrap">
+
+            <div class="row col-mb-50">
+                <div class="col-lg-5 order-last order-lg-first">
+
+                    <div class="widget">
+                        {% set logo = design.logo.one() %}
+                        {% if logo %}
+                            <img src="{{ logo.getUrl() }}" alt="{{ siteName }}" style="position: relative; opacity: 0.85; left: -10px; max-height: 80px; margin-bottom: 20px;">
+                        {% endif %}
+                        {% if design.slogan %}
+                            {{ design.slogan }}
+                        {% endif %}
+                        <div class="line" style="margin: 30px 0;"></div>
+                        <p class="ls-1 fw-light" style="opacity: 0.6; font-size: 13px;">Copyrights &copy; {{ 'now' | date('Y') }} {{ siteName }}</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <div class="row col-mb-50">
+                        <div class="col-md-6">
+                            <h4 class="ls-1 fw-normal text-uppercase">Beliebte Links</h4>
+
+                            <div class="row g-4">
+                                <div class="widget_links widget_real_estate_popular">
+                                    <ul>
+                                        {% set nodes = craft.navigation.nodes('navigationFooter').level(1).all() %}
+                                        {% for firstLevelNode in nodes %}
+                                            <li><a href="{{ firstLevelNode.url }}" target="{{ firstLevelNode.target }}">{{ firstLevelNode.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4 class="ls-1 fw-normal text-uppercase">Folgen Sie uns auf</h4>
+
+                            <div class="d-flex mb-4">
+                                {% if socialMedia.facebook %}
+                                    <a href="{{ socialMedia.facebook }}" 
+                                        class="social-icon si-small rounded-circle text-white bg-facebook" 
+                                        title="Facebook"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                {% endif %}
+                                {% if socialMedia.instagram %}
+                                    <a href="{{ socialMedia.instagram }}"
+                                        class="social-icon si-small rounded-circle text-white bg-instagram" 
+                                        title="Instagram"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i class="bi-instagram"></i>
+                                        <i class="bi-instagram"></i>
+                                    </a>
+                                {% endif %}
+                                {% if socialMedia.pinterest %}
+                                    <a href="{{ socialMedia.pinterest }}"
+                                        class="social-icon si-small rounded-circle text-white bg-pinterest" 
+                                        title="Pinterest"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i class="bi-pinterest"></i>
+                                        <i class="bi-pinterest"></i>
+                                    </a>
+                                {% endif %}
+                                {% if socialMedia.twitter %}
+                                    <a href="{{ socialMedia.twitter }}" 
+                                        class="social-icon si-small rounded-circle text-white bg-twitter" 
+                                        title="Twitter / X"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i class="bi-twitter"></i>
+                                        <i class="bi-twitter"></i>
+                                    </a>
+                                {% endif %}
+                                <a href="mailto:{{ company.mail }}" class="social-icon si-small rounded-circle text-white bg-google" title="E-Mail an uns">
+                                    <i class="bi-envelope"></i>
+                                    <i class="bi-envelope"></i>
+                                </a>
+                            </div>
+
+                            <div class="pt-4"> 
+                                <span class="footer-powered align-items-end small">powered by <a href="https://www.ansgar.at" target="_blank"
+                                    rel="noopener noreferrer" title="Professionelle Webseite einfach selbst erstellen">ansgar websites</a>
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!-- .footer-widgets-wrap end -->
+    </div>
+</footer>

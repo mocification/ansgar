@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: imageCrop_600x400
+height: 400
+interlace: none
+mode: crop
+name: image_crop_600x400
+position: center-center
+quality: null
+upscale: true
+width: 600

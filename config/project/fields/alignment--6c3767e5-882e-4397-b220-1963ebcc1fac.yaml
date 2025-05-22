@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: alignment
+instructions: null
+name: Ausrichtung
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Link
+        -
+          - value
+          - text-start
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Mitte
+        -
+          - value
+          - text-center
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - text-end
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

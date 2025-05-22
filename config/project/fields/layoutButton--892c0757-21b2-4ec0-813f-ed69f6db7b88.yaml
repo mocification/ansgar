@@ -1,0 +1,66 @@
+columnSuffix: null
+handle: layoutButton
+instructions: null
+name: 'Layout Button'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 3D
+        -
+          - value
+          - 3d
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Flat
+        -
+          - value
+          - default
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Umrahmung mit runden Ecken'
+        -
+          - value
+          - rounded
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Umrahmung mit Ecken'
+        -
+          - value
+          - border
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Umrahmung Kreisförmig'
+        -
+          - value
+          - circle
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

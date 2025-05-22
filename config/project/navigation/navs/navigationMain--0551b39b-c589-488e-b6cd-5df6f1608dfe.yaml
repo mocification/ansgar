@@ -1,0 +1,204 @@
+defaultPlacement: end
+fieldLayouts:
+  d151caac-67a7-4f50-9860-e4e402695cce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: c690b28c-4b66-4281-b751-3b5eff314fc4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            elementCondition: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: verbb\navigation\fieldlayoutelements\NodeTypeElements
+            uid: d8d0382b-8540-4080-8ca4-ea1acb3da20d
+            userCondition: null
+            warning: null
+          -
+            attribute: newWindow
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: true
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\NewWindowField
+            uid: 827adde3-3ab9-47d2-96bc-4516893a9b13
+            userCondition: null
+            warning: null
+            width: 100
+        name: Node
+        uid: d32a366b-1e21-459a-8ad5-6acb0b78423e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            attribute: urlSuffix
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            mandatory: false
+            max: null
+            maxlength: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\UrlSuffixField
+            uid: d297902e-28ee-42f8-893d-4b18a300fa1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: classes
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            mandatory: false
+            max: null
+            maxlength: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\ClassesField
+            uid: efb8a8d3-597c-482f-988f-9c32b5940ff2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: customAttributes
+            dateAdded: '2025-04-07T21:04:01+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: true
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\CustomAttributesField
+            uid: 0df645b4-956b-48df-abbc-dae565880579
+            userCondition: null
+            warning: null
+            width: 100
+        name: Advanced
+        uid: 42f3ef1c-cb98-486d-812c-e9629b1afee1
+        userCondition: null
+handle: navigationMain
+instructions: ''
+maxNodes: null
+name: 'Menü in Kopfzeile (Hauptmenü)'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  verbb\navigation\nodetypes\CustomType:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+  verbb\navigation\nodetypes\SiteType:
+    enabled: '1'
+propagationMethod: none
+siteSettings:
+  211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
+    enabled: true
+  1914165a-c550-4819-b74d-d56cf7f38ceb: # Testseite 01
+    enabled: true
+sortOrder: 1
+structure:
+  maxLevels: 2
+  uid: 0a21cdf2-eaee-465d-a3e5-8ed11765ff1f

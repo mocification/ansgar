@@ -1,0 +1,537 @@
+columnSuffix: null
+handle: fontFamily
+instructions: null
+name: Schriftart
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Voreingestellte Schriftart'
+        -
+          - value
+          - default
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - optgroup
+          - 'Sans Serif Stil'
+    -
+      __assoc__:
+        -
+          - label
+          - Arial
+        -
+          - value
+          - arial
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Arimo
+        -
+          - value
+          - arimo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'DM Sans'
+        -
+          - value
+          - dmSans
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Dosis
+        -
+          - value
+          - dosis
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Heebo
+        -
+          - value
+          - heebo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Helvetica
+        -
+          - value
+          - helvetica
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'IBM Plex Sans'
+        -
+          - value
+          - ibmPlexSans
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Inter
+        -
+          - value
+          - inter
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Istok Web'
+        -
+          - value
+          - istokWeb
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lato
+        -
+          - value
+          - lato
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Manrope
+        -
+          - value
+          - manrope
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Montserrat
+        -
+          - value
+          - montserrat
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Noto Sans'
+        -
+          - value
+          - notoSans
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Open Sans'
+        -
+          - value
+          - openSans
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Oswald
+        -
+          - value
+          - oswald
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Outfit
+        -
+          - value
+          - outfit
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Poppins
+        -
+          - value
+          - poppins
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Quicksand
+        -
+          - value
+          - quicksand
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Raleway
+        -
+          - value
+          - raleway
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Roboto
+        -
+          - value
+          - roboto
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Verdana
+        -
+          - value
+          - verdana
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - optgroup
+          - 'Serif Stil'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Crete Round'
+        -
+          - value
+          - creteRound
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'DM Serif Display'
+        -
+          - value
+          - dmSerifDisplay
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'DM Serif Text'
+        -
+          - value
+          - dmSerifText
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Georgia
+        -
+          - value
+          - georgia
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'IBM Plex Serif'
+        -
+          - value
+          - ibmPlexSerif
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Merriweather
+        -
+          - value
+          - merriweather
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Noto Serif'
+        -
+          - value
+          - notoSerif
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Playfair Display'
+        -
+          - value
+          - playfairDisplay
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Prata
+        -
+          - value
+          - prata
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'PT Serif'
+        -
+          - value
+          - ptSerif
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Quattrocento
+        -
+          - value
+          - quattrocento
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Times New Roman'
+        -
+          - value
+          - timesNewRoman
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Zilla Slab'
+        -
+          - value
+          - zillaSlab
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - optgroup
+          - 'Handschrift Stil'
+    -
+      __assoc__:
+        -
+          - label
+          - Caveat
+        -
+          - value
+          - caveat
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cookie
+        -
+          - value
+          - cookie
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Dancing Script'
+        -
+          - value
+          - dancingScript
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Great Vibes'
+        -
+          - value
+          - greatVibes
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lobster
+        -
+          - value
+          - lobster
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Nothing You could do'
+        -
+          - value
+          - nothingYouCouldDo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Pacifico
+        -
+          - value
+          - pacifico
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sacramento
+        -
+          - value
+          - sacramento
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Shadows Into Light'
+        -
+          - value
+          - shadowsIntoLight
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sofia
+        -
+          - value
+          - sofia
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - optgroup
+          - Display
+    -
+      __assoc__:
+        -
+          - label
+          - Chewy
+        -
+          - value
+          - chewy
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

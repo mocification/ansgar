@@ -1,0 +1,42 @@
+columnSuffix: null
+handle: files
+instructions: null
+name: Dateien
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - audio
+    - compressed
+    - excel
+    - pdf
+    - powerpoint
+    - text
+    - word
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:96b0fd30-1d38-48e4-a19f-88765ec3b0dc' # Ansgar
+  defaultUploadLocationSubpath: '{site.handle}'
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:96b0fd30-1d38-48e4-a19f-88765ec3b0dc' # Ansgar
+  restrictedLocationSubpath: null
+  selectionLabel: 'Dateien auswählen'
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

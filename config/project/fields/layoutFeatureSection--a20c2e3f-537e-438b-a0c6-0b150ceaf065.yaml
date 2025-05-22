@@ -1,0 +1,66 @@
+columnSuffix: null
+handle: layoutFeatureSection
+instructions: null
+name: Layout
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text rechts / Bild links'
+        -
+          - value
+          - textRightImageLeft
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text links / Bild rechts'
+        -
+          - value
+          - textLeftImageRight
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text oben / Bild unten'
+        -
+          - value
+          - textTopImageBottom
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text unten / Bild oben'
+        -
+          - value
+          - textBottomImageTop
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text im Vordergrund / Bild im Hintergrund '
+        -
+          - value
+          - textFrontImageBack
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

@@ -1,0 +1,14 @@
+{% extends "_layouts/main" %}
+
+{% block content %}
+
+	<section id="content">
+		<div class="content-wrap">
+			{% for contentBlock in entry.contentBuilder.all() %}
+				{{ contentBlock.render() }}
+			{% endfor %}
+		</div>
+	</section>
+
+{% endblock %}
+

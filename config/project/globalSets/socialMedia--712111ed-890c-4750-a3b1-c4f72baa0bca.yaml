@@ -1,0 +1,85 @@
+fieldLayouts:
+  b77763d1-f0f6-4879-928e-d545e3576da8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-29T13:34:33+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Trage hier die Links zu deinen Social Media Profilen ein. Die Links werden im Fußbereich deiner Webseite angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: af484091-b56d-46c7-a6d3-081ab4661728
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T13:34:33+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: facebook
+            includeInCards: false
+            instructions: null
+            label: Facebook
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1419c2e2-06c1-43f3-804a-18caec1d8023
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:34:33+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: instagram
+            includeInCards: false
+            instructions: null
+            label: Instagram
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06898c09-e23e-40e1-b442-6e1debf41f90
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:34:33+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: pinterest
+            includeInCards: false
+            instructions: null
+            label: Pinterest
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f99e0d52-5308-4396-9df5-645cc4203011
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T13:34:33+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: twitter
+            includeInCards: false
+            instructions: null
+            label: 'Twitter / X'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de6c40ce-3dbf-465f-ae8b-b6426105d4b5
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Social Media'
+        uid: 7ab6fcc4-ce20-47e3-bdcc-2ab1a832f343
+        userCondition: null
+handle: socialMedia
+name: 'Social Media'
+sortOrder: 2

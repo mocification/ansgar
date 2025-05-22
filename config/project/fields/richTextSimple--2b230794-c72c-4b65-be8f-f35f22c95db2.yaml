@@ -1,0 +1,28 @@
+columnSuffix: null
+handle: richTextSimple
+instructions: null
+name: Text
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 89b376a1-b338-49e6-91ac-d78324718791 # Simple
+  createButtonLabel: 'Neuen Inhaltsblock hinzufügen'
+  defaultTransform: null
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 5ebbf5f4-727e-4349-921a-925eb4060cbd # Bild & Text
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: true
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

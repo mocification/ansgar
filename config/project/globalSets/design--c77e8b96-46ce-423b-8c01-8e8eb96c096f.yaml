@@ -1,0 +1,431 @@
+fieldLayouts:
+  0248b94f-ac78-4114-99a8-5bf4e82ca9e3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-11T08:03:11+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Lade hier dein Logo hoch und gib optional einen Slogan oder Claim ein. Der Text erscheint je nach Designvorlage im Fußbereich deiner Seite.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 48621cff-0491-478b-9b00-69013a2cfc9f
+            userCondition: null
+          -
+            dateAdded: '2025-04-11T11:09:50+00:00'
+            elementCondition: null
+            heading: 'Logos & Slogan'
+            type: craft\fieldlayoutelements\Heading
+            uid: b90bba2a-a851-4475-81b1-b94ce3f29868
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: logo
+            includeInCards: false
+            instructions: 'Verwende für die beste Darstellung dein Logo mit transparentem Hintergrund.'
+            label: Logo
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85024447-6aa0-4406-b677-b7f3eb2b520b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-11T11:08:15+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: f7a0ab41-fb70-4bd1-a2ca-2eec8ac645ba
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:27:53+00:00'
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: favicon
+            includeInCards: false
+            instructions: "Ein Favicons ist das kleine Symbol/Logo oben beim Browser. Aufgrund der Größe werden hier meist vereinfachte Logos verwendet.\r\nVerwende für eine optimale Darstellung ein quadratisches Bild mit einer Mindestauflösung von 512 x 512 Pixel."
+            label: Favicon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8130869-3129-4e9d-b62d-478926ba4c3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-02T15:01:00+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: da49fcbb-c8e3-4384-9520-32e44cc2860a
+            userCondition: null
+          -
+            dateAdded: '2025-04-02T15:01:00+00:00'
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: slogan
+            includeInCards: false
+            instructions: null
+            label: Slogan
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bfab3dfa-7c6b-4db0-b9d2-51aa2c2149c6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Logo
+        uid: a9c7c00f-f79f-4509-8d91-b9c8b2fe10c3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-11T07:46:45+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Wähle eine Designvorlage, die das grundsätzliche Aussehen deiner Seite bestimmt – mit vordefinierten Farben, Schriften und Layout. Zusätzlich kannst du ein eigenes Layout für den Fußbereich festlegen – unabhängig vom restlichen Design. Die Farben und Schriftarten kannst du dann in den weiteren Einstellungen deinen Anforderungen anpassen.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 1ba300f3-6a8a-4765-a45f-746d3cf7787e
+            userCondition: null
+          -
+            dateAdded: '2025-04-02T15:01:45+00:00'
+            elementCondition: null
+            heading: 'Design Einstellungen'
+            type: craft\fieldlayoutelements\Heading
+            uid: 7b515136-b2b5-4746-8bf0-e977afeb2f73
+            userCondition: null
+          -
+            dateAdded: '2025-04-05T14:32:20+00:00'
+            elementCondition: null
+            fieldUid: e6a1eac1-990e-41e3-b9c4-e93c35572887 # Theme
+            handle: null
+            includeInCards: false
+            instructions: 'Wähle eine Designvorlage, die am besten zu dir passt und die gefällt.'
+            label: Designvorlage
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a22ac77d-8a63-4a4e-acdf-08d2c3e20f1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-02T15:01:45+00:00'
+            elementCondition: null
+            fieldUid: 284a9db4-65fd-4347-86cf-659736c23205 # Layout Fußzeile
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b423454d-e340-4001-ab19-5fb6815f58bf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Designvorlage
+        uid: 441b77d4-5184-4950-91e0-932533033e4e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-11T07:34:12+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Hier kannst du die Farben für Hintergrund und Schrift anpassen. Wenn du ein Feld leer lässt, wird automatisch die Standardfarbe deiner gewählten Designvorlage verwendet.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 288ef20e-df29-4189-8d26-deec5ac4c4b9
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            heading: Haupfarbe
+            type: craft\fieldlayoutelements\Heading
+            uid: 212ea704-cf73-42e2-9b10-9b6168a2eb9d
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorTheme
+            includeInCards: false
+            instructions: 'Diese Farbe wird für allgemeine Elemente wie Navigation, Links, Buttons, usw. verwendet.'
+            label: Design
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a54e253-2b64-4759-b059-e13000103be3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            heading: Hintergrundfarben
+            type: craft\fieldlayoutelements\Heading
+            uid: 751ad907-e3e7-4fb2-b739-1c310095cb56
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: backgroundColorHeader
+            includeInCards: false
+            instructions: null
+            label: Kopfzeile
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d7dde41-c4b7-44e5-8181-784d629adba5
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: backgroundColorBody
+            includeInCards: false
+            instructions: null
+            label: Inhalt
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21f78045-e429-44c8-b86c-5bfe600b8a1f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: backgroundColorFooter
+            includeInCards: false
+            instructions: null
+            label: Fußzeile
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c354efa5-ae64-4ade-9b9b-d46f562610a4
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            heading: 'Schriftfarben im Inhaltsbereich'
+            type: craft\fieldlayoutelements\Heading
+            uid: 0238a41f-07e3-4aef-bcda-64a0fa65d090
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorHeading
+            includeInCards: false
+            instructions: null
+            label: Überschriften
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebe10087-5c48-4008-a5f1-4851fa033b5e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-04-07T20:50:18+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorSubHeading
+            includeInCards: false
+            instructions: null
+            label: Unterüberschrift
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0206d78d-65ee-4e7e-9608-aeaa66ef390d
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T17:16:41+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorText
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77c1abde-85c4-4e9b-b610-449a21e2751c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-04-11T07:26:12+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorLink
+            includeInCards: false
+            instructions: null
+            label: Link
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0c6f352-d6f6-4369-8d1c-912f05059b81
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-04-11T07:27:12+00:00'
+            elementCondition: null
+            heading: 'Schriftfarben im Fußbereich'
+            type: craft\fieldlayoutelements\Heading
+            uid: 809f5924-a197-47d6-9915-4b5631b87515
+            userCondition: null
+          -
+            dateAdded: '2025-04-07T20:52:44+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorFooterHeading
+            includeInCards: false
+            instructions: null
+            label: 'Überschriften Fußzeile'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eecca34c-f2f8-44f0-be3d-b7fa4163ece7
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-04-07T20:52:44+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorFooterText
+            includeInCards: false
+            instructions: null
+            label: 'Text Fußzeile'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c463af2-82fd-4842-a45d-be6974e75562
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-04-11T07:26:12+00:00'
+            elementCondition: null
+            fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            handle: colorFooterLink
+            includeInCards: false
+            instructions: null
+            label: 'Link Fußzeile'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5ba0a6b-9d7f-486f-976c-8b47bff02fca
+            userCondition: null
+            warning: null
+            width: 25
+        name: Farben
+        uid: f86c282c-778d-4aaa-8c45-f0affe2b5056
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-11T08:07:12+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Wähle hier deine gewünschten Schriftarten. Wenn du ''Voreingestellte Schriftart'' auswählst, wird automatisch die Schriftart der eingestellten Designvorlage verwendet.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 06649ac8-3d9e-465c-8276-0478c46af81a
+            userCondition: null
+          -
+            dateAdded: '2025-04-11T11:09:50+00:00'
+            elementCondition: null
+            heading: Schriftarten
+            type: craft\fieldlayoutelements\Heading
+            uid: 366c9f5b-1267-4906-94d6-246f46fd845d
+            userCondition: null
+          -
+            dateAdded: '2025-03-29T19:06:11+00:00'
+            elementCondition: null
+            fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
+            handle: fontFamilyPrimary
+            includeInCards: false
+            instructions: 'Diese Schriftart wird für Überschriften und wichtige Akzente verwendet.'
+            label: 'Primäre Schriftart'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3ae688f-b599-4aa5-a117-23be68b6e0f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T19:06:11+00:00'
+            elementCondition: null
+            fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
+            handle: fontFamilySecondary
+            includeInCards: false
+            instructions: 'Die Schriftart wird für Unterüberschriften, hervorgehobenem Text, usw. verwendet.'
+            label: 'Sekundäre Schriftart'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2f34a43-02a9-4222-8b5f-92d952833bfa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-29T19:06:11+00:00'
+            elementCondition: null
+            fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
+            handle: fontFamilyBody
+            includeInCards: false
+            instructions: 'Diese Schriftart wird für Texte und allgemeine Inhalte verwendet.'
+            label: 'Allgemeine Schriftart'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cbf9e45c-25da-4177-8039-b1258085afdd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Schriftarten
+        uid: e476fd77-2105-49ad-b2b7-38e306084272
+        userCondition: null
+handle: design
+name: Design
+sortOrder: 3

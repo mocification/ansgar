@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: heading
+instructions: null
+name: Überschrift
+searchable: true
+settings:
+  createButtonLabel: 'Neue Überschrift hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 9b950206-8197-4201-833d-689ccf11ee70 # Überschrift
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

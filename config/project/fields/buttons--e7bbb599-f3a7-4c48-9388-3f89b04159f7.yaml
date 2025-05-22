@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: buttons
+instructions: null
+name: Buttons
+searchable: false
+settings:
+  createButtonLabel: 'Button hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 4c510138-e031-476c-bb4a-db4d2c8d1165 # Button
+        -
+          - handle
+          - buttonEntry
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

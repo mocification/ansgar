@@ -1,0 +1,41 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 3d9f0390-ce07-4974-8935-383af7afc516 # Page
+handle: page
+maxAuthors: 1
+name: Seiten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: none
+siteSettings:
+  211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+  8444ed32-3604-40aa-b2c9-d46f24f8d714: # Naturparklauf
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+  1914165a-c550-4819-b74d-d56cf7f38ceb: # Testseite 01
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: 3
+  uid: 2d0e0ace-ecc3-4f02-adc9-a7ace00c26e7
+type: structure

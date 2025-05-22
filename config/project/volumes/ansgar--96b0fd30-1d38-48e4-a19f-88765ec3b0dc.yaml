@@ -1,0 +1,76 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  e92d2065-64d1-4ae5-b2b0-add4984be288:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-28T17:42:54+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: af50d47e-eb1a-45bc-9cf3-4e93f23c669f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-03-28T17:46:52+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: 'Dieser Text für barrierefreien Zugang und Suchmaschinen wichtig. Der Text sollte kurz beschreiben was auf dem Bild zu sehen ist.'
+            label: 'Alternativer Text'
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: b858f3a8-0384-4b92-b7fb-81cb970d30cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e467ff94-bb32-4ea8-963b-21c92738ffcc
+        userCondition: null
+fs: hardDiskAnsgar
+handle: ansgar
+name: Ansgar
+sortOrder: 2
+subpath: ansgar
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+transformFs: ''
+transformSubpath: ansgar

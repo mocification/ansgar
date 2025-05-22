@@ -1,0 +1,473 @@
+columnSuffix: null
+handle: theme
+instructions: null
+name: Theme
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'App Landingpage'
+        -
+          - value
+          - app-landing
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'App Showcase'
+        -
+          - value
+          - app-showcase
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Burger
+        -
+          - value
+          - burger
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Business
+        -
+          - value
+          - business
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cafe
+        -
+          - value
+          - cafe
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cleaner
+        -
+          - value
+          - cleaner
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Construction
+        -
+          - value
+          - construction
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Corporate
+        -
+          - value
+          - corporate
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Corporate-3
+        -
+          - value
+          - corporate-3
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Corporate-4
+        -
+          - value
+          - corporate-4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Covid Care'
+        -
+          - value
+          - covid-care
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Coworking
+        -
+          - value
+          - coworking
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Crowdfunding
+        -
+          - value
+          - crowdfunding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Finance
+        -
+          - value
+          - finance
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Football Club'
+        -
+          - value
+          - football-club
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Freelancer
+        -
+          - value
+          - freelancer
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Furniture
+        -
+          - value
+          - furniture
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Home
+        -
+          - value
+          - home
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hostel
+        -
+          - value
+          - hostel
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hosting
+        -
+          - value
+          - hosting
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Insurance
+        -
+          - value
+          - insurance
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Integro
+        -
+          - value
+          - integro
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Kindergarten
+        -
+          - value
+          - kindergarten
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Landing
+        -
+          - value
+          - landing
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Landing-2
+        -
+          - value
+          - landing-2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Landing-2 dunkel'
+        -
+          - value
+          - landing-2-dark
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Medical
+        -
+          - value
+          - medical
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Onepage-3
+        -
+          - value
+          - onepage-3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Pet
+        -
+          - value
+          - pet
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Photographer
+        -
+          - value
+          - photographer
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Photographer dunkel'
+        -
+          - value
+          - photographer-dark
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Podcasts
+        -
+          - value
+          - podcasts
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Portfolio-3
+        -
+          - value
+          - portfolio-3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Recipes
+        -
+          - value
+          - recipes
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Restaurant
+        -
+          - value
+          - restaurant
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Saas
+        -
+          - value
+          - saas
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Saas-2
+        -
+          - value
+          - saas-2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Seo
+        -
+          - value
+          - seo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Spa
+        -
+          - value
+          - spa
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Speaker
+        -
+          - value
+          - speaker
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Therapy
+        -
+          - value
+          - therapy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wine
+        -
+          - value
+          - wine
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

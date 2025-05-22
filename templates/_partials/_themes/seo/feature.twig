@@ -1,0 +1,159 @@
+<!---
+Fields:
+- heading
+- richTextDefault
+- image
+- buttons
+- layoutFeatureSection
+- backgroundColor
+- backgroundImage
+- layoutShapeDividerTop
+- layoutShapeDividerBottom
+-->
+
+{% switch entry.layoutFeatureSection %}
+    {% case 'textRightImageLeft' %}
+       {% set fadeInDirection = 'left' %}
+    {% case 'right' %}
+        {% set textLeftImageRight = 'right' %}
+    {% default %}
+        {% set fadeInDirection = '' %}
+{% endswitch %}
+
+{% if entry.layoutFeatureSection == 'textRightImageLeft' or entry.layoutFeatureSection == 'textLeftImageRight' %}
+    {% set textPart %}
+        {% for heading in entry.heading.all() %}
+            {% if heading.subTitle%}
+                <div class="badge rounded-pill badge-default {{ heading.alignment }}">{{ heading.subTitle }}</div>
+            {% endif %}
+			<{{ heading.headingTag }} class="display-4 fw-bold">{{ heading.title }}</{{ heading.headingTag }}>
+        {% endfor %}
+
+        {{ entry.richTextDefault }}
+
+        {% for button in entry.buttons.all() %}
+            <a 
+                href="{{ button.linkField}}" 
+                class="button button-rounded button-large text-transform-none ls-0"
+            >
+                {{ button.linkField.label }}
+            </a>
+        {% endfor %}
+    {% endset %}
+
+    {% set imagePart %}
+        {% set image = entry.image.one() %}
+        {% if image %}
+            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" data-animate="{{ fadeInDirection }}" class="{{ fadeInDirection }} animated h-100 img-fluid object-fit-cover">
+        {% endif %}
+    {% endset %}
+
+    <div class="feature m-0" style="background: {{ entry.backgroundColor }}">
+        <div class="container">
+            <div class="row justify-content-between g-5">
+                {% if entry.layoutFeatureSection == 'textRightImageLeft' %}
+                    <div class="col-md-6 order-first">
+                        {{ imagePart }}
+                    </div>
+                    <div class="col-md-6 order-last">
+                        {{ textPart }}
+                    </div>
+                {% else %}
+                    <div class="col-md-6 order-last order-md-first">
+                        {{ textPart }}
+                    </div>
+                    <div class="col-md-6 order-first order-md-last">
+                        {{ imagePart }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% else %}
+
+    <div class="section parallax scroll-detect dark m-0 border-0" style="padding: 120px 0;">
+        {% set image = entry.image.one() %}
+        {% if image%}
+        
+        <div class="bg-overlay-bg" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #323334 150%);">
+            <img src="{{ image.getUrl('imageFit_1920x0') }}" class="parallax-bg">
+        </div>
+        <div class="container text-center">
+
+            {% for heading in entry.heading.all() %}
+                <div class="emphasis-title">
+                    <{{ heading.headingTag }} class="mb-0 dancing-script-400"> {{ heading.title }} </{{ heading.headingTag }}>
+                    {% if heading.subTitle%}
+                        <div class="heading-block">{{ heading.subTitle }}</div>
+                    {% endif %}
+                    {% if entry.richTextDefault %}
+                        <div class="lead text-white text-opacity-75 mt-3">{{ entry.richTextDefault }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+            {% for button in entry.button.all() %}
+                <a 
+                    href="{{ button.linkField}}" 
+                    class="button button-large button-border button-border-light"
+                >
+                    {{ button.linkField.label }}
+                </a>
+            {% endfor %}
+
+        </div>
+        
+        {% endif %}
+    </div>
+
+{% endif %}
+
+<div class="section bg-transparent my-0 my-lg-5">
+    <div class="container">
+        <div class="row align-items-md-center">
+            <!-- Image -->
+                <img src="demos/saas/images/section/2.jpg" alt="..." class="col-md-6">
+
+            <!-- Content -->
+            <div class="col-md-6 px-lg-5">
+                <p class="mt-3 mb-1 fs-5 text-muted">Sales Analytics</p>
+                <h3 class="h2 mb-4 fw-semibold">100% Trustable & Best Quality</h3>
+                <p class="lead fw-normal">Compellingly cultivate synergistic infrastructures rather than fully tested opportunities. Synergistically evisculate web-enabled interfaces for market.</p>
+
+                <a href="#" class="btn-link fw-medium">Learn More <i class="bi-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+
+        <div class="clear mt-lg-6"></div>
+
+        <div class="row flex-row-reverse align-items-md-center mt-5">
+            <!-- Image -->
+                <img src="demos/saas/images/section/3.jpg" alt="..." class="col-md-6">
+
+            <!-- Content -->
+            <div class="col-md-6 px-lg-5">
+                <p class="mt-3 mb-1 fs-5 text-muted">Open Dashboard</p>
+                <h3 class="h2 mb-4 fw-semibold">Marketing Relationships</h3>
+                <p class="lead fw-normal">Compellingly cultivate synergistic infrastructures rather than fully tested opportunities. Synergistically evisculate web-enabled interfaces for market.</p>
+
+                <a href="#" class="btn-link fw-medium">Learn More <i class="bi-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+
+        <div class="clear mt-lg-6"></div>
+
+        <div class="row align-items-md-center mt-5">
+            <!-- Image -->
+                <img src="demos/saas/images/section/4.jpg" alt="..." class="col-md-6">
+
+            <!-- Content -->
+            <div class="col-md-6 px-lg-5">
+                <p class="mt-3 mb-1 fs-5 text-muted">Taxes And Growth</p>
+                <h3 class="h2 mb-4 fw-semibold">Sales Growth & Analytics</h3>
+                <p class="lead fw-normal">Compellingly cultivate synergistic infrastructures rather than fully tested opportunities. Synergistically evisculate web-enabled interfaces for market.</p>
+
+                <a href="#" class="btn-link fw-medium">Learn More <i class="bi-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

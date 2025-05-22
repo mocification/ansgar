@@ -1,0 +1,109 @@
+:root, .dark {
+    {% if design.colorTheme %}
+        --cnvs-themecolor: {{ design.colorTheme }};
+        --cnvs-themecolor-rgb: {{ hexToRgb(design.colorTheme) }};
+    {% endif %}
+
+    {% if design.backgroundColorHeader %}
+        --cnvs-header-bg: {{ design.backgroundColorHeader }};
+    {% endif %}
+
+    {% if design.backgroundColorBody %}
+        --cnvs-body-bg: {{ design.backgroundColorBody }};
+    {% endif %}
+
+    {% if design.backgroundColorFooter %}
+        --cnvs-footer-bg: {{ design.backgroundColorFooter }};
+    {% endif %}
+
+    {% if design.colorHeading %}
+        --cnvs-heading-color: {{ design.colorHeading }};
+    {% endif %}
+
+    {% if design.colorSubHeading %}
+        --cnvs-heading-block-span-color: {{ design.colorSubHeading }};
+    {% endif %}
+    
+    {% if design.colorFooterText %}
+        .dark#footer .footer-widgets-wrap, .dark #footer .footer-widgets-wrap {
+            color: {{ design.colorFooterText }};
+        }
+        #footer .footer-widgets-wrap, #footer .footer-widgets-wrap {
+            color: {{ design.colorFooterText }};
+        }
+    {% endif %}
+
+    {% if design.colorFooterHeading %}
+        #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+            color: {{ design.colorFooterHeading }};
+        }
+    {% endif %}
+
+    {% if design.colorText %}
+        --bs-body-color: {{ design.colorText }};
+    {% endif %}
+
+    --bs-body-font-size: 1rem;
+    --cnvs-line-height-content: 1.65;
+
+    {% set fontFamilies = [
+        { name: 'Arial', style: 'sans-serif'},
+        { name: 'Helvetica', style: 'sans-serif'},
+        { name: 'Inter', style: 'sans-serif'},
+        { name: 'Lato', style: 'sans-serif'},
+        { name: 'Lobster', style: 'sans-serif'},
+        { name: 'Montserrat', style: 'sans-serif'},
+        { name: 'Noto Sans', style: 'sans-serif'},
+        { name: 'Open Sans', style: 'sans-serif'},
+        { name: 'Oswald', style: 'sans-serif'},
+        { name: 'Outfit', style: 'sans-serif'},
+        { name: 'Poppins', style: 'sans-serif'},
+        { name: 'Quicksand', style: 'sans-serif'},
+        { name: 'Raleway', style: 'sans-serif'},
+        { name: 'Roboto', style: 'sans-serif'},
+        { name: 'Verdana', style: 'sans-serif'},
+        { name: 'Georgia', style: 'serif'},
+        { name: 'Playfair Display', style: 'serif'},
+        { name: 'Times New Roman', style: 'serif'},
+        { name: 'Caveat', style: 'cursive'},
+        { name: 'Dancing Script', style: 'cursive'},
+        { name: 'Great Vibes', style: 'cursive'},
+        { name: 'Pacifico', style: 'cursive'},
+        { name: 'Sacramento', style: 'cursive'},
+        { name: 'Sofia', style: 'cursive'},
+        { name: 'Heebo', style: 'sans-serif'},
+        { name: 'Dm Serif Display', style: 'serif'},
+        { name: 'Merriweather', style: 'serif'},
+        { name: 'Dosis', style: 'sans-serif'},
+        { name: 'Nothing You Could Do', style: 'cursive'},
+        { name: 'IBM Plex Sans', style: 'sans-serif'},
+        { name: 'IBM Plex Serif', style: 'serif'},
+        { name: 'Manrope', style: 'sans-serif'},
+        { name: 'DM Serif Text', style: 'serif'},
+        { name: 'Zilla Slab', style: 'serif'},
+        { name: 'PT Serif', style: 'serif'},
+        { name: 'Istok Web', style: 'sans-serif'},
+        { name: 'Quattrocento', style: 'serif'},
+        { name: 'Shadows Into Light', style: 'cursive'},
+        { name: 'Crete Round', style: 'serif'},
+        { name: 'Chewy', style: 'system-ui'},
+        { name: 'Noto Serif', style: 'serif'},
+        { name: 'DM Sans', style: 'sans-serif'},
+        { name: 'Cookie', style: 'cursive'},
+        { name: 'Arimo', style: 'sans-serif'},
+        { name: 'Prata', style: 'serif'}
+    ] %}
+    /* Font Families */
+    {% if design.fontFamilyPrimary and design.fontFamilyPrimary != 'default' %}
+        {% set fontPrimary = fontFamilies | firstWhere(m => m.name == design.fontFamilyPrimary.label) %}
+        --cnvs-primary-font: "{{ design.fontFamilyPrimary.label }}", {{fontPrimary.style}};
+    {% endif %}
+    {% if design.fontFamilySecondary and design.fontFamilySecondary != 'default' %}
+        {% set fontSecondary = fontFamilies | firstWhere(m => m.name == design.fontFamilySecondary.label) %}
+        --cnvs-secondary-font: "{{ design.fontFamilySecondary.label }}", {{fontSecondary.style}};
+    {% endif %}
+    {% if design.fontFamilyBody and design.fontFamilyBody != 'default' %}
+        {% set fontBody = fontFamilies | firstWhere(m => m.name == design.fontFamilyBody.label) %}
+        --cnvs-body-font: "{{ design.fontFamilyBody.label }}", {{fontBody.style}};
+    {% endif %}
+}

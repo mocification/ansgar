@@ -1,0 +1,110 @@
+{% set fonts = [] %}
+
+{% if design.fontFamilyPrimary.value %}
+    {% set fonts = fonts|merge([design.fontFamilyPrimary.value]) %}
+{% endif %}
+
+{% if design.fontFamilySecondary.value %}
+    {% if fonts|length %}
+        {% if design.fontFamilySecondary.value not in fonts %}
+            {% set fonts = fonts|merge([design.fontFamilySecondary.value]) %}
+        {% endif %}
+    {% else %}
+        {% set fonts = fonts|merge([design.fontFamilySecondary.value]) %}
+    {% endif %}
+{% endif %}
+
+{% if design.fontFamilyBody.value %}
+    {% if fonts|length %}
+        {% if design.fontFamilyBody.value not in fonts %}
+            {% set fonts = fonts|merge([design.fontFamilyBody.value]) %}
+        {% endif %}
+    {% else %}
+        {% set fonts = fonts|merge([design.fontFamilyBody.value]) %}
+    {% endif %}
+{% endif %}
+
+{% for font in fonts %}
+    {% switch font %}
+        {% case "inter" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/inter.css">
+        {% case "lato" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/lato.css">
+        {% case "montserrat" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/montserrat.css">
+        {% case "notoSans" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/noto-sans.css">
+        {% case "openSans" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/open-sans.css">
+        {% case "oswald" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/oswald.css">
+        {% case "outfit" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/outfit.css">
+        {% case "playfairDisplay" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/playfair-display.css">
+        {% case "poppins" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/poppins.css">
+        {% case "quicksand" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/quicksand.css">
+        {% case "raleway" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/raleway.css">
+        {% case "roboto" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/roboto.css">
+        {% case "caveat" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/caveat.css">
+        {% case "dancingScript" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/dancing-script.css">
+        {% case "greatVibes" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/great-vibes.css">
+        {% case "lobster" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/lobster.css">
+        {% case "pacifico" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/pacifico.css">
+        {% case "sacramento" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/sacramento.css">
+        {% case "sofia" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/sofia.css">
+        {% case "heebo" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/heebo.css">
+        {% case "dmSerifDisplay" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/dm-serif-display.css">
+        {% case "merriweather" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/merriweather.css">
+        {% case "dosis" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/dosis.css">
+        {% case "nothingYouCouldDo" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/nothing-you-could-do.css">
+        {% case "ibmPlexSans" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/ibm-plex-sans.css">
+        {% case "ibmPlexSerif" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/ibm-plex-serif.css">
+        {% case "manrope" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/manrope.css">
+        {% case "dmSerifText" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/dm-serif-text.css">
+        {% case "zillaSlab" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/zilla-slab.css">
+        {% case "ptSerif" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/pt-serif.css">
+        {% case "istokWeb" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/istok-web.css">
+        {% case "quattrocento" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/quattrocento.css">
+        {% case "shadowsIntoLight" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/shadows-into-light.css">
+        {% case "creteRound" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/crete-round.css">
+        {% case "chewy" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/chewy.css">
+        {% case "notoSerif" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/noto-serif.css">
+        {% case "dmSans" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/dm-sans.css">
+        {% case "cookie" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/cookie.css">
+        {% case "arimo" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/arimo.css">
+        {% case "prata" %}
+            <link rel="stylesheet" href="{{ siteUrl }}template/css/fonts/prata.css">        
+    {% endswitch %}
+{% endfor %}

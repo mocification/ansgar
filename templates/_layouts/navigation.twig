@@ -1,0 +1,33 @@
+<div class="primary-menu-trigger">
+    <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+        <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+    </button>
+</div>
+
+<!-- Primary Navigation
+============================================= -->
+<nav class="primary-menu with-arrows">
+    {% set nodes = craft.navigation.nodes('navigationMain').level(1).all() %}
+    <ul class="menu-container">
+        {% for firstLevelNode in nodes %}
+        <li class="menu-item {{ firstLevelNode.classes }} {% if firstLevelNode.active %}current{% endif %}">
+            <a class="menu-link" href="{{ firstLevelNode.url }}" target="{{ firstLevelNode.target }}">
+                <div>{{ firstLevelNode.title }}</div>
+            </a>
+
+            {% if firstLevelNode.children is not empty %}
+                <ul class="sub-menu-container">
+                    {% for secondLevelNode in firstLevelNode.children %}
+                        <li class="menu-item {{ firstLevelNode.classes }} {% if firstLevelNode.active %}current{% endif %}">
+                            <a class="menu-link" href="{{ secondLevelNode.url }}" target="{{ secondLevelNode.target }}">
+                                <div>{{ secondLevelNode.title }}</div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+        </li>
+        {% endfor %}
+    </ul>
+</nav><!-- #primary-menu end -->

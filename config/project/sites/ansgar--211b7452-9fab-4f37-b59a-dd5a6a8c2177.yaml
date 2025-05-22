@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: ansgar
+hasUrls: true
+language: en-US
+name: ansgar
+primary: true
+siteGroup: af770c74-5b49-4ea3-bf1b-82f11c83b5a1 # ansgar
+sortOrder: 1

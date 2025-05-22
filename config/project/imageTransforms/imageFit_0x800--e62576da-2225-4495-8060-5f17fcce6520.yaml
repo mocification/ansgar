@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: imageFit_0x800
+height: 800
+interlace: none
+mode: fit
+name: image_fit_0x800
+position: center-center
+quality: null
+upscale: true
+width: null

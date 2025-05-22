@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: imageCrop_0x1920
+height: 1920
+interlace: none
+mode: crop
+name: image_crop_0x1920
+position: center-center
+quality: null
+upscale: true
+width: null
