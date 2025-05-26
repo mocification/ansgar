@@ -25,5 +25,5 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
-    ->baseCpUrl(getenv('PRIMARY_SITE_URL').'/scms')
+    ->baseCpUrl(getenv('CONTROL_PANEL_SITE_URL').'/scms')
 ;
