@@ -2,7 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "craftcms/ckeditor": "4.8.0",
+    "craftcms/ckeditor": "4.9.0",
     "craftcms/cms": "5.7.7",
     "verbb/navigation": "3.0.8",
     "vlucas/phpdotenv": "^5.4.0"

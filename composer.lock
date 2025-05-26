@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3ca30a8f639bf92e4858c26fbcba383",
+    "content-hash": "fc9fef6018979fa69a3115d5271e3ff0",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -201,6 +201,82 @@
             "time": "2025-01-13T16:03:24+00:00"
         },
         {
+            "name": "composer/ca-bundle",
+            "version": "1.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f65c239c970e7f072f067ab78646e9f0b2935175",
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^8 || ^9",
+                "psr/log": "^1.0 || ^2.0 || ^3.0",
+                "symfony/process": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CaBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+            "keywords": [
+                "cabundle",
+                "cacert",
+                "certificate",
+                "ssl",
+                "tls"
+            ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/ca-bundle/issues",
+                "source": "https://github.com/composer/ca-bundle/tree/1.5.6"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-03-06T14:30:56+00:00"
+        },
+        {
             "name": "composer/semver",
             "version": "3.4.3",
             "dist": {
@@ -254,16 +330,17 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.8.0",
+            "version": "4.9.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/f96d936af6922e81e5c5a0a7b0df41a6cceaf88c",
-                "reference": "f96d936af6922e81e5c5a0a7b0df41a6cceaf88c",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/df2ea2ec6a689b276507c83c38eb982a0287651a",
+                "reference": "df2ea2ec6a689b276507c83c38eb982a0287651a",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.6.0",
                 "craftcms/html-field": "^3.4.0",
+                "embed/embed": "^4.4",
                 "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
                 "php": "^8.2"
             },
@@ -302,7 +379,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
-            "time": "2025-04-30T18:24:34+00:00"
+            "time": "2025-05-23T15:58:04+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -926,6 +1003,95 @@
                 "php-emoji"
             ],
             "time": "2022-10-28T02:32:19+00:00"
+        },
+        {
+            "name": "embed/embed",
+            "version": "v4.4.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-embed/Embed.git",
+                "reference": "b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-embed/Embed/zipball/b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87",
+                "reference": "b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ml/json-ld": "^1.1",
+                "oscarotero/html-parser": "^0.1.4",
+                "php": "^7.4|^8",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "brick/varexporter": "^0.3.1",
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "nyholm/psr7": "^1.2",
+                "oscarotero/php-cs-fixer-config": "^1.0",
+                "phpunit/phpunit": "^9.0",
+                "symfony/css-selector": "^5.0"
+            },
+            "suggest": {
+                "symfony/css-selector": "If you want to get elements using css selectors"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Embed\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+            "homepage": "https://github.com/oscarotero/Embed",
+            "keywords": [
+                "embed",
+                "embedly",
+                "oembed",
+                "opengraph",
+                "twitter cards"
+            ],
+            "support": {
+                "email": "oom@oscarotero.com",
+                "issues": "https://github.com/oscarotero/Embed/issues",
+                "source": "https://github.com/php-embed/Embed/tree/v4.4.17"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/oscarotero",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/oscarotero",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/misteroom",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-05-13T12:42:29+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -1861,6 +2027,86 @@
             "time": "2023-04-19T08:25:22+00:00"
         },
         {
+            "name": "ml/iri",
+            "version": "1.1.4",
+            "target-dir": "ML/IRI",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lanthaler/IRI/zipball/cbd44fa913e00ea624241b38cefaa99da8d71341",
+                "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ML\\IRI": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Lanthaler",
+                    "email": "mail@markus-lanthaler.com",
+                    "homepage": "http://www.markus-lanthaler.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "IRI handling for PHP",
+            "homepage": "http://www.markus-lanthaler.com",
+            "keywords": [
+                "URN",
+                "iri",
+                "uri",
+                "url"
+            ],
+            "time": "2014-01-21T13:43:39+00:00"
+        },
+        {
+            "name": "ml/json-ld",
+            "version": "1.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lanthaler/JsonLD/zipball/537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
+                "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ml/iri": "^1.1.1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ML\\JsonLD\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Lanthaler",
+                    "email": "mail@markus-lanthaler.com",
+                    "homepage": "http://www.markus-lanthaler.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON-LD Processor for PHP",
+            "homepage": "http://www.markus-lanthaler.com",
+            "keywords": [
+                "JSON-LD",
+                "jsonld"
+            ],
+            "time": "2022-09-29T08:45:17+00:00"
+        },
+        {
             "name": "moneyphp/money",
             "version": "v4.7.0",
             "source": {
@@ -2055,16 +2301,26 @@
         },
         {
             "name": "nystudio107/craft-code-editor",
-            "version": "1.0.22",
+            "version": "1.0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-code-editor.git",
+                "reference": "0a206d73efa8f8d3bd7294ae68b3d70c696b19c5"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/170edf71355b659e1db9ede12980b17c20eb3d1f",
-                "reference": "170edf71355b659e1db9ede12980b17c20eb3d1f",
+                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/0a206d73efa8f8d3bd7294ae68b3d70c696b19c5",
+                "reference": "0a206d73efa8f8d3bd7294ae68b3d70c696b19c5",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0 || ^4.0.0 || ^5.0.0",
                 "phpdocumentor/reflection-docblock": "^5.0.0"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2075,6 +2331,7 @@
                     "nystudio107\\codeeditor\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2097,7 +2354,56 @@
                 "markdown",
                 "twig"
             ],
-            "time": "2024-09-23T17:20:25+00:00"
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-code-editor/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-code-editor/issues",
+                "source": "https://github.com/nystudio107/craft-code-editor"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-17T20:38:20+00:00"
+        },
+        {
+            "name": "oscarotero/html-parser",
+            "version": "v0.1.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oscarotero/html-parser/zipball/10f3219267a365d9433f2f7d1694209c9d436c8d",
+                "reference": "10f3219267a365d9433f2f7d1694209c9d436c8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HtmlParser\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parse html strings to DOMDocument",
+            "homepage": "https://github.com/oscarotero/html-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2023-11-29T20:28:41+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -3290,11 +3596,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
-                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62",
                 "shasum": ""
             },
             "require": {
@@ -3302,12 +3613,12 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.5-dev"
-                },
                 "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -3315,6 +3626,7 @@
                     "function.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3330,7 +3642,24 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
-            "time": "2024-09-25T14:20:29+00:00"
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-25T14:21:43+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -3448,11 +3777,16 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher-contracts.git",
+                "reference": "59eb412e93815df44f05f342958efa9f46b1e586"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/7642f5e970b672283b7823222ae8ef8bbc160b9f",
-                "reference": "7642f5e970b672283b7823222ae8ef8bbc160b9f",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/59eb412e93815df44f05f342958efa9f46b1e586",
+                "reference": "59eb412e93815df44f05f342958efa9f46b1e586",
                 "shasum": ""
             },
             "require": {
@@ -3461,12 +3795,12 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.5-dev"
-                },
                 "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -3474,6 +3808,7 @@
                     "Symfony\\Contracts\\EventDispatcher\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3497,7 +3832,24 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2024-09-25T14:20:29+00:00"
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-25T14:21:43+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -3636,11 +3988,16 @@
         },
         {
             "name": "symfony/http-client-contracts",
-            "version": "v3.5.2",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "75d7043853a42837e68111812f4d964b01e5101c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/ee8d807ab20fcb51267fdace50fbe3494c31e645",
-                "reference": "ee8d807ab20fcb51267fdace50fbe3494c31e645",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/75d7043853a42837e68111812f4d964b01e5101c",
+                "reference": "75d7043853a42837e68111812f4d964b01e5101c",
                 "shasum": ""
             },
             "require": {
@@ -3653,7 +4010,7 @@
                     "name": "symfony/contracts"
                 },
                 "branch-alias": {
-                    "dev-main": "3.5-dev"
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -3664,6 +4021,7 @@
                     "/Test/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3687,7 +4045,24 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2024-12-07T08:49:48+00:00"
+            "support": {
+                "source": "https://github.com/symfony/http-client-contracts/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-04-29T11:18:49+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -4984,11 +5359,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/e53260aabf78fb3d63f8d79d69ece59f80d5eda0",
-                "reference": "e53260aabf78fb3d63f8d79d69ece59f80d5eda0",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
+                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
                 "shasum": ""
             },
             "require": {
@@ -5001,12 +5381,12 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.5-dev"
-                },
                 "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -5017,6 +5397,7 @@
                     "/Test/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5040,7 +5421,24 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2024-09-25T14:20:29+00:00"
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-04-25T09:37:31+00:00"
         },
         {
             "name": "symfony/string",
