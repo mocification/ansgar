@@ -9,7 +9,7 @@ fieldLayouts:
             dismissible: false
             elementCondition: null
             style: tip
-            tip: 'Lade hier dein Logo hoch und gib optional einen Slogan oder Claim ein. Der Text erscheint je nach Designvorlage im Fußbereich deiner Seite.'
+            tip: 'Lade hier dein Logo hoch und gib optional einen Slogan oder Claim ein. Der Text erscheint je nach Designvorlage im Fußbereich deiner Seite. Die Eingabe ist optional.'
             type: craft\fieldlayoutelements\Tip
             uid: 48621cff-0491-478b-9b00-69013a2cfc9f
             userCondition: null
@@ -22,6 +22,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
             handle: logo
@@ -44,6 +45,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T17:27:53+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
             handle: favicon
@@ -66,6 +68,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-04-02T15:01:00+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: slogan
@@ -104,6 +107,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-04-05T14:32:20+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: e6a1eac1-990e-41e3-b9c4-e93c35572887 # Theme
             handle: null
@@ -120,6 +124,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-04-02T15:01:45+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 284a9db4-65fd-4347-86cf-659736c23205 # Layout Fußzeile
             handle: null
@@ -158,6 +163,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorTheme
@@ -181,6 +187,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: backgroundColorHeader
@@ -197,6 +204,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: backgroundColorBody
@@ -213,6 +221,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: backgroundColorFooter
@@ -236,6 +245,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorHeading
@@ -252,6 +262,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-04-07T20:50:18+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorSubHeading
@@ -268,6 +279,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-03-29T17:16:41+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorText
@@ -284,6 +296,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-04-11T07:26:12+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorLink
@@ -307,6 +320,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-04-07T20:52:44+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorFooterHeading
@@ -323,6 +337,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-04-07T20:52:44+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorFooterText
@@ -339,6 +354,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-04-11T07:26:12+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
             handle: colorFooterLink
@@ -377,6 +393,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T19:06:11+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
             handle: fontFamilyPrimary
@@ -393,6 +410,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T19:06:11+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
             handle: fontFamilySecondary
@@ -409,6 +427,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T19:06:11+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
             handle: fontFamilyBody
