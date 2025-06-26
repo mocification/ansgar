@@ -64,10 +64,18 @@ p.service-desc {
 	color: #777;
 }
 
+.heading-block h1, 
+.heading-block h2,
+.heading-block h3,
+.heading-block h4,
+.heading-block h5,
+.heading-block h6
+{
+	font-family: 'Cookie';
+}
 .heading-block h3 {
 	text-transform: none;
-	font-size: 38px;
-	font-family: 'Cookie';
+	font-size: 38px;	
 }
 
 .heading-block::after {

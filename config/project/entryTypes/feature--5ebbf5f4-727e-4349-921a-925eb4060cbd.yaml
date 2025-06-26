@@ -138,6 +138,23 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-05-26T19:43:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6c3767e5-882e-4397-b220-1963ebcc1fac # Ausrichtung
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Textausrichtung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad9aeefd-acad-470d-b862-e17f8b177379
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-04-07T20:43:38+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
@@ -174,46 +191,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 02e278b6-776a-4cb4-9ada-38992732079e
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2025-04-07T20:43:38+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 397272b8-83c5-41cc-abf9-fe5dd51100b7
-            userCondition: null
-          -
-            dateAdded: '2025-04-07T20:43:38+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: da5bb037-c378-44b6-bf51-4988a6b632b8 # Trennform
-            handle: layoutShapeDividerTop
-            includeInCards: false
-            instructions: null
-            label: 'Trennform oben'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9cfdb0e8-1cd4-4aa8-b8fb-a05d8cced912
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2025-04-07T20:43:38+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: da5bb037-c378-44b6-bf51-4988a6b632b8 # Trennform
-            handle: layoutShapeDividerBottom
-            includeInCards: false
-            instructions: null
-            label: 'Trennform unten'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 23b610b1-57ac-497d-9834-b18ea2625ac8
             userCondition: null
             warning: null
             width: 50

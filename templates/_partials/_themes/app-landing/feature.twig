@@ -1,20 +1,22 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="emphasis-title mb-4">                
+                {% if heading.subTitle%}
+                    <span class="before-heading">{{ heading.subTitle }}</span>
+                {% endif %}
+                <{{ heading.headingTag }} class="display-4 font-body ls-1 fw-normal {{ heading.alignment }}" style="font-size: 42px;" >{{ heading.title }}</{{ heading.headingTag }}>
+            </div>   
         {% endfor %}
 
+        <div class="lead text-muted">
         {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button button-circle text-capitalize"
             >
                 {{ button.linkField.label }}
             </a>
@@ -41,8 +43,8 @@
         <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
-                <div class="col-md-6 order-first align-self-center">
+            <div class="row justify-content-between g-5 align-self-center">
+                <div class="col-md-6 order-first">
                     {{ imagePart }}
                 </div>
                 <div class="col-md-6 order-last align-self-center">

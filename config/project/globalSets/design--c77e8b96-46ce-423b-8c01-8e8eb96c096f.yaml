@@ -364,7 +364,7 @@ fieldLayouts:
             dismissible: false
             elementCondition: null
             style: tip
-            tip: 'Wähle hier deine gewünschten Schriftarten. Wenn du ''Voreingestellte Schriftart'' auswählst, wird automatisch die Schriftart der eingestellten Designvorlage verwendet.'
+            tip: "Wähle hier deine gewünschten Schriftarten. Wenn du 'Voreingestellte Schriftart' auswählst, wird automatisch die Schriftart der eingestellten Designvorlage verwendet."
             type: craft\fieldlayoutelements\Tip
             uid: 06649ac8-3d9e-465c-8276-0478c46af81a
             userCondition: null

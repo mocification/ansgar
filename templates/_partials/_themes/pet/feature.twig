@@ -1,12 +1,12 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="heading-block border-bottom-0 mb-4">
+                <{{ heading.headingTag }} class="text-transform-none font-secondary fw-normal {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>                
+                {% if heading.subTitle%}
+                    <div class="color h5 fw-normal">{{ heading.subTitle }}</div>
+                {% endif %}
+            </div>       
         {% endfor %}
 
         {{ entry.richTextDefault }}
@@ -14,7 +14,7 @@
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button button-large button-rounded mt-4 ms-0"
             >
                 {{ button.linkField.label }}
             </a>

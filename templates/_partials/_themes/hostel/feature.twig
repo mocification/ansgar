@@ -1,12 +1,12 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="heading-block border-bottom-0 mb-4">
+                {% if heading.subTitle%}
+                    <div class="color fw-normal mb-2">{{ heading.subTitle }}</div>
+                {% endif %}
+                <{{ heading.headingTag }} class="text-dark h1 fw-semibold ls-0 mb-4 {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>                
+            </div>       
         {% endfor %}
 
         {{ entry.richTextDefault }}
@@ -14,7 +14,7 @@
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button bg-color text-transform-none ls-0 mt-4 mx-0"
             >
                 {{ button.linkField.label }}
             </a>
@@ -25,7 +25,13 @@
 {% set imagePart %}
     {% set image = entry.image.one() %}
     {% if image %}
-        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="animated h-100 img-fluid object-fit-cover">
+        {% if entry.layoutFeatureSection == 'textRightImageLeft' %}
+            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="box-img animated h-100 img-fluid object-fit-cover">
+        {% elseif entry.layoutFeatureSection == 'textLeftImageRight' %}
+            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="box-img shadow-left animated h-100 img-fluid object-fit-cover">
+        {% else %}
+            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="animated h-100 img-fluid object-fit-cover">
+        {% endif %}        
     {% endif %}
 {% endset %}
 

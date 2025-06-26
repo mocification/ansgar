@@ -13,7 +13,7 @@
 	--cnvs-primary-font: 'Prata', serif;
 
 	--cnvs-border-opacity: .15;
-	--cnvs-body-image: url('images/blur-svg/blur-bg.png');
+	--cnvs-body-image: url('../../images/blur-bg.png');
 }
 
 body {

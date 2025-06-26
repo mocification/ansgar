@@ -1,20 +1,22 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="mb-5">
+                <{{ heading.headingTag }} class="display-3 color fw-normal font-display mb-2 {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+                {% if heading.subTitle%}
+                    <span class="before-heading fw-light ls-4 fs-5">{{ heading.subTitle }}</span>
+                {% endif %}                
+            </div>            
         {% endfor %}
 
-        {{ entry.richTextDefault }}
+        <div class="text-large color">
+            {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button rounded-pill ls-0 fw-medium my-0 mx-0"
             >
                 {{ button.linkField.label }}
             </a>
@@ -25,7 +27,7 @@
 {% set imagePart %}
     {% set image = entry.image.one() %}
     {% if image %}
-        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="animated h-100 img-fluid object-fit-cover">
+        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded animated h-100 img-fluid object-fit-cover">
     {% endif %}
 {% endset %}
 

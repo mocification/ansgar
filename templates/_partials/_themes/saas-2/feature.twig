@@ -3,18 +3,20 @@
         {% for heading in entry.heading.all() %}
             {% if heading.subTitle%}
                 <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
+                    <span class="badge rounded-pill text-bg-primary px-3 py-2 mb-3 fw-normal">{{ heading.subTitle }}</span>
                 </div>
             {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <{{ heading.headingTag }} class="mb-3 fw-bolder {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
         {% endfor %}
 
-        {{ entry.richTextDefault }}
+        <div class="op-09 mb-5">
+            {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button button-large button-border button-dark rounded-pill m-0"
             >
                 {{ button.linkField.label }}
             </a>
@@ -42,10 +44,10 @@
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">
-                <div class="col-md-6 order-first align-self-center">
+                <div class="col-md-6 order-first">
                     {{ imagePart }}
                 </div>
-                <div class="col-md-6 order-last align-self-center">
+                <div class="col-md-6 order-last">
                     {{ textPart }}
                 </div>
             </div>
@@ -59,10 +61,10 @@
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">
-                <div class="col-md-6 order-last order-md-first align-self-center">
+                <div class="col-md-6 order-last order-md-first">
                     {{ textPart }}
                 </div>
-                <div class="col-md-6 order-first order-md-last align-self-center">
+                <div class="col-md-6 order-first order-md-last">
                     {{ imagePart }}
                 </div>
             </div>

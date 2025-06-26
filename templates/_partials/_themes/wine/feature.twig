@@ -3,18 +3,20 @@
         {% for heading in entry.heading.all() %}
             {% if heading.subTitle%}
                 <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
+                    <div class="text-uppercase ls-2 fw-bold mb-3 small text-smaller">{{ heading.subTitle }}</div>
                 </div>
             {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <{{ heading.headingTag }} class="display-3 text-light text-uppercase ls-1 fw-bolder negative-text-margin {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
         {% endfor %}
 
-        {{ entry.richTextDefault }}
+        <div class="lead fw-normal">
+            {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button button-3d-border h-bg-color fw-semibold button-xlarge"
             >
                 {{ button.linkField.label }}
             </a>
@@ -25,7 +27,7 @@
 {% set imagePart %}
     {% set image = entry.image.one() %}
     {% if image %}
-        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="animated h-100 img-fluid object-fit-cover">
+        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="h-100 w-100 object-cover object-top rounded">
     {% endif %}
 {% endset %}
 
@@ -36,16 +38,16 @@
 
 {% if entry.layoutFeatureSection == 'textRightImageLeft' %} 
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="section page-section dark bg-transparent m-0" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="section page-section dark bg-transparent m-0" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
-                <div class="col-md-6 order-first align-self-center">
+            <div class="row align-items-stretch g-4">
+                <div class="col-lg-6 align-self-center">
                     {{ imagePart }}
                 </div>
-                <div class="col-md-6 order-last align-self-center">
+                <div class="col-lg-6 ps-lg-4 d-flex align-self-center flex-column align-self-center">
                     {{ textPart }}
                 </div>
             </div>
@@ -53,16 +55,16 @@
     </div>
 {% elseif  entry.layoutFeatureSection == 'textLeftImageRight'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="section page-section dark bg-transparent m-0" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="section page-section dark bg-transparent m-0" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
-                <div class="col-md-6 order-last order-md-first align-self-center">
+            <div class="row align-items-stretch g-4">
+                <div class="col-lg-6 ps-lg-4 d-flex align-self-center flex-column align-self-center">
                     {{ textPart }}
                 </div>
-                <div class="col-md-6 order-first order-md-last align-self-center">
+                <div class="col-lg-6 align-self-center">
                     {{ imagePart }}
                 </div>
             </div>
@@ -70,12 +72,12 @@
     </div>
 {% elseif  entry.layoutFeatureSection == 'textTopImageBottom'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="section page-section dark bg-transparent m-0" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="section page-section dark bg-transparent m-0" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row align-items-stretch g-4">
                 <div class="col-md-12 order-last order-md-first">
                     {{ textPart }}
                 </div>
@@ -87,12 +89,12 @@
     </div>
 {% elseif entry.layoutFeatureSection == 'textBottomImageTop'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="section page-section dark bg-transparent m-0" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="section page-section dark bg-transparent m-0" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row align-items-stretch g-4">
                 <div class="col-md-12 order-first">
                     {{ imagePart }}
                 </div>

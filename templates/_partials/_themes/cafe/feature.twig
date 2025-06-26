@@ -1,12 +1,12 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="heading-block border-bottom-0">
+                {% if heading.subTitle%}
+                    <span class="before-heading color">{{ heading.subTitle }}</span>
+                {% endif %}
+                <{{ heading.headingTag }} class="{{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            </div>            
         {% endfor %}
 
         {{ entry.richTextDefault }}
@@ -14,7 +14,7 @@
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button button-border button-rounded button-large button-light"
             >
                 {{ button.linkField.label }}
             </a>
@@ -36,9 +36,9 @@
 
 {% if entry.layoutFeatureSection == 'textRightImageLeft' %} 
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="page-section section mb-0 dark" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="spage-section section mb-0 dark" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">
@@ -53,9 +53,9 @@
     </div>
 {% elseif  entry.layoutFeatureSection == 'textLeftImageRight'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="spage-section section mb-0 dark" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="spage-section section mb-0 dark" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">
@@ -70,9 +70,9 @@
     </div>
 {% elseif  entry.layoutFeatureSection == 'textTopImageBottom'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="spage-section section mb-0 dark" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="spage-section section mb-0 dark" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">
@@ -87,9 +87,9 @@
     </div>
 {% elseif entry.layoutFeatureSection == 'textBottomImageTop'%}
     {% if backgroundImage %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
+        <div class="spage-section section mb-0 dark" style="background: url('{{ backgroundImage.getUrl('imageFit_1920x0') }}') no-repeat; background-size: cover;">
     {% else %}
-        <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
+        <div class="spage-section section mb-0 dark" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
             <div class="row justify-content-between g-5">

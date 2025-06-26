@@ -1,20 +1,22 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
-            {% if heading.subTitle%}
-                <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
-                </div>
-            {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
+            <div class="heading-block border-bottom-0 mb-3">
+                {% if heading.subTitle%}
+                    <div class="before-heading">{{ heading.subTitle }}</div>
+                {% endif %}
+                <{{ heading.headingTag }} class="text-transform-none fw-semibold mb-4 {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>                
+            </div>       
         {% endfor %}
 
-        {{ entry.richTextDefault }}
+        <div class="text-muted">
+            {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
             <a 
                 href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
+                class="button fw-semibold button-rounded ls-0 text-transform-none m-0"
             >
                 {{ button.linkField.label }}
             </a>

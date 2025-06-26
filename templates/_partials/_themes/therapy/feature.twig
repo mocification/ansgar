@@ -1,23 +1,31 @@
 {% set textPart %}
     <div class="{{ entry.alignment }}">
         {% for heading in entry.heading.all() %}
+            <div class="overflow-hidden mb-4">
+                <{{ heading.headingTag }} class="display-4 color mb-0 fadeInUpSmall fast animated {{ heading.alignment }}" data-animate="fadeInUpSmall fast">{{ heading.title }}</{{ heading.headingTag }}>
+            </div>
             {% if heading.subTitle%}
                 <div class="{{ heading.alignment }}">
-                    <div class="badge rounded-pill badge-default">{{ heading.subTitle }}</div>
+                    <div class="text-white h6 mb-4">{{ heading.subTitle }}</div>
                 </div>
             {% endif %}
-            <{{ heading.headingTag }} class="fw-bold {{ heading.alignment }}">{{ heading.title }}</{{ heading.headingTag }}>
         {% endfor %}
-
-        {{ entry.richTextDefault }}
+        
+        <div class="text-white-50 fadeInUpSmall fast animated" data-animate="fadeInUpSmall fast">
+            {{ entry.richTextDefault }}
+        </div>
 
         {% for button in entry.buttons.all() %}
-            <a 
-                href="{{ button.linkField}}" 
-                class="button button-rounded button-large text-transform-none ls-0"
-            >
-                {{ button.linkField.label }}
-            </a>
+            <div class="overflow-hidden mb-4">
+                <a 
+                    href="{{ button.linkField}}" 
+                    data-animate="fadeInUpSmall faster" 
+                    data-delay="300" 
+                    class="btn rounded-0 btn-border color fadeInUpSmall faster animated"                
+                >
+                    <span class="px-4">{{ button.linkField.label }}</span>
+                </a>
+            </div>
         {% endfor %}
     </div>
 {% endset %}
@@ -25,7 +33,7 @@
 {% set imagePart %}
     {% set image = entry.image.one() %}
     {% if image %}
-        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="animated h-100 img-fluid object-fit-cover">
+        <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="h-100 min-vh-50 rounded">
     {% endif %}
 {% endset %}
 
@@ -41,7 +49,7 @@
         <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row justify-content-between gutter-50">
                 <div class="col-md-6 order-first align-self-center">
                     {{ imagePart }}
                 </div>
@@ -58,7 +66,7 @@
         <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row justify-content-between gutter-50">
                 <div class="col-md-6 order-last order-md-first align-self-center">
                     {{ textPart }}
                 </div>
@@ -75,7 +83,7 @@
         <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row justify-content-between gutter-50">
                 <div class="col-md-12 order-last order-md-first">
                     {{ textPart }}
                 </div>
@@ -92,7 +100,7 @@
         <div class="section bg-transparent my-0 my-lg-5" style="background: {{ entry.backgroundColor }} !important;">
     {% endif %}
         <div class="container">
-            <div class="row justify-content-between g-5">
+            <div class="row justify-content-between gutter-50">
                 <div class="col-md-12 order-first">
                     {{ imagePart }}
                 </div>
