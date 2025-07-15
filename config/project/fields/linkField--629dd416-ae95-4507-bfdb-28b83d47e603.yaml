@@ -19,6 +19,12 @@ settings:
             -
               - sources
               - '*'
+            -
+              - showUnpermittedSections
+              - '1'
+            -
+              - showUnpermittedEntries
+              - '1'
       -
         - url
         -
@@ -28,6 +34,9 @@ settings:
               - ''
             -
               - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
               - ''
   types:
     - entry
