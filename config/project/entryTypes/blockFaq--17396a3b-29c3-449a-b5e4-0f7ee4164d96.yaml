@@ -1,0 +1,120 @@
+color: null
+description: null
+fieldLayouts:
+  151e27a8-4f5f-4584-abcc-15f66b72047e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T13:28:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c278bdd0-e669-4114-8573-ebe87fb44a6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:28:41+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 367861c9-e32b-4acd-9c1a-6d45ab09b995
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T13:28:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c978e53f-faa2-4b1e-87e6-5fc1851126a4 # FAQs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1addd6fd-2196-4a9a-ae9c-65aae9b23415
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1892537c-6acf-471c-857b-5c8b57eba9a6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T13:28:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 109ab20e-f068-4d1d-999d-07f67e1ab0f5 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56805967-12ee-4df8-9dca-89771efa17e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-02T16:51:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0d27a76c-60c7-4b60-b6ac-7993d50ef9e4 # Position der Aufklappliste
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c51a3c04-fbab-451c-9122-7488787ca273
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-04T12:31:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72101ac5-4ee9-4074-ba1b-da4eb64b1f96 # Faq Layout
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Layout
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7f699bb-9622-40ee-887b-6a5dbb417a58
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: aaeba4a5-04c6-4297-8fa0-630f0617449d
+        userCondition: null
+handle: blockFaq
+hasTitleField: false
+icon: messages-question
+name: FAQ
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

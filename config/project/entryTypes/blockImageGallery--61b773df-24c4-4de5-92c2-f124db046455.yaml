@@ -1,0 +1,122 @@
+color: null
+description: null
+fieldLayouts:
+  f6e612fb-d1df-4eb5-ae25-b3d66b922b93:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:573f6799-40cc-4a4a-ba3e-d11c7a358d30'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T13:35:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a1b9208-26a9-4f52-8f76-532fd2bce0b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:35:00+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: bc286133-a767-4958-b779-32e3b604f5a8
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T13:35:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c17e37d1-2245-4a08-ae7a-f3b635cb8da8 # Bilder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c229c4ba-3ea1-4bfe-a9e0-4b51d88839f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 18ec54b3-5947-4596-9818-6a030881badc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T13:35:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 109ab20e-f068-4d1d-999d-07f67e1ab0f5 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26e5a41c-761d-4fca-9337-571df4e80a70
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:40:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7f5cd571-d7d1-45d8-a365-a67566facbca # Spalten
+            handle: galleryColumns
+            includeInCards: false
+            instructions: 'Gib hier an, in wie vielen Spalten deine Bildergalerie angezeigt werden soll.'
+            label: 'Spalten Layout'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5778e66a-bc3f-400d-b962-697faa7f696f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:40:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ebaf514e-62f3-48f0-b78a-2706a7d67cd3 # Image Gallery View
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Darstellung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 573f6799-40cc-4a4a-ba3e-d11c7a358d30
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: 5e477f09-c2b6-45a3-8e02-6dc15b23d323
+        userCondition: null
+handle: blockImageGallery
+hasTitleField: false
+icon: images
+name: Bildergalerie
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

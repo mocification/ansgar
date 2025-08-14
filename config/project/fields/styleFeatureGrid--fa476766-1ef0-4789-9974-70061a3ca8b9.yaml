@@ -1,0 +1,85 @@
+columnSuffix: null
+handle: styleFeatureGrid
+instructions: null
+name: 'Style Feature Grid'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - e7b2e099-1849-4903-8c39-4282c0814f19
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 3ba77b31-6aff-4125-bef6-241ea048179b
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-08-04T13:56:49+00:00'
+                            11:
+                              - uid
+                              - 9e31a711-d20a-4cdc-9bd1-d9a12cd1df3d
+                            14:
+                              - fieldUid
+                              - eb4836a1-08f0-4c87-b376-b39fb99e1bd8 # Layout Feature Grid
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-08-04T13:58:42+00:00'
+                            11:
+                              - uid
+                              - b09c28fc-01c4-4df2-a00d-5a0d7cb2dd62
+                            14:
+                              - fieldUid
+                              - 89da30fd-9504-432e-b9f5-32dfde8d27de # Ausrichtung der Feature-Inhalten
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

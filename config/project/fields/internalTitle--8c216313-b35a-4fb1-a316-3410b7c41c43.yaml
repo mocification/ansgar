@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: internalTitle
+instructions: 'Gib hier eine kurze Bezeichnung ein, damit du in der Übersicht schnell siehst um welchen Inhaltsblock es sich handelt.'
+name: 'Interne Bezeichnung'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

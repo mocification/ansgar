@@ -1,0 +1,96 @@
+columnSuffix: null
+handle: tag
+instructions: 'Wähle hier das Format deiner Hauptüberschrift aus. Bitte beachte, dass h1 nur einmal pro Seite und als erste Überschrift verwendet werden soll.'
+name: Überschriftenformat
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - h1
+        -
+          - value
+          - h1
+        -
+          - icon
+          - h1
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - h2
+        -
+          - value
+          - h2
+        -
+          - icon
+          - h2
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - h3
+        -
+          - value
+          - h3
+        -
+          - icon
+          - h3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - h4
+        -
+          - value
+          - h4
+        -
+          - icon
+          - h4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - h5
+        -
+          - value
+          - h5
+        -
+          - icon
+          - h5
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - h6
+        -
+          - value
+          - h6
+        -
+          - icon
+          - h6
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

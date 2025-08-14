@@ -1,0 +1,137 @@
+color: null
+description: null
+fieldLayouts:
+  7ae1d247-8de5-4fd8-bbfd-191d3b828864:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T11:21:03+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4039c397-a8bd-4619-ad8f-14d63ae92eb2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T11:21:03+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 64018b0b-2ed5-4148-8435-f60a1e94e487
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T11:48:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fab01bdf-6a69-4bc0-b0f5-27f320fd31f5 # Features With Icon & Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94354e99-3cec-4dcb-b14b-8c2f51db195f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 51ec6ae4-fc2b-4059-9bff-efa67f8be4f7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T11:46:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 109ab20e-f068-4d1d-999d-07f67e1ab0f5 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 431b6f9e-3da5-434d-8955-c22dfa20f180
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-04T13:59:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fa476766-1ef0-4789-9974-70061a3ca8b9 # Style Feature Grid
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b5b8299-7bb9-4709-9634-68dc776cfc83
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T11:46:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7f5cd571-d7d1-45d8-a365-a67566facbca # Spalten
+            handle: featureColumns
+            includeInCards: false
+            instructions: null
+            label: 'Feature Spalten'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e5e390c-12be-42d4-ac60-845959503bd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T18:17:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ea378fd-b7a4-446a-b36f-951d78786afa # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e27830a-2264-4995-b4fb-67a960d66e9f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: 983e5d97-e7e3-4460-8f30-305b9a93f56b
+        userCondition: null
+handle: blockFeatureGridWithIcon
+hasTitleField: false
+icon: grid
+name: 'Feature Grid mit Icons'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

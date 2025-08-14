@@ -1,19 +1,23 @@
 columnSuffix: null
-handle: layoutFeatureSection
-instructions: null
-name: Layout
+handle: imagePosition
+instructions: 'Stelle hier ein, in welcher Position das Bild zum Text stehen soll.'
+name: Bildposition
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: false
   options:
     -
       __assoc__:
         -
           - label
-          - 'Text rechts / Bild links'
+          - Links
         -
           - value
-          - textRightImageLeft
+          - left
+        -
+          - icon
+          - border-left
         -
           - default
           - '1'
@@ -21,10 +25,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Text links / Bild rechts'
+          - Rechts
         -
           - value
-          - textLeftImageRight
+          - right
+        -
+          - icon
+          - border-right
         -
           - default
           - ''
@@ -32,10 +39,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Text oben / Bild unten'
+          - Oberhalb
         -
           - value
-          - textTopImageBottom
+          - top
+        -
+          - icon
+          - border-top
         -
           - default
           - ''
@@ -43,10 +53,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Text unten / Bild oben'
+          - Unterhalb
         -
           - value
-          - textBottomImageTop
+          - bottom
+        -
+          - icon
+          - border-bottom
         -
           - default
           - ''
@@ -54,13 +67,16 @@ settings:
       __assoc__:
         -
           - label
-          - 'Text im Vordergrund / Bild im Hintergrund '
+          - Hintergrund
         -
           - value
-          - textFrontImageBack
+          - background
+        -
+          - icon
+          - expand-wide
         -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

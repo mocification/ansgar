@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: imageGalleryView
+instructions: null
+name: 'Image Gallery View'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Tabelle
+        -
+          - value
+          - masonry
+        -
+          - icon
+          - grid
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Karusell
+        -
+          - value
+          - carousel
+        -
+          - icon
+          - gallery-thumbnails
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: clients
+instructions: null
+name: Kunden
+searchable: false
+settings:
+  createButtonLabel: 'Partner hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - aa8f2c61-b663-4628-8c34-4d12ad9fc03f # Client
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

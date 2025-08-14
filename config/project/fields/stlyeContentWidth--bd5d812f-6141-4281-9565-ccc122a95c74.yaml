@@ -1,44 +1,40 @@
 columnSuffix: null
-handle: alignment
+handle: stlyeContentWidth
 instructions: null
-name: Ausrichtung
+name: Inhaltsbreite
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: false
   options:
     -
       __assoc__:
         -
           - label
-          - Link
+          - 'Volle Breite'
         -
           - value
-          - text-start
+          - full
+        -
+          - icon
+          - expand-wide
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Inhaltsbreite
+        -
+          - value
+          - container
+        -
+          - icon
+          - border-outer
         -
           - default
           - '1'
-    -
-      __assoc__:
-        -
-          - label
-          - Mitte
-        -
-          - value
-          - text-center
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Rechts
-        -
-          - value
-          - text-end
-        -
-          - default
-          - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

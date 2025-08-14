@@ -1,19 +1,23 @@
 columnSuffix: null
-handle: headingTag
-instructions: 'Wähle hier das Format deiner Überschrift aus. Bitte beachte, dass h1 nur einmal pro Seite und als erste Überschrift verwendet werden soll.'
-name: Überschriftenformat
+handle: buttonAlignment
+instructions: null
+name: 'Button Alignment'
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: false
   options:
     -
       __assoc__:
         -
           - label
-          - h1
+          - Oben
         -
           - value
-          - h1
+          - top
+        -
+          - icon
+          - border-top
         -
           - default
           - ''
@@ -21,10 +25,13 @@ settings:
       __assoc__:
         -
           - label
-          - h2
+          - rechts
         -
           - value
-          - h2
+          - right
+        -
+          - icon
+          - border-right
         -
           - default
           - '1'
@@ -32,10 +39,13 @@ settings:
       __assoc__:
         -
           - label
-          - h3
+          - unten
         -
           - value
-          - h3
+          - bottom
+        -
+          - icon
+          - border-bottom
         -
           - default
           - ''
@@ -43,35 +53,16 @@ settings:
       __assoc__:
         -
           - label
-          - h4
+          - links
         -
           - value
-          - h4
+          - left
         -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - h5
-        -
-          - value
-          - h5
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - h6
-        -
-          - value
-          - h6
+          - icon
+          - border-left
         -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

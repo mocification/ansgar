@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: featuresWithImageLink
+instructions: null
+name: 'Features With Image & Link'
+searchable: false
+settings:
+  createButtonLabel: 'Feature hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cff7104f-fab7-452a-a505-f58112002642 # Feature with Image, Text & Link
+        -
+          - name
+          - Feature
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

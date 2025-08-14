@@ -19,7 +19,7 @@
 
     <!-- Theme CSS -->
     {% if design.theme.value %}
-		<link rel="stylesheet" href="{{ siteUrl }}template/css/themes/{{ design.theme.value }}.css">    
+		<link rel="stylesheet" href="{{ siteUrl }}template/css/themes/{{ design.theme.value }}.css{{ craft.app.config.general.devMode ? '?v=' ~ random() : '?v=' ~ getenv('CRAFT_ASSET_VERSION') }}">    
 	{% endif %}
 
 	{% include '_layouts/themeFonts.twig' %}

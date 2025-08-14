@@ -1,58 +1,40 @@
 color: null
+description: null
 fieldLayouts:
   80f5dbb5-6307-4279-b9de-7f93b2b8f01c:
+    cardThumbAlignment: start
+    cardView:
+      - link
+      - 'layoutElement:e84b3249-5aed-4f06-a661-56dbd349ecf0'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-04-07T17:55:56+00:00'
+            dateAdded: '2025-08-02T14:56:24+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 629dd416-ae95-4507-bfdb-28b83d47e603 # Link
             handle: null
-            includeInCards: false
-            instructions: null
-            label: Button
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2a5c18c0-5f42-4260-bbd1-83ec92cd75df
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-04-07T20:22:36+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: ca12b1c0-9f3a-4519-9751-58bc32eac446
-            userCondition: null
-          -
-            dateAdded: '2025-04-07T20:09:16+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: e6fd663a-5010-4845-8a71-707af08f8df0 # Größe
-            handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: eb1c6ec5-bc0b-429c-bd28-159c9f055bcb
+            uid: e84b3249-5aed-4f06-a661-56dbd349ecf0
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-04-07T20:22:36+00:00'
+            dateAdded: '2025-08-02T14:56:24+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: 21fa6522-ab08-4fa2-a3c5-94fd6f2105be
+            uid: 41482076-10ab-45e5-bcc0-ecdc8c82e2ea
             userCondition: null
           -
-            dateAdded: '2025-04-07T20:00:00+00:00'
+            dateAdded: '2025-08-02T14:56:24+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: de587eda-41a2-4051-98f4-d4dcb6e7ffc5 # Icon
@@ -60,34 +42,11 @@ fieldLayouts:
             includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
+            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e303c288-0fb7-4e4a-aef4-c141a17e861f
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-04-07T20:22:36+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 583545e8-831d-401f-a787-467794788a4f
-            userCondition: null
-          -
-            dateAdded: '2025-04-07T20:19:48+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 892c0757-21b2-4ec0-813f-ed69f6db7b88 # Layout Button
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: Layout
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9c6940cc-9185-429f-a29e-11909e0568d2
+            uid: e38deb96-d947-4d13-a2f0-1a6df18504e8
             userCondition: null
             warning: null
             width: 100

@@ -1,30 +1,23 @@
 columnSuffix: null
-handle: layoutButton
+handle: styleIconlistSimple
 instructions: null
-name: 'Layout Button'
+name: 'Style Iconlist'
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: false
   options:
     -
       __assoc__:
         -
           - label
-          - 3D
+          - Einfach
         -
           - value
-          - 3d
+          - simple
         -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Flat
-        -
-          - value
-          - default
+          - icon
+          - check
         -
           - default
           - '1'
@@ -32,35 +25,30 @@ settings:
       __assoc__:
         -
           - label
-          - 'Umrahmung mit runden Ecken'
-        -
-          - value
-          - rounded
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Umrahmung mit Ecken'
+          - Umrahmt
         -
           - value
           - border
         -
+          - icon
+          - border-outer
+        -
           - default
           - ''
     -
       __assoc__:
         -
           - label
-          - 'Umrahmung Kreisförmig'
+          - Hintergrundfarbe
         -
           - value
-          - circle
+          - background
+        -
+          - icon
+          - fill-drip
         -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

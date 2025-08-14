@@ -14,8 +14,8 @@ settings:
           - uid
           - 4c510138-e031-476c-bb4a-db4d2c8d1165 # Button
         -
-          - handle
-          - buttonEntry
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

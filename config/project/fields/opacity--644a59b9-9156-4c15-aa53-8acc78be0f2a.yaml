@@ -1,0 +1,14 @@
+columnSuffix: null
+handle: opacity
+instructions: 'Stelle die Deckkraft deines Hintergrunds ein. Ein niedriger Wert bedeutet weniger Deckkraft für deinen Hintergrund. Also ein niedriger Wert ist eine größere Transparenz.'
+name: Deckkraft
+searchable: false
+settings:
+  defaultValue: 70
+  max: 100
+  min: 0
+  step: 1
+  suffix: '%'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Range

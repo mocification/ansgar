@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: testimonialGalleryView
+instructions: null
+name: 'Testimonial Gallery View'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Tabelle
+        -
+          - value
+          - table
+        -
+          - icon
+          - grid-horizontal
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Karusell
+        -
+          - value
+          - carousel
+        -
+          - icon
+          - gallery-thumbnails
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

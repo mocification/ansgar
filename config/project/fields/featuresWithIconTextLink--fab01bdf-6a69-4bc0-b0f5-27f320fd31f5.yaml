@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: featuresWithIconTextLink
+instructions: null
+name: 'Features With Icon & Link'
+searchable: false
+settings:
+  createButtonLabel: 'Feature hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 4cde9a80-ae39-4a4f-b6d6-9312ca917d69 # Feature with Icon, Text & Link
+        -
+          - name
+          - Feature
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

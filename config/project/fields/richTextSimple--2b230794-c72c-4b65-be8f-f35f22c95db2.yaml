@@ -14,7 +14,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 5ebbf5f4-727e-4349-921a-925eb4060cbd # Bild & Text
+          - 5ebbf5f4-727e-4349-921a-925eb4060cbd
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false

@@ -1,0 +1,179 @@
+color: null
+description: null
+fieldLayouts:
+  dd4c2782-8b58-4690-b719-2cda03d97323:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:997033a7-502a-4369-8f27-0276246a7d64'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39364545-cd54-43e6-bc66-8a19b865a9a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: null
+            includeInCards: false
+            instructions: 'Verwende für die beste Darstellung ein Bild in Querformat.'
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 54584295-9ee6-4a53-9fcd-930a9152bee5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: ea16d79f-2b01-4878-b01f-0af61eeb20d0
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3a4974cb-b09b-4396-bc7d-dd1c1cb28121 # Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15a76786-9bb5-4138-8124-a0877805921e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: eba9b878-67f7-4f64-9675-cfbcb26811d2
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T14:30:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 66d5ab98-ae03-480f-9744-f7bd9d013328 # Features with Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 063ffb9d-e2b1-444a-a81d-df99fcec8ede
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e995ab34-3a30-4e27-9d92-a67eb3c5c0b4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T09:43:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 109ab20e-f068-4d1d-999d-07f67e1ab0f5 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bb962d7-0eca-4de6-8ab9-dcf9e05a1440
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T18:09:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a20c2e3f-537e-438b-a0c6-0b150ceaf065 # Bildposition
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 997033a7-502a-4369-8f27-0276246a7d64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T18:09:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ea378fd-b7a4-446a-b36f-951d78786afa # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Button
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1604e83c-367d-4dcb-a645-77fc218510ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-29T20:03:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 17f4da84-c185-46dd-8beb-71a4cc05397f # Style Iconlist
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Iconliste
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96caf4d9-565b-46ad-95aa-0213e3787a84
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: 32304dc2-d59d-4f3e-b20b-8ef9e704c2db
+        userCondition: null
+handle: blockFeatureSimple
+hasTitleField: false
+icon: hand-holding
+name: 'Bild & Text mit einfacher Icon-Liste'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

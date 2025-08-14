@@ -1,0 +1,120 @@
+color: null
+description: null
+fieldLayouts:
+  5dd088ec-ff13-434f-9c1a-a49c32290398:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T14:05:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e84d4413-997c-487d-866d-50840e6bbe47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:05:17+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9bae36f6-fdc2-4632-b70b-96b29e5efdc9
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T14:05:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c801945c-293e-4139-b0dd-a028ce04fe80 # Kundenmeinungen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a367e991-259c-4204-bed5-90644aa9111f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5b1e704c-21df-425f-9d61-660b47c8b6e2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T14:05:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 109ab20e-f068-4d1d-999d-07f67e1ab0f5 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1ed16c2-d9b7-4050-8e69-1b230604d601
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:05:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7f5cd571-d7d1-45d8-a365-a67566facbca # Spalten
+            handle: testimonialColumns
+            includeInCards: false
+            instructions: 'Gib hier an, in wie viele Spalten deine Kundenmeinungen angezeigt werden sollen.'
+            label: 'Spalten Layout'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f97d2420-7d16-43bf-8b1a-646a55bf45d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:08:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f0d5c884-6ab7-4dbe-8c5f-be4148440df5 # Testimonial Gallery View
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Darstellung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f775a60-cb3f-4c76-a46e-49d17dd7b36d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: 375be97b-aeb2-4bc1-9f41-7366ecab9e4c
+        userCondition: null
+handle: blockTestimonial
+hasTitleField: false
+icon: poll-people
+name: Kundenmeinungen
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

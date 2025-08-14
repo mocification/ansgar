@@ -1,0 +1,122 @@
+columnSuffix: null
+handle: styleBackground
+instructions: null
+name: Hintergrund
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - cfa70e7b-23e5-4c17-afa8-653a0c1c078d
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - e10a2512-bc7f-4e55-9594-b5190314be92
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:26:07+00:00'
+                            11:
+                              - uid
+                              - ef609ab5-34cf-4798-be43-120dc7187550
+                            14:
+                              - fieldUid
+                              - 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\HorizontalRule
+                            -
+                              - dateAdded
+                              - '2025-07-29T19:06:56+00:00'
+                            -
+                              - uid
+                              - a99c59a3-1f9f-4040-b948-f41be615e81d
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:26:07+00:00'
+                            11:
+                              - uid
+                              - f124c4bc-1322-4171-8354-849edd97269c
+                            14:
+                              - fieldUid
+                              - cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-29T14:29:28+00:00'
+                            11:
+                              - uid
+                              - 5caea314-921d-47f4-be4e-d229627f2d0f
+                            14:
+                              - fieldUid
+                              - 644a59b9-9156-4c15-aa53-8acc78be0f2a # Deckkraft
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

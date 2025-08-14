@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: faqLayout
+instructions: null
+name: 'Faq Layout'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Layout 1'
+        -
+          - value
+          - layout1
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Layout 2'
+        -
+          - value
+          - layout2
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

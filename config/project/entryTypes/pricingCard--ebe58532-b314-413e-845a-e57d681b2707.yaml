@@ -1,0 +1,198 @@
+color: null
+description: null
+fieldLayouts:
+  3a2a6b6e-1766-48fe-865b-326c8a816272:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:357b2a82-8f25-48c6-bb1d-f45b406480c3'
+      - 'layoutElement:d11bf67a-c984-466b-bee9-d9366c057b5d'
+      - 'layoutElement:2e810afc-a8be-4382-a71c-527cea531b03'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9079df2-140c-4bd9-8a81-4ff61d73b8c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            elementCondition: null
+            heading: Preisinformation
+            type: craft\fieldlayoutelements\Heading
+            uid: 86665190-d6a5-4c98-ad2a-a6c22b1ce34f
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: price
+            includeInCards: true
+            instructions: null
+            label: Preis
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 357b2a82-8f25-48c6-bb1d-f45b406480c3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: unit
+            includeInCards: true
+            instructions: null
+            label: Einheit
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d11bf67a-c984-466b-bee9-d9366c057b5d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a0606219-7552-4b35-842c-2f182632cc91
+            userCondition: null
+          -
+            dateAdded: '2025-08-02T21:08:16+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: de587eda-41a2-4051-98f4-d4dcb6e7ffc5 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Icon für die Aufzählungspunkte'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b5598ef-0f09-4ebc-9c44-8e931e6fdb67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-02T21:08:16+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bc9c492b-c448-430f-b191-162b10755dec # Pricing Features Table
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Aufzählungspunkte
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebcca0f8-9b68-4d77-8141-0eb523631ae2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-02T21:08:16+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6ce40bd0-3cb9-4f4b-a486-b39d61d4b293
+            userCondition: null
+          -
+            dateAdded: '2025-08-02T21:21:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 629dd416-ae95-4507-bfdb-28b83d47e603 # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c8b85be-e85d-4134-91df-4b60a2c05f29
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:54:12+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c57d530c-5b01-4f90-9850-3b128b70ec24
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T16:12:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9404b35f-bf80-4e76-9a78-b84a7b5f82b7 # Lightswitch
+            handle: showAsHighlight
+            includeInCards: true
+            instructions: null
+            label: 'Darstellung als Highlight'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e810afc-a8be-4382-a71c-527cea531b03
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-07-27T16:12:49+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 9404b35f-bf80-4e76-9a78-b84a7b5f82b7 # Lightswitch
+                  layoutElementUid: 2e810afc-a8be-4382-a71c-527cea531b03
+                  uid: 9cb5cac6-d4c2-4d7e-8330-afa79eb0560e
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: highlightText
+            includeInCards: false
+            instructions: null
+            label: 'Highlight Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6bd2e44-d60d-43c9-aa4e-428c1ed10995
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 64ff2aa0-0292-411e-afff-7f88b7b6bafb
+        userCondition: null
+handle: pricingCard
+hasTitleField: false
+icon: null
+name: 'Pricing Card'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: pricingCards
+instructions: null
+name: Preiskarten
+searchable: false
+settings:
+  createButtonLabel: 'Preiskarte hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - ebe58532-b314-413e-845a-e57d681b2707 # Pricing Card
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

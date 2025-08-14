@@ -1,0 +1,91 @@
+columnSuffix: null
+handle: styleHeader
+instructions: null
+name: Überschrift
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 8318ecaa-8038-4300-ac59-6e5bed1b9032
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 91ee3010-935b-445f-8504-9801118ec39c
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - Format
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:27:08+00:00'
+                            11:
+                              - uid
+                              - ce12b287-88fd-46d4-90d7-6a915b1d871d
+                            14:
+                              - fieldUid
+                              - 95dbab60-df92-47c3-a001-8b5be0df71fb # Überschriftenformat
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - Textausrichtung
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:27:08+00:00'
+                            11:
+                              - uid
+                              - 8dfe7fbb-1e74-4730-9634-9b554e142b65
+                            14:
+                              - fieldUid
+                              - 2257a735-8343-4931-9f79-9aa55499b95c # Textausrichtung Überschrift
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

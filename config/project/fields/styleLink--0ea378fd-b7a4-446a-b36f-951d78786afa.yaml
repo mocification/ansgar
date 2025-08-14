@@ -1,0 +1,68 @@
+columnSuffix: null
+handle: styleLink
+instructions: null
+name: Link
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - b7ed40b7-16f0-4309-8993-292c536741b7
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - bccb36a7-5585-4af4-8ef9-1e49a2161b8f
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - showAsButton
+                            2:
+                              - label
+                              - 'Links als Buttons anzeigen'
+                            3:
+                              - instructions
+                              - 'Hier stellst du ein, ob die erstellen Links als Textlinks oder als Button/Schaltknopf dargestellt werden.'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-28T17:55:25+00:00'
+                            11:
+                              - uid
+                              - 230f4504-6815-4d77-8c33-ea4c23ccfd5e
+                            14:
+                              - fieldUid
+                              - 9404b35f-bf80-4e76-9a78-b84a7b5f82b7 # Lightswitch
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

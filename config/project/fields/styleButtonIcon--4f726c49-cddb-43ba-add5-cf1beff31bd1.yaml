@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: styleButtonIcon
+instructions: 'Stelle hier ein, ob die Icons deiner Buttons links- oder rechtsbündig angezeigt werden sollen.'
+name: 'Button Icon Position'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - left
+        -
+          - icon
+          - border-left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - right
+        -
+          - icon
+          - border-right
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

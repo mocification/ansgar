@@ -1,10 +1,11 @@
 columnSuffix: null
 handle: columns
-instructions: null
+instructions: 'Gib hier an, in wie viele Spalten deine Features angezeigt werden sollen.'
 name: Spalten
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: true
   options:
     -
       __assoc__:
@@ -15,6 +16,9 @@ settings:
           - value
           - '12'
         -
+          - icon
+          - '1'
+        -
           - default
           - ''
     -
@@ -26,6 +30,9 @@ settings:
           - value
           - '6'
         -
+          - icon
+          - '2'
+        -
           - default
           - ''
     -
@@ -36,6 +43,9 @@ settings:
         -
           - value
           - '4'
+        -
+          - icon
+          - '3'
         -
           - default
           - '1'
@@ -48,6 +58,9 @@ settings:
           - value
           - '3'
         -
+          - icon
+          - '4'
+        -
           - default
           - ''
     -
@@ -59,8 +72,11 @@ settings:
           - value
           - '2'
         -
+          - icon
+          - '6'
+        -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

@@ -1,0 +1,120 @@
+color: null
+description: null
+fieldLayouts:
+  238b79e9-f644-424c-8600-ae2570ad34a4:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-02T14:06:23+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: da708e2a-e183-4911-b43a-60760107ba57 # Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 962ebf50-cf11-4bdc-b7fa-ea65a118cc36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T12:29:04+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2ed22905-4a9c-4eca-ab57-61adf7864397
+            userCondition: null
+          -
+            dateAdded: '2025-08-02T14:51:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e7bbb599-f3a7-4c48-9388-3f89b04159f7 # Buttons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03cc59ed-4035-4c41-a7e6-2dc3f3e2cff5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6ac8dd31-c1b0-48c8-8fc7-02f321cc90c1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-02T13:58:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4f04fa9b-e0e1-4c4b-a083-f5772e74ece4 # Hintergrund
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63cd81c1-df70-40f3-8bbb-09523f3792aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:16:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: be0d25cb-afd2-4b5a-8a43-1cfa58958182 # Button Alignment
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Button Position'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f482781c-c2ac-4a5d-9d8c-d0b968c46b04
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-02T14:29:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4f726c49-cddb-43ba-add5-cf1beff31bd1 # Button Icon Position
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e30ad044-3b2c-4904-a9ab-4ef593f0f99a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: 272530c2-5a44-4b4f-9430-3b8a8370aeb3
+        userCondition: null
+handle: blockCallToAction
+hasTitleField: false
+icon: cart-shopping-fast
+name: 'Call To Action'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header.mainTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

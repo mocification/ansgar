@@ -1,0 +1,85 @@
+columnSuffix: null
+handle: style
+instructions: null
+name: Style
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 4bc4b6dc-e3db-48bc-a295-1a6c04ac40b7
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 8f783d87-eaba-4025-a04c-62e4b0160548
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:27:47+00:00'
+                            11:
+                              - uid
+                              - e04fef78-a0e6-4116-a0dd-bd4f8a576645
+                            14:
+                              - fieldUid
+                              - 16a4a1ef-215c-48f4-b0ff-a5e3ea6a25ab # Überschrift
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:27:47+00:00'
+                            11:
+                              - uid
+                              - 74491ea1-cd4b-49e6-9dd1-5ba55af63ee8
+                            14:
+                              - fieldUid
+                              - 4f04fa9b-e0e1-4c4b-a083-f5772e74ece4 # Hintergrund
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: inline
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

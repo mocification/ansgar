@@ -1,6 +1,8 @@
 color: null
+description: null
 fieldLayouts:
   55278945-d834-421d-86c0-7ba2db698935:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -37,6 +39,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-04-07T16:49:07+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 171c6317-fef7-4fb9-a710-297896fb9f55 # Content Builder
             handle: null
@@ -53,6 +56,106 @@ fieldLayouts:
             width: 100
         name: Content
         uid: d53e84ca-3fe0-4c9b-9831-b11dc01c1b7c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            content: 'Gibt hier die Zusammenfassung der Seite an. Diesen Inhalt kannst du dann auf anderen Seiten mit dem Inhaltsblock "Teaser Grid" anzeigen lassen.'
+            dateAdded: '2025-07-27T15:16:46+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: 975f7149-077f-4a5e-aa29-beec098dae83
+            userCondition: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:16:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: teaserTitle
+            includeInCards: false
+            instructions: null
+            label: Überschrfit
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41c3977f-2d34-481e-b328-f6c7f3397804
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-12T12:48:13+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: teaserSubTitle
+            includeInCards: false
+            instructions: null
+            label: Unterüberschrift
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7b2257bd-7415-4a00-9622-5bead2fa24d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:16:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: teaserImage
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ec44b5a-4139-4f04-93b8-067303a12d05
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-12T13:10:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ee38dd4d-bc35-47c7-9299-3e09ba752fdb # Text
+            handle: teaserText
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8407e5c6-7b34-4a36-9f21-7b8e19072604
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-12T14:54:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: teaserLinkText
+            includeInCards: false
+            instructions: 'Dieser Text wird als Link dargestellt. Beispieltext: Mehr erfahren'
+            label: Link-Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4f15049-e183-4a79-8dfc-5b1841c35978
+            userCondition: null
+            warning: null
+            width: 100
+        name: Teaser
+        uid: b7f1061f-a5dd-43f3-9756-3f144d237bfe
         userCondition: null
 handle: page
 hasTitleField: true

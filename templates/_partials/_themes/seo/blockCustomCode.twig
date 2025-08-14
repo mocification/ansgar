@@ -1,0 +1,18 @@
+<div class="section bg-transparent my-0">
+    {% switch entry.stlyeContentWidth %}
+    
+        {% case "full" %}
+            {{ raw(entry.code) }}            
+    
+        {% case "container" %}
+            <div class="container">
+                {{ raw(entry.code) }}
+            </div>
+    
+        {% default %}
+            <div class="container">
+                {{ raw(entry.code) }}
+            </div>
+    
+    {% endswitch %}
+</div>

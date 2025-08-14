@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: imageHeight
+instructions: 'Die Bildhöhe kann in % zur Höhe des aktuellen Browserfensters angegeben werden. Ein Wert von 100% entspricht dabei 100% des Browserfensterhöhe, also die komplette Bildschirmhöhe. Somit entspricht 50% der halben Höhe des Browserfensters.'
+name: Bildhöhe
+searchable: false
+settings:
+  decimals: 2
+  defaultValue: 30
+  max: 100
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: 20
+  step: 0.1
+  suffix: '%'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Number

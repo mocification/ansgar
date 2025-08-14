@@ -1,5 +1,6 @@
 fieldLayouts:
   0248b94f-ac78-4114-99a8-5bf4e82ca9e3:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -415,7 +416,7 @@ fieldLayouts:
             fieldUid: d1780175-4bf1-43c1-b47a-64585417da83 # Schriftart
             handle: fontFamilySecondary
             includeInCards: false
-            instructions: 'Die Schriftart wird für Unterüberschriften, hervorgehobenem Text, usw. verwendet.'
+            instructions: 'Diese Schriftart wird für Unterüberschriften, hervorgehobenem Text, usw. verwendet.'
             label: 'Sekundäre Schriftart'
             providesThumbs: false
             required: false

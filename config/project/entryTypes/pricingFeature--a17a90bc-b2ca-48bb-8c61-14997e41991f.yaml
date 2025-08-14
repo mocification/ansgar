@@ -1,0 +1,97 @@
+color: null
+description: null
+fieldLayouts:
+  6ff520c8-2854-4c3e-83c8-c42795f28a80:
+    cardThumbAlignment: start
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T15:46:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: de587eda-41a2-4051-98f4-d4dcb6e7ffc5 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 181083f3-ed05-43b6-96f3-2e76cfd49ee8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:46:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64abce57-f17b-4a3f-8af9-b1f2c42b6450
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:46:22+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6a750c6a-2477-436a-9283-07b8dd20349e
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T15:48:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9404b35f-bf80-4e76-9a78-b84a7b5f82b7 # Lightswitch
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Highlight?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f6ef613-df65-4a61-8eca-03e1e79df30f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T15:48:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: textHighlight
+            includeInCards: false
+            instructions: null
+            label: 'Text für Highlight'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d4b16ca-0297-446b-a438-1e9d6307e131
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e55bdd71-b029-41a2-9aaa-832ba274e330
+        userCondition: null
+handle: pricingFeature
+hasTitleField: false
+icon: null
+name: 'Pricing Feature'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{text}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

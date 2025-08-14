@@ -122,7 +122,7 @@ input.switch-toggle-round + label {
 input.switch-toggle-round + label::after { border-radius: 4px }
 
 /* Pricing Boxes
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 .pricing-box {
 	border-color: rgba(17, 18, 18, .1);
 	text-align: left;
@@ -134,7 +134,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 
 
 /* Pricing Boxes - Title
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 .pricing-title {
 	padding: 0;
 	background-color: transparent;
@@ -156,7 +156,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 
 
 /* Pricing Boxes - Price
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 .pricing-price {
 	position: relative;
 	font-weight: 500;
@@ -172,7 +172,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 }
 
 /* Pricing Boxes - Features
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 .pricing-features {
 	padding: 0 0 1.25rem 0;
 }
@@ -189,14 +189,15 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 
 
 /* Pricing Boxes - Action
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 .pricing-action {
 	padding: 0;
 	text-align: center;
 }
 
 /* Badge
------------------------------------------------------------------*/
+-----------------------------------------------------------------
+*/
 .badge {
 	padding: 8px;
 	font-size: 12px;
@@ -210,6 +211,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	border: 1px solid var(--cnvs-themecolor);
 	color: var(--cnvs-themecolor);
 }
+
 
 /* Testimonials Carousel
 -----------------------------------------------------------------*/

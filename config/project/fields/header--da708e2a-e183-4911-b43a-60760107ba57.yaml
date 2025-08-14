@@ -1,0 +1,137 @@
+columnSuffix: null
+handle: header
+instructions: null
+name: Header
+searchable: true
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 608ec599-b8a6-4450-b288-67178538ad8c
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 716d3792-ede9-4332-9cdb-849a7f695126
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - mainTitle
+                            2:
+                              - label
+                              - Hauptüberschrift
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-26T21:14:35+00:00'
+                            11:
+                              - uid
+                              - af5c2a37-ceec-490b-902a-33c6c02ae812
+                            14:
+                              - fieldUid
+                              - 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - subTitle
+                            2:
+                              - label
+                              - Unterüberschrift
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-26T21:14:35+00:00'
+                            11:
+                              - uid
+                              - c707812e-ad1c-43f0-bec2-ef7d79e8fe9b
+                            14:
+                              - fieldUid
+                              - 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\HorizontalRule
+                            -
+                              - dateAdded
+                              - '2025-07-26T21:15:13+00:00'
+                            -
+                              - uid
+                              - ee91f385-652d-48f4-8320-6b58ac78a447
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - text
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-27T10:07:29+00:00'
+                            11:
+                              - uid
+                              - 1af44e9b-c124-4a08-a590-28c15fffa6f6
+                            14:
+                              - fieldUid
+                              - f7cf0c11-6724-459d-bb73-4ab842d76701 # Text
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

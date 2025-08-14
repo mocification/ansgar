@@ -1,41 +1,23 @@
 columnSuffix: null
-handle: buttonSize
+handle: alignment
 instructions: null
-name: Größe
+name: 'Textausrichtung Überschrift'
 searchable: false
 settings:
   customOptions: false
+  iconsOnly: true
   options:
     -
       __assoc__:
         -
           - label
-          - XS
+          - Links
         -
           - value
-          - mini
+          - text-start
         -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - S
-        -
-          - value
-          - small
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - M
-        -
-          - value
-          - default
+          - icon
+          - align-left
         -
           - default
           - '1'
@@ -43,10 +25,13 @@ settings:
       __assoc__:
         -
           - label
-          - L
+          - Mitte
         -
           - value
-          - large
+          - text-center
+        -
+          - icon
+          - align-center
         -
           - default
           - ''
@@ -54,13 +39,16 @@ settings:
       __assoc__:
         -
           - label
-          - XL
+          - Rechts
         -
           - value
-          - xlarge
+          - text-end
+        -
+          - icon
+          - align-right
         -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Dropdown
+type: craft\fields\ButtonGroup

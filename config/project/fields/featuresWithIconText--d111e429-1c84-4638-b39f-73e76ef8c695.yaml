@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: featuresWithIconText
+instructions: null
+name: 'Features With Icon Text'
+searchable: false
+settings:
+  createButtonLabel: 'Neues Feature erstellen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 8f0a1a1d-db59-4fb7-b020-0f8130a4e527 # Feature with Icon Text
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

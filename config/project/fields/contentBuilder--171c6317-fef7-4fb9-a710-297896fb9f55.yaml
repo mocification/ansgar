@@ -4,19 +4,130 @@ instructions: null
 name: 'Content Builder'
 searchable: false
 settings:
-  createButtonLabel: null
+  createButtonLabel: 'Inhaltsblock hinzüfügen'
   defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
       __assoc__:
         -
           - uid
-          - 9b950206-8197-4201-833d-689ccf11ee70 # Überschrift
+          - fb003d0c-e346-4895-b744-421ee37ccf99 # Bild & Text
+        -
+          - group
+          - 'Bild & Text'
     -
       __assoc__:
         -
           - uid
-          - 5ebbf5f4-727e-4349-921a-925eb4060cbd # Bild & Text
+          - 60f28879-e1b3-4087-b95a-d4d48ea3dfee # Bild & Text mit einfacher Icon-Liste
+        -
+          - group
+          - 'Bild & Text'
+    -
+      __assoc__:
+        -
+          - uid
+          - 45ad2146-34fa-4372-b7d7-b832b0537175 # Bild & Text mit erweiterter Icon-Liste
+        -
+          - group
+          - 'Bild & Text'
+    -
+      __assoc__:
+        -
+          - uid
+          - 61b773df-24c4-4de5-92c2-f124db046455 # Bildergalerie
+        -
+          - group
+          - 'Bild & Text'
+    -
+      __assoc__:
+        -
+          - uid
+          - 1b1aeafc-f612-4ec0-be74-1e965a661226 # Kundenlogos
+        -
+          - group
+          - 'Bild & Text'
+    -
+      __assoc__:
+        -
+          - uid
+          - 78d5d689-3b8f-41af-9ac8-a37fbe7ffe8c # Kundenmeinungen
+        -
+          - group
+          - 'Bild & Text'
+    -
+      __assoc__:
+        -
+          - uid
+          - 42a77539-99d1-4a24-bb13-b8e2e9dd56e7 # Einfache Überschrift & Text
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 04984d4a-4598-4afa-a800-037ede0e1686 # Einfacher Text
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - c991f779-0383-4f93-b52c-ab8717ff4349 # Call To Action
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 17396a3b-29c3-449a-b5e4-0f7ee4164d96 # FAQ
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 9043021b-2ff6-40ab-9bcc-68f95dfa3f67 # Custom Code
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 69cb83dc-d619-48a2-95bc-0a51de2fbbb6 # Pricing
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 14d2e8cd-aa6f-4f66-917d-0a00b10cb38f # Teaser Grid
+        -
+          - group
+          - Grid
+    -
+      __assoc__:
+        -
+          - uid
+          - 08d290a4-864e-4bac-971d-99cf909b267c # Feature Grid mit Icons
+        -
+          - group
+          - Grid
+    -
+      __assoc__:
+        -
+          - uid
+          - 5ea16779-9230-4a7b-8bcf-406318a3d053 # Feature Grid mit Bildern
+        -
+          - group
+          - Grid
   includeTableView: false
   maxEntries: null
   minEntries: null

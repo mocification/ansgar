@@ -1,0 +1,68 @@
+columnSuffix: null
+handle: faqPosition
+instructions: 'Stelle hier ein wie die Aufklappliste zum Text positioniert werden soll.'
+name: 'Position der Aufklappliste'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - left
+        -
+          - icon
+          - border-left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - right
+        -
+          - icon
+          - border-right
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Oberhalb
+        -
+          - value
+          - top
+        -
+          - icon
+          - border-top
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Unterhalb
+        -
+          - value
+          - bottom
+        -
+          - icon
+          - border-bottom
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

@@ -1,0 +1,86 @@
+color: null
+description: null
+fieldLayouts:
+  56a2913e-eea7-4b20-9df1-36b0d83614d9:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T13:31:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8c216313-b35a-4fb1-a316-3410b7c41c43 # Interne Bezeichnung
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf2f2552-062d-4fca-811c-7ff4081bf3e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T13:31:39+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a4c4a0a1-4f95-48ad-8d89-a0e63c27f298
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T13:31:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 52ca6112-b0a8-41ad-a0fa-faf8cf518763 # Text
+            handle: code
+            includeInCards: false
+            instructions: null
+            label: Code
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cd31103-3eb0-4185-ae0c-630e47914296
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a402f0c8-42ef-42b4-9a36-2a495ba65510
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-02T17:25:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bd5d812f-6141-4281-9565-ccc122a95c74 # Inhaltsbreite
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2899751-98ea-4fe6-9fe2-fe8c5f62f6aa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: ef3ce5d8-dff0-4a8c-965b-a2eae9ba47ba
+        userCondition: null
+handle: blockCustomCode
+hasTitleField: false
+icon: code
+name: 'Custom Code'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{internalTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

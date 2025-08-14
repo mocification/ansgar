@@ -1,0 +1,105 @@
+color: null
+description: null
+fieldLayouts:
+  4fe05004-f742-43cc-8bf1-6f7bf55532dc:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:bf487eec-162d-41f0-801e-11e36ced9778'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-27T14:01:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: person
+            includeInCards: false
+            instructions: null
+            label: Person
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fbdbbb81-8f2a-4ffb-b830-0af7aa3cf2ec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:01:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            handle: company
+            includeInCards: true
+            instructions: null
+            label: Firma
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf487eec-162d-41f0-801e-11e36ced9778
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:01:52+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 40529058-cf6f-4218-8355-a7b1585799c2
+            userCondition: null
+          -
+            dateAdded: '2025-07-27T14:01:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Foto
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 594fc58b-8f01-42af-8c95-9f9f9ddb52de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-27T14:01:52+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: f63d79e1-aef2-4a1d-b963-479b30ee17f4
+            userCondition: null
+          -
+            dateAdded: '2025-08-01T14:39:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 52ca6112-b0a8-41ad-a0fa-faf8cf518763 # Text
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9341e4db-4f7f-4627-9a87-89c69ecbf6a8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a134f130-420c-44fc-a26d-b20ac427f99a
+        userCondition: null
+handle: testimonial
+hasTitleField: false
+icon: null
+name: Testimonial
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{person}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
