@@ -1,0 +1,80 @@
+color: null
+description: null
+fieldLayouts:
+  c899dd66-0009-4e66-8d88-49023a5b635f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-28T06:24:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0d6781e0-d456-46c9-8723-480d8fd5a4e6 # Kunden
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4ee55c4-0b6c-4be0-9c6c-f48c9cdf450c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: eeb5f876-c83e-49c9-becf-6a93f1bc2cca
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-28T06:24:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7f5cd571-d7d1-45d8-a365-a67566facbca # Spalten
+            handle: clientColumns
+            includeInCards: false
+            instructions: null
+            label: SpaltenLayout
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66bd8121-b1cd-488f-aa17-6bd8be2dfff5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-28T06:24:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ac0c441c-23c2-44cf-ac5a-a58bef4202b3 # Client Gallery View
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Darstellung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5af72240-323a-4d72-b70f-4281c10466be
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: eba047c8-acf9-45cb-9f32-f95692625b6b
+        userCondition: null
+handle: blockFooterClients
+hasTitleField: false
+icon: null
+name: Kundenlogos
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

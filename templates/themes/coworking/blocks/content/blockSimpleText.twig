@@ -1,0 +1,24 @@
+{% set textPart %}
+    <div class="{{ entry.style.styleHeader.alignment }}">
+        {{ entry.text }}
+    </div>
+{% endset %}
+
+<div class="section bg-transparent my-0"
+    {% include 'themes/'~ design.theme.value ~'/baseSection.twig' %}
+>
+    <div class="container">
+        <div class="row justify-content-between g-5">
+            <div class="col-12">
+                {{ textPart }}
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+

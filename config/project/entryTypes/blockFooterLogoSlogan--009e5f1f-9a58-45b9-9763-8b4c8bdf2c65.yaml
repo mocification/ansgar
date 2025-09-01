@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  c3cabea1-6956-496e-a509-8bd96919d4c6:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-27T10:52:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ff2b8307-3eb1-4484-9309-6f5fd3740b5b # Bildhöhe
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50bbc69f-ea87-43fc-8097-aaaac07d9a4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ab7b2578-898f-4fbe-b0c3-82ef8e9c51dc
+        userCondition: null
+handle: blockFooterLogoSlogan
+hasTitleField: false
+icon: null
+name: 'Logo & Slogan'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

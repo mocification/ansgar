@@ -19,7 +19,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: Seitentitel
             max: null
             min: null
             name: null
@@ -38,6 +38,35 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-08-25T19:53:02+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b0c83ce5-692b-47b3-bd12-e96e7eb0db71
+            userCondition: null
+          -
+            dateAdded: '2025-08-25T19:47:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: acbcc684-7558-4210-a466-04147c7c3562 # Header Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Kopfbereich / Slider'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc2995b2-5c62-4f2a-9506-3fa26a6cfaba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-25T19:47:00+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 35b2d360-9952-4b3f-92d7-e388805caa9e
+            userCondition: null
+          -
             dateAdded: '2025-04-07T16:49:07+00:00'
             editCondition: null
             elementCondition: null
@@ -45,7 +74,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: Inhalt
             providesThumbs: false
             required: false
             tip: null
@@ -60,6 +89,12 @@ fieldLayouts:
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2025-08-25T19:53:02+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1c241caa-a03f-4095-8823-fccd9eb81423
+            userCondition: null
           -
             content: 'Gibt hier die Zusammenfassung der Seite an. Diesen Inhalt kannst du dann auf anderen Seiten mit dem Inhaltsblock "Teaser Grid" anzeigen lassen.'
             dateAdded: '2025-07-27T15:16:46+00:00'

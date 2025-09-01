@@ -1,0 +1,39 @@
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="{{ siteName }}">
+	<meta name="description" content="">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="{{ siteUrl }}template/css/canvas.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="{{ siteUrl }}template/css/font-icons-general.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="{{ siteUrl }}template/css/components/swiper.css">
+    <link rel="stylesheet" href="{{ siteUrl }}template/css/components/bs-select.css">
+	<link rel="stylesheet" href="{{ siteUrl }}template/css/components/bs-switches.css">
+	<link rel="stylesheet" href="{{ siteUrl }}template/css/components/ion.rangeslider.css">
+
+    <!-- Theme CSS -->
+    {% if design.theme.value %}
+		<link rel="stylesheet" href="{{ siteUrl }}template/css/themes/{{ design.theme.value }}.css{{ craft.app.config.general.devMode ? '?v=' ~ random() : '?v=' ~ getenv('CRAFT_ASSET_VERSION') }}">    
+	{% endif %}
+
+	{% include '_layouts/_general/_canvas/themeFonts.twig' %}
+    {% include '_layouts/_general/_canvas/fonts.twig' %}
+
+	<link rel="stylesheet" href="style/canvas.css{{ craft.app.config.general.devMode ? '?v=' ~ random() : '?v=' ~ getenv('CRAFT_ASSET_VERSION') }}">
+	<link rel="stylesheet" href="themes/{{ design.theme.value }}/custom.css{{ craft.app.config.general.devMode ? '?v=' ~ random() : '?v=' ~ getenv('CRAFT_ASSET_VERSION') }}">
+	
+    {% include '_layouts/favicon.twig' %}
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ entry.title }} | {{ siteName }}</title>
+
+	<link rel="home" href="{{ siteUrl }}" />
+
+</head>

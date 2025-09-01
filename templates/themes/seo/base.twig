@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de">
+	{% include '_layouts/_general/_canvas/head.twig' %}
+
+	<body class="stretched">
+
+		<!-- Document Wrapper
+		============================================= -->
+		<div id="wrapper">
+
+			<!-- Top Bar
+			============================================= -->
+			<div id="top-bar" class="transparent-topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 dark text-end">
+						
+							<!-- Top Social
+							============================================= -->
+							<ul id="top-social">
+								<li><a href="https://facebook.com/semicolonweb" class="h-bg-facebook" target="_blank"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a></li>
+								<li><a href="https://twitter.com/__semicolon" class="h-bg-x-twitter" target="_blank"><span class="ts-icon"><i class="fa-brands fa-x-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+								<li><a href="https://youtube.com/semicolonweb" class="h-bg-youtube" target="_blank"><span class="ts-icon"><i class="fa-brands fa-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
+								<li><a href="https://instagram.com/semicolonweb" class="h-bg-instagram" target="_blank"><span class="ts-icon"><i class="fa-brands fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
+								<li><a href="tel:+10.11.85412542" class="h-bg-call"><span class="ts-icon"><i class="fa-solid fa-phone"></i></span><span class="ts-text">+10.11.85412542</span></a></li>
+								<li><a href="mailto:info@canvas.com" class="h-bg-email3"><span class="ts-icon"><i class="bi-envelope-fill"></i></span><span class="ts-text">info@canvas.com</span></a></li>
+							</ul><!-- #top-social end -->
+
+						</div>
+					</div>
+				</div>
+			</div><!-- #top-bar end -->
+
+			<!-- Header
+			============================================= -->
+			<header id="header" class="transparent-header floating-header header-size-md">
+				<div id="header-wrap">
+					<div class="container rounded-3">
+						<div class="header-row">
+							{% include '_layouts/_general/_canvas/logo.twig' %}
+							{% include 'themes/'~ design.theme.value ~'/navigationButton.twig' %}
+							{% include '_layouts/_general/_canvas/navigation.twig' %}
+						</div>
+					</div>
+				</div>
+				<div class="header-wrap-clone"></div>
+			</header><!-- #header end -->
+
+			{% if entry.headerBuilder.count() > 0 %}
+			<!-- Slider
+			============================================= -->
+			<section id="slider" class="slider-element slider-parallax swiper_wrapper vh-100 include-header">
+				<div class="slider-inner">
+					<div class="swiper swiper-parent ">
+						<div class="swiper-wrapper">
+							{% block header %}
+
+							{% endblock %}
+						</div>
+						<div class="slider-arrow-left"><i class="uil uil-angle-left-b"></i></div>
+						<div class="slider-arrow-right"><i class="uil uil-angle-right-b"></i></div>
+						<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
+					</div>
+				</div>
+			</section>			
+			<!-- #slider end -->
+			{% endif %}
+
+			<!-- Content
+			============================================= -->
+			<section id="content">
+				<div class="content-wrap">
+					{% block content %}
+
+					{% endblock %}
+				</div>
+			</section>
+			<!-- #content end -->
+
+			<!-- Footer
+			============================================= -->
+			{% set footerBackgroundImage = footer.styleBackground.image.one() %}
+			<footer id="footer" class="border-0"
+				{% if footerBackgroundImage is not empty or footer.styleBackground.color is not empty %}
+				style="background: 
+					{% if footerBackgroundImage is not empty %}
+						url('{{ footerBackgroundImage.getUrl('imageFit_1920x0') }}') no-repeat center center / cover 
+					{% endif %}
+					{% if footer.styleBackground.color %}
+						{% if footer.styleBackground.opacity %}
+						rgba({{ footer.styleBackground.color.red }}, {{ footer.styleBackground.color.green }}, {{ footer.styleBackground.color.blue }}, {{ footer.styleBackground.opacity / 100 }})
+						{% else %}
+							{{footer.styleBackground.color}}
+						{% endif %}
+					{% endif %}
+					!important;"				
+				{% endif %}
+			>
+
+				<div class="container">
+					<!-- Footer Widgets
+					============================================= -->
+					<div class="footer-widgets-wrap pb-5">
+
+						<div class="row col-mb-50">
+							{% if footer.footerBuilderArea1.count() > 0 %}
+								{% if footer.columnsCountArea1 is not empty%}
+									<div class="col-md-{{ footer.columnsCountArea1 }}">
+								{% else %}
+									<div class="col">
+								{% endif %}
+									<div class="widget">
+										{% block footerArea1 %}
+
+										{% endblock %}
+									</div>	
+								</div>
+							{% endif %}
+
+							{% if footer.footerBuilderArea2.count() > 0 %}
+								{% if footer.columnsCountArea2 is not empty%}
+									<div class="col-md-{{ footer.columnsCountArea2 }}">
+								{% else %}
+									<div class="col">
+								{% endif %}
+									<div class="widget">
+										{% block footerArea2 %}
+
+										{% endblock %}
+									</div>
+								</div>
+							{% endif %}
+
+							{% if footer.footerBuilderArea3.count() > 0 %}
+								{% if footer.columnsCountArea3 is not empty%}
+									<div class="col-md-{{ footer.columnsCountArea3 }}">
+								{% else %}
+									<div class="col">
+								{% endif %}
+									<div class="widget">
+										{% block footerArea3 %}
+
+										{% endblock %}
+									</div>
+								</div>
+							{% endif %}
+
+							{% if footer.footerBuilderArea4.count() > 0 %}
+								{% if footer.columnsCountArea4 is not empty%}
+									<div class="col-md-{{ footer.columnsCountArea4 }}">
+								{% else %}
+									<div class="col">
+								{% endif %}
+									<div class="widget">
+										{% block footerArea4 %}
+
+										{% endblock %}
+									</div>
+								</div>
+							{% endif %}
+						</div>
+
+					</div><!-- .footer-widgets-wrap end -->
+				</div>
+			</footer><!-- #footer end -->
+
+		</div><!-- #wrapper end -->
+
+		<!-- Go To Top
+		============================================= -->
+		<div id="gotoTop" class="uil uil-angle-up"></div>
+
+		<!-- JavaScripts
+		============================================= -->
+		{% include '_layouts/_general/_canvas/scripts.twig' %}
+
+		<!-- Parallax Script
+		============================================= -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+		<script>!SEMICOLON.Mobile.any() && skrollr.init({forceHeight: false});</script>
+
+	</body>
+</html>

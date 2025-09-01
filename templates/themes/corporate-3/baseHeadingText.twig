@@ -1,0 +1,33 @@
+<div class="{{ entry.style.styleHeader.alignment }}">
+    <div class="heading-block">
+        <{{ entry.style.styleHeader.tag }}
+            {% if entry.style.styleColor.mainTitle is not empty %}
+                style="color: {{ entry.style.styleColor.mainTitle }} !important;"
+            {% endif %}
+        >
+            {{ entry.header.mainTitle }}
+        </{{ entry.style.styleHeader.tag }}>
+        
+        {% if entry.header.subTitle %}
+            <span
+                {% if entry.style.styleColor.subTitle is not empty %}
+                    style="color: {{ entry.style.styleColor.subTitle }} !important;"
+                {% endif %}
+            >
+                {{ entry.header.subTitle }}
+            </span>
+        {% endif %}
+    </div>
+
+    {% if entry.style.styleColor.text is not empty %}
+        <div style="color: {{ entry.style.styleColor.text }} !important;"
+            {{ entry.header.text }}
+        </div>
+    {% else %}
+        {{ entry.header.text }}
+    {% endif %}
+
+    {% if not entry == 'blockFeatureSimple' or not entry == 'blockFeatureExtended' %}    
+        {% include 'themes/'~ design.theme.value ~'/baseLinks.twig' %}
+    {% endif %}
+</div>

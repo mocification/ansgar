@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: headerBuilder
+instructions: null
+name: 'Header Builder'
+searchable: false
+settings:
+  createButtonLabel: 'Element hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - d7fc58fd-e1e1-48cd-ae18-629c2234af1a # Bild & Text
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

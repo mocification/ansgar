@@ -1,4 +1,4 @@
-dateModified: 1755169115
+dateModified: 1756757440
 elementSources:
   craft\elements\Entry:
     -
@@ -50,7 +50,9 @@ meta:
     0d6781e0-d456-46c9-8723-480d8fd5a4e6: Kunden # Kunden
     0ea378fd-b7a4-446a-b36f-951d78786afa: Link # Link
     1b1aeafc-f612-4ec0-be74-1e965a661226: Kundenlogos # Kundenlogos
+    1ef9b21b-31e1-4206-b006-05146a783dde: 'Social Media Links' # Social Media Links
     1f0ba122-7b45-4e01-80b5-f388978b5342: Bild # Bild
+    2ae4ed8d-3c40-4129-9ee7-323929a67bcc: Navigation # Navigation
     2b3385d6-7958-4b5c-a081-9de52035861a: image_fit_400x0 # image_fit_400x0
     2b230794-c72c-4b65-be8f-f35f22c95db2: Text # Text
     3a4974cb-b09b-4396-bc7d-dd1c1cb28121: Links # Links
@@ -63,16 +65,21 @@ meta:
     4f726c49-cddb-43ba-add5-cf1beff31bd1: 'Button Icon Position' # Button Icon Position
     5ea16779-9230-4a7b-8bcf-406318a3d053: 'Feature Grid mit Bildern' # Feature Grid mit Bildern
     6c3794f6-cce2-44d6-b7f6-aff499d81ccd: image_crop_400x400 # image_crop_400x400
+    6ee8ab03-9142-41d1-ad5f-ef651481d91f: Logo # Logo
     7f5cd571-d7d1-45d8-a365-a67566facbca: Spalten # Spalten
     8c216313-b35a-4fb1-a316-3410b7c41c43: 'Interne Bezeichnung' # Interne Bezeichnung
     08d290a4-864e-4bac-971d-99cf909b267c: 'Feature Grid mit Icons' # Feature Grid mit Icons
+    8e2805ff-737c-4a9e-b9ea-8325406440a5: 'Footer Builder Area 1' # Footer Builder Area 1
     8f0a1a1d-db59-4fb7-b020-0f8130a4e527: 'Feature with Icon Text' # Feature with Icon Text
+    009e5f1f-9a58-45b9-9763-8b4c8bdf2c65: 'Logo & Slogan' # Logo & Slogan
     14d2e8cd-aa6f-4f66-917d-0a00b10cb38f: 'Teaser Grid' # Teaser Grid
     16a4a1ef-215c-48f4-b0ff-a5e3ea6a25ab: Überschrift # Überschrift
     17f4da84-c185-46dd-8beb-71a4cc05397f: 'Style Iconlist' # Style Iconlist
     42a77539-99d1-4a24-bb13-b8e2e9dd56e7: 'Einfache Überschrift & Text' # Einfache Überschrift & Text
+    043b6b5a-2b61-4e4e-82a5-5061f5d03389: Kundenlogos # Kundenlogos
     45ad2146-34fa-4372-b7d7-b832b0537175: 'Bild & Text mit erweiterter Icon-Liste' # Bild & Text mit erweiterter Icon-Liste
     45dca9ef-b6f9-4d10-ac2d-23146edfa2c1: image_fit_800x0 # image_fit_800x0
+    046ff0ab-21e9-4b2d-89ed-abaa2907a357: Trennlinie # Trennlinie
     52ca6112-b0a8-41ad-a0fa-faf8cf518763: Text # Text
     60f28879-e1b3-4087-b95a-d4d48ea3dfee: 'Bild & Text mit einfacher Icon-Liste' # Bild & Text mit einfacher Icon-Liste
     61b773df-24c4-4de5-92c2-f124db046455: Bildergalerie # Bildergalerie
@@ -81,17 +88,19 @@ meta:
     71bceb4f-93f1-4da7-af88-1db4d70c5b6d: Kontaktdaten # Kontaktdaten
     72efd85b-79bd-4818-8ca9-84fd8b892d94: image_crop_1920x0 # image_crop_1920x0
     78d5d689-3b8f-41af-9ac8-a37fbe7ffe8c: Kundenmeinungen # Kundenmeinungen
+    89b12e2f-b81c-45a0-a28b-366510a572d6: Breite # Breite
     89b376a1-b338-49e6-91ac-d78324718791: Simple # Simple
     89da30fd-9504-432e-b9f5-32dfde8d27de: 'Ausrichtung der Feature-Inhalten' # Ausrichtung der Feature-Inhalten
     95dbab60-df92-47c3-a001-8b5be0df71fb: Überschriftenformat # Überschriftenformat
     96b0fd30-1d38-48e4-a19f-88765ec3b0dc: Ansgar # Ansgar
-    109ab20e-f068-4d1d-999d-07f67e1ab0f5: Style # Style
+    109ab20e-f068-4d1d-999d-07f67e1ab0f5: Erscheinungsbild # Erscheinungsbild
     171c6317-fef7-4fb9-a710-297896fb9f55: 'Content Builder' # Content Builder
     211b7452-9fab-4f37-b59a-dd5a6a8c2177: ansgar # ansgar
-    284a9db4-65fd-4347-86cf-659736c23205: 'Layout Fußzeile' # Layout Fußzeile
     357b1395-175c-493f-ab40-189bf82bd5df: image_crop_600x400 # image_crop_600x400
+    390e91b3-5b83-4f1c-bfac-3ee64ddc428a: Navigation # Navigation
     406dc2e0-2fac-4dd3-944e-c29ad54cd3f5: Text # Text
     459d94e2-e90b-4576-b114-4f63180d2ab0: Seiten # Seiten
+    533f8ca1-417e-4414-974e-606a5935751f: Überschrift # Überschrift
     0551b39b-c589-488e-b6cd-5df6f1608dfe: 'Menü in Kopfzeile (Hauptmenü)' # Menü in Kopfzeile (Hauptmenü)
     629dd416-ae95-4507-bfdb-28b83d47e603: Link # Link
     644a59b9-9156-4c15-aa53-8acc78be0f2a: Deckkraft # Deckkraft
@@ -102,6 +111,9 @@ meta:
     2257a735-8343-4931-9f79-9aa55499b95c: 'Textausrichtung Überschrift' # Textausrichtung Überschrift
     2459c8e9-c0bc-4ec1-aac4-cf596c7a8745: Videos # Videos
     2877cbd8-171b-4368-928e-3e7acbf7ad8d: 'Menü in Fußzeile ' # Menü in Fußzeile 
+    2972affb-fd93-4aa0-ac36-d7648f489715: 'Footer Builder Area 2' # Footer Builder Area 2
+    4307b6c8-5672-430e-aa6d-06ca24d15770: Text # Text
+    4510ec4c-667f-4059-a32c-b2d6f9b08e2a: 'Footer Builder Area 3' # Footer Builder Area 3
     04984d4a-4598-4afa-a800-037ede0e1686: 'Einfacher Text' # Einfacher Text
     8444ed32-3604-40aa-b2c9-d46f24f8d714: Naturparklauf # Naturparklauf
     9404b35f-bf80-4e76-9a78-b84a7b5f82b7: Lightswitch # Lightswitch
@@ -114,21 +126,29 @@ meta:
     4810327a-2ed6-43f1-a2d5-2c8586e367fe: Video # Video
     8034555a-dd41-4a6b-b595-b84899fde29e: Default # Default
     9043021b-2ff6-40ab-9bcc-68f95dfa3f67: 'Custom Code' # Custom Code
+    61275317-20c1-4324-adf6-9cf839e15130: 'Buttons in Kopfzeile (Hauptmenü)' # Buttons in Kopfzeile (Hauptmenü)
     88584328-05ce-4123-8ba3-5fa20483c0c1: Preiskarten # Preiskarten
+    a1f64d10-4595-4184-9961-4671f5cbc5b6: Bilder # Bilder
+    a6e0f712-9e96-4733-a77e-312d06827acd: Text # Text
     a10c62cd-d7f0-41ff-8234-cc5136f32d6f: 'Testseite Eins' # Testseite Eins
     a17a90bc-b2ca-48bb-8c61-14997e41991f: 'Pricing Feature' # Pricing Feature
     a20c2e3f-537e-438b-a0c6-0b150ceaf065: Bildposition # Bildposition
+    a3769b71-8bd5-41fa-9c15-6928ab790816: 'Externer Link' # Externer Link
     aa8f2c61-b663-4628-8c34-4d12ad9fc03f: Client # Client
     ac0c441c-23c2-44cf-ac5a-a58bef4202b3: 'Client Gallery View' # Client Gallery View
     ac884f9a-72ff-4a27-af57-66a7e9c8a7e0: image_fit_0x1920 # image_fit_0x1920
+    ac326926-83e0-4137-9c9e-bd32de82becc: Fußzeile # Fußzeile
+    acbcc684-7558-4210-a466-04147c7c3562: 'Header Builder' # Header Builder
     aeb0063b-6d35-4f96-ac9f-b58cbf09e5cb: 'Feature with Icon' # Feature with Icon
     af770c74-5b49-4ea3-bf1b-82f11c83b5a1: ansgar # ansgar
     b8fad48c-439a-4217-a491-30b68117f2b1: 'Features With Image & Link' # Features With Image & Link
+    b5187e4b-9432-4512-81b2-780cb7dbcf36: Kontaktdaten # Kontaktdaten
     ba7f1da6-f4c1-4e0f-a8db-58e1fcf1f084: 'Preiskarten Layout' # Preiskarten Layout
     bc9c492b-c448-430f-b191-162b10755dec: 'Pricing Features Table' # Pricing Features Table
     bd5d812f-6141-4281-9565-ccc122a95c74: Inhaltsbreite # Inhaltsbreite
     be0d25cb-afd2-4b5a-8a43-1cfa58958182: 'Button Alignment' # Button Alignment
     becc60e2-dfe2-4c22-b26c-64e8cd6c9ec3: Button # Button
+    c4e858b9-b646-4f1d-908b-c8ad2c41c919: Slogan # Slogan
     c6fa7de8-e627-4b9e-9f39-07b394aa97d2: FAQ # FAQ
     c17e37d1-2245-4a08-ae7a-f3b635cb8da8: Bilder # Bilder
     c77e8b96-46ce-423b-8c01-8e8eb96c096f: Design # Design
@@ -139,6 +159,7 @@ meta:
     cd2fd189-80e9-4cbd-b833-97e0a91c8bbc: Farbe # Farbe
     cff7104f-fab7-452a-a505-f58112002642: 'Feature with Image, Text & Link' # Feature with Image, Text & Link
     d5bb6513-9cb6-465b-a500-a9b1fde5c26d: Land # Land
+    d7fc58fd-e1e1-48cd-ae18-629c2234af1a: 'Bild & Text' # Bild & Text
     d23f9520-b61b-4ceb-a796-93047c7cfbd0: BoldItalic # BoldItalic
     d111e429-1c84-4638-b39f-73e76ef8c695: 'Features With Icon Text' # Features With Icon Text
     d1780175-4bf1-43c1-b47a-64585417da83: Schriftart # Schriftart
@@ -160,9 +181,11 @@ meta:
     f0d5c884-6ab7-4dbe-8c5f-be4148440df5: 'Testimonial Gallery View' # Testimonial Gallery View
     f7cf0c11-6724-459d-bb73-4ab842d76701: Text # Text
     f21e2776-92fb-4040-9848-e6b6f18d8a02: Startseite # Startseite
+    f3326d64-1a0a-4924-a8fb-f7a08ac6587c: Schriftfarbe # Schriftfarbe
     fa476766-1ef0-4789-9974-70061a3ca8b9: 'Style Feature Grid' # Style Feature Grid
     fab01bdf-6a69-4bc0-b0f5-27f320fd31f5: 'Features With Icon & Link' # Features With Icon & Link
     fb003d0c-e346-4895-b744-421ee37ccf99: 'Bild & Text' # Bild & Text
+    fcac6695-ff3e-4c35-81cb-af382760b3e3: 'Footer Builder Area 4' # Footer Builder Area 4
     ff2b8307-3eb1-4484-9309-6f5fd3740b5b: Bildhöhe # Bildhöhe
 plugins:
   ckeditor:

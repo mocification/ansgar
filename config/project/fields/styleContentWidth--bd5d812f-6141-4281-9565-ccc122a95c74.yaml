@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: styleContentWidth
+instructions: null
+name: Inhaltsbreite
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Volle Breite'
+        -
+          - value
+          - full
+        -
+          - icon
+          - expand-wide
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Inhaltsbreite
+        -
+          - value
+          - container
+        -
+          - icon
+          - border-outer
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ButtonGroup

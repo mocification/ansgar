@@ -1,0 +1,87 @@
+<div class="section bg-transparent my-0"
+    {% include 'themes/'~ design.theme.value ~'/baseSection.twig' %}
+>
+
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12">
+                {% include 'themes/'~ design.theme.value ~'/baseHeadingText.twig' %}
+            </div>
+            <div class="col-12">
+                {% if entry.galleryColumns is not empty %}
+                    {% set colCarousel = 12 // entry.galleryColumns.value|number_format %}
+                    {% set colMasonry = 'row-cols-md-' ~ colCarousel %}
+                {% else %}
+                    {% set colCarousel = 4 %}
+                    {% set colMasonry = 'row-cols-md-12' %}
+                {% endif %}
+                
+                {% switch entry.imageGalleryView %}
+                
+                    {% case "carousel" %}
+                        <div id="oc-images" class="owl-carousel image-carousel carousel-widget mb-0" data-lightbox="gallery" data-items-xs="2" data-items-sm="3" data-items-lg="{{ colCarousel }}" data-items-xl="{{ colCarousel }}">
+                            {% for image in entry.images.all() %}
+                                <div class="oc-item">
+                                    <a class="col" href="{{ image.getUrl('imageFit_1920x0') }}" data-lightbox="gallery-item" title="{{ image.title }}" data-zoom="true">
+                                        <div class="grid-inner">
+                                            <img src="{{ image.getUrl('imageFit_0x400') }}" class="img-carousel" alt="{{ image.alt }}">
+                                            <div class="bg-overlay">
+                                                <div class="bg-overlay-content" data-hover-animate="fadeIn" data-hover-speed="350">
+                                                    <i class="bi-zoom-in h2 mb-0"></i>
+                                                </div>
+                                                <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                
+                    {% case "masonry" %}
+                        <div class="masonry-thumbs grid-container row row-cols-2 row-cols-sm-3 {{ colMasonry }}" data-lightbox="gallery">
+                            {% for image in entry.images.all() %}
+                                <a class="grid-item" href="{{ image.getUrl('imageFit_1920x0') }}" data-lightbox="gallery-item" title="{{ image.title }}">
+                                    <div class="grid-inner">
+                                        <img src="{{ image.getUrl('imageFit_0x400') }}" class="img-gallery" alt="{{ image.alt }}">
+                                        <div class="bg-overlay">
+                                            <div class="bg-overlay-content" data-hover-animate="fadeIn" data-hover-speed="350">
+                                                <i class="bi-zoom-in h2 mb-0"></i>
+                                            </div>
+                                            <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        </div> 
+                
+                    {% default %}
+                        <div class="masonry-thumbs grid-container row row-cols-2 row-cols-sm-3 row-cols-md-4" data-lightbox="gallery">
+                            {% for image in entry.images.all() %}
+                                <a class="grid-item" href="{{ image.getUrl('imageFit_1920x0') }}" data-lightbox="gallery-item" title="{{ image.title }}">
+                                    <div class="grid-inner">
+                                        <img class="lazy entered lazy-loaded" src="{{ image.getUrl('imageFit_0x400') }}" alt="{{ image.alt }}">
+                                        <div class="bg-overlay">
+                                            <div class="bg-overlay-content" data-hover-animate="fadeIn" data-hover-speed="350">
+                                                <i class="bi-zoom-in h4"></i>
+                                            </div>
+                                            <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        </div>      
+                
+                {% endswitch %}
+                               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+
+
+
+
+

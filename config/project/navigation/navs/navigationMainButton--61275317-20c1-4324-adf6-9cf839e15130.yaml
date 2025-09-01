@@ -1,0 +1,109 @@
+defaultPlacement: end
+fieldLayouts:
+  922788f1-4e78-42a0-8f7b-98887aa43844:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-25T21:34:55+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: a2e93627-d6c3-4ce0-a1bc-2739f889a2b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-25T21:34:55+00:00'
+            elementCondition: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: verbb\navigation\fieldlayoutelements\NodeTypeElements
+            uid: ebc14bf7-7e99-4ded-9878-50b5c014f2ae
+            userCondition: null
+            warning: null
+          -
+            attribute: newWindow
+            dateAdded: '2025-08-25T21:34:55+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: true
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\NewWindowField
+            uid: 81131472-0b8c-4401-a96b-1e4e3ee5e703
+            userCondition: null
+            warning: null
+            width: 100
+        name: Node
+        uid: 7bb7ea84-917e-4d0a-a1e7-2f9addda4a4c
+        userCondition: null
+handle: navigationMainButton
+instructions: ''
+maxNodes: null
+name: 'Buttons in Kopfzeile (Hauptmenü)'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  verbb\navigation\nodetypes\CustomType:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: ''
+  verbb\navigation\nodetypes\SiteType:
+    enabled: '1'
+propagationMethod: none
+siteSettings:
+  211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
+    enabled: true
+  8444ed32-3604-40aa-b2c9-d46f24f8d714: # Naturparklauf
+    enabled: true
+  1914165a-c550-4819-b74d-d56cf7f38ceb: # Testseite 01
+    enabled: true
+sortOrder: 3
+structure:
+  maxLevels: 1
+  uid: d48830b2-35f6-439e-bece-efbfd80186de

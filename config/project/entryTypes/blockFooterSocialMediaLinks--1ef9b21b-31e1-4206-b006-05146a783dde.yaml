@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  c6bb0ebc-634b-4034-8d9b-d9f40fdb7ad5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: e840dfc8-7ad2-4437-8c6f-a6ef26215b10
+        userCondition: null
+handle: blockFooterSocialMediaLinks
+hasTitleField: false
+icon: null
+name: 'Social Media Links'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

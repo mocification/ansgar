@@ -1,0 +1,70 @@
+{% set image = entry.image.one() %}
+<div class="swiper-slide">
+    <div class="vertical-middle slider-element-fade">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col">
+                    <div class="slider-title">
+                        <div class="{{ entry.alignment }}">
+                            {% if entry.header.subTitle is not empty %}
+                                <div class="badge rounded-pill badge-default"
+                                    {% if entry.styleColor.subTitle is not empty %}
+                                        style="color: {{ entry.styleColor.subTitle }} !important;"
+                                    {% endif %}
+                                >
+                                    {{ entry.header.subTitle }}
+                                </div>
+                            {% endif %} 
+                            {% if entry.header.mainTitle is not empty %}
+                                <h2
+                                    {% if entry.styleColor.mainTitle is not empty %}
+                                        style="color: {{ entry.styleColor.mainTitle }} !important;"
+                                    {% endif %}
+                                >
+                                    {{ entry.header.mainTitle }}
+                                </h2>
+                            {% endif %}
+
+                            {% if entry.styleColor.text is not empty %}
+                                <div style="color: {{ entry.styleColor.text }} !important;"
+                                    {{ entry.header.text }}
+                                </div>
+                            {% else %}
+                                {{ entry.header.text }}
+                            {% endif %}
+
+                            {% set links = entry.links.all() %}
+                            {% if entry.styleLink.showAsButton %}
+                                {% for link in links %}
+                                    <a 
+                                        href="{{ link.linkField}}" 
+                                        class="button button-rounded button-large text-transform-none ls-0"
+                                        title="{{ link.linkField.title }}"
+                                        target="{{ link.linkField.target }}"
+                                    >
+                                        {{ link.linkField.label }}
+                                    </a>
+                                {% endfor %}                        
+                            {% else %}
+                                <!-- hier kommen die normalen Links -->
+                                {% for link in links %}
+                                    <a 
+                                        href="{{ link.linkField}}" 
+                                        class="btn btn-link"
+                                        title="{{ link.linkField.title }}"
+                                        target="{{ link.linkField.target }}"
+                                    >
+                                        {{ link.linkField.label }}
+                                    </a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if image is not empty %}
+        <div class="swiper-slide-bg" style="background: url('{{ image.getUrl('imageFit_1920x0') }}') no-repeat center center / cover;"></div>
+    {% endif %}
+</div>

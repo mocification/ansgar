@@ -1,0 +1,19 @@
+<div class="row">
+<div class="container">
+    <div class="masonry-thumbs grid-container row row-cols-2 row-cols-sm-3 row-cols-md-3 mb-4" data-lightbox="gallery">
+        {% for image in entry.images.all() %}
+            <a class="grid-item" href="{{ image.getUrl('imageFit_1920x0') }}" data-lightbox="gallery-item" title="{{ image.title }}">
+                <div class="grid-inner">
+                    <img src="{{ image.getUrl('imageFit_0x400') }}" class="img-gallery rounded-4" alt="{{ image.alt }}">
+                    <div class="bg-overlay">
+                        <div class="bg-overlay-content" data-hover-animate="fadeIn" data-hover-speed="350">
+                            <i class="bi-zoom-in h2 mb-0"></i>
+                        </div>
+                        <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    </div>
+</div>

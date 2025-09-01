@@ -1,0 +1,109 @@
+columnSuffix: null
+handle: footerBuilderArea3
+instructions: null
+name: 'Footer Builder Area 3'
+searchable: false
+settings:
+  createButtonLabel: 'Block hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 009e5f1f-9a58-45b9-9763-8b4c8bdf2c65 # Logo & Slogan
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 6ee8ab03-9142-41d1-ad5f-ef651481d91f # Logo
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 533f8ca1-417e-4414-974e-606a5935751f # Überschrift
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b5187e4b-9432-4512-81b2-780cb7dbcf36 # Kontaktdaten
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 4307b6c8-5672-430e-aa6d-06ca24d15770 # Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - c4e858b9-b646-4f1d-908b-c8ad2c41c919 # Slogan
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - a1f64d10-4595-4184-9961-4671f5cbc5b6 # Bilder
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 043b6b5a-2b61-4e4e-82a5-5061f5d03389 # Kundenlogos
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 390e91b3-5b83-4f1c-bfac-3ee64ddc428a # Navigation
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1ef9b21b-31e1-4206-b006-05146a783dde # Social Media Links
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 046ff0ab-21e9-4b2d-89ed-abaa2907a357 # Trennlinie
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

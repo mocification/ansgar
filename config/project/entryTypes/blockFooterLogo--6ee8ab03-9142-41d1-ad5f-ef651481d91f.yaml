@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  a85718b4-eaaf-4a30-b914-c2902503c54a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-26T13:37:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1f0ba122-7b45-4e01-80b5-f388978b5342 # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75b888ee-1adb-4cdd-8a7b-dda4cc6ad040
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T21:14:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ff2b8307-3eb1-4484-9309-6f5fd3740b5b # Bildhöhe
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d09644bc-39fb-43f4-9b52-687924c78d1a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c74296f5-24fb-4c43-8530-347aa955c0c1
+        userCondition: null
+handle: blockFooterLogo
+hasTitleField: false
+icon: null
+name: Logo
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

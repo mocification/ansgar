@@ -1,0 +1,8 @@
+{% set image = entry.image.one() %}
+{% if image %}
+    <div class="row">
+        <div class="col">
+            <img src="{{ image.getUrl('imageFit_400x0') }}" alt="{{ image.alt }}" class="alignleft img-fluid" style="height: {{ entry.imageHeight }}vh !important;">
+        </div>
+    </div>
+{% endif %}

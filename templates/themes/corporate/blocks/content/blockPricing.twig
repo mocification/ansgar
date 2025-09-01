@@ -1,0 +1,254 @@
+{% set textPart %}
+    {% include 'themes/'~ design.theme.value ~'/baseHeadingText.twig' %}
+{% endset %}
+
+<div class="section bg-transparent my-0"
+    {% include 'themes/'~ design.theme.value ~'/baseSection.twig' %}
+>
+    <div class="container">
+        <div class="row justify-content-between g-5">
+            <div class="col-12">
+                {{ textPart }}
+            </div>            
+        </div>
+
+        {% switch entry.layoutPricingCards %}
+        
+            {% case "layout1" %}
+                {% set pricingCards = entry.pricingCards.all() %}
+                {% if pricingCards|length %}
+                    <div class="row pricing col-mb-30 mb-4 g-0">
+                        {% for card in pricingCards %}
+                            <div class="col-sm-12 col-md col-lg">
+                                <div class="pricing-box text-center {% if card.showAsHighlight %}pricing-highlight{% endif %}">
+                                    <div class="pricing-title text-uppercase title-sm">
+                                        <h3>{{ card.header.mainTitle }}</h3>
+                                        <span> {{ card.header.subTitle }}</span>
+                                        {% if card.showAsHighlight %}
+                                            <div class="badge badge-default bg-color text-white text-transform-none fw-medium">
+                                                {{ card.highlightText }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="pricing-price">
+                                        <span class="price-unit">&euro;</span>{{ card.price }}<span class="price-tenure">{{ card.unit }}</span>
+                                    </div>
+                                    {% set features = card.pricingFeaturesTable %}
+                                    {% if features is not empty %}
+                                        <div class="pricing-features">
+                                            <ul>
+                                                {% for feature in features %}
+                                                    <li>
+                                                        {% if card.iconField is not empty %}<i class="fa-solid fa-{{ card.iconField }} color"></i>{% endif %}
+                                                        {{ feature.text }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    {% endif %}
+                                    {% if card.linkField is not empty %}
+                                        <div class="pricing-action px-4">
+                                            <a 
+                                                href="{{ card.linkField}}"
+                                                class="btn w-100 btn-lg {% if card.showAsHighlight %}btn-danger bg-color border-color bg-hover-white{% else %}btn-outline-dark{% endif %}"
+                                                title="{{ card.linkField.title }}"
+                                                target="{{ card.linkField.target }}"
+                                            >
+                                                {{ card.linkField.label }}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}        
+            
+            {% case "layout2" %}
+                {% set pricingCards = entry.pricingCards.all() %}
+                {% if pricingCards|length %}
+                    <div class="row pricing col-mb-30 mb-4 g-0">
+                        {% for card in pricingCards %}
+                            <div class="col-sm-1 col-md col-lg">
+                                <div class="pricing-box pricing-minimal text-center {% if card.showAsHighlight %}pricing-highlight{% endif %}">
+                                    <div class="pricing-title title-sm">
+                                        <h3>{{ card.header.mainTitle }}</h3>
+                                        <span> {{ card.header.subTitle }}</span>
+                                        {% if card.showAsHighlight %}
+                                            <div class="badge badge-default bg-color text-white text-transform-none fw-medium">
+                                                {{ card.highlightText }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="pricing-price">
+                                        <span class="price-unit">&euro;</span>{{ card.price }}<span class="price-tenure">{{ card.unit }}</span>
+                                    </div>
+                                    {% if card.linkField is not empty %}
+                                        <div class="pricing-action px-4">
+                                            <a 
+                                                href="{{ card.linkField}}"
+                                                class="btn w-100 btn-lg {% if card.showAsHighlight %}btn-danger bg-color border-color bg-hover-white{% else %}btn-outline-dark{% endif %}"
+                                                title="{{ card.linkField.title }}"
+                                                target="{{ card.linkField.target }}"
+                                            >
+                                                {{ card.linkField.label }}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+        
+            {% case "layout3" %}
+                {% set pricingCards = entry.pricingCards.all() %}
+                {% if pricingCards|length %}
+                <div class="row pricing col-mb-30 mb-4">
+                    {% for card in pricingCards %}
+                        <div class="col-sm-1 col-md col-lg">
+
+                            <div class="pricing-box h-shadow shadow-ts px-4 {% if card.showAsHighlight %}border-color{% endif %}">
+                                {% if card.showAsHighlight %}
+                                    <span class="badge bg-color rounded-0 fw-normal ls-1 text-white text-uppercase position-absolute" style="right: 0;">{{ card.highlightText }}</span>
+                                {% endif %}
+                                <div class="pricing-title border-bottom-0 pb-0 bg-transparent">
+                                    <!-- <span class="text-muted text-smaller">Basic</span> -->
+                                    <h3 class="fw-medium">{{ card.header.mainTitle }}</h3>
+                                    <span> {{ card.header.subTitle }}</span>
+                                </div>
+                                <div class="pricing-price">
+                                    <span class="price-unit">&euro;</span>{{ card.price }}<span class="price-tenure">{{ card.unit }}</span>
+                                </div>
+                                {% set features = card.pricingFeaturesTable %}
+                                {% if features is not empty %}
+                                    <div class="pricing-features bg-transparent border-bottom-0 pb-1">
+                                        <ul class="iconlist">
+                                            {% for feature in features %}
+                                                <li>
+                                                    {% if card.iconField is not empty %}<i class="fa-solid fa-{{ card.iconField }} color text-smaller"></i>{% endif %}
+                                                    {{ feature.text }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                                <div class="pricing-action">
+                                    <a 
+                                        href="{{ card.linkField}}"
+                                        class="btn btn-lg w-100 d-flex justify-content-between {% if card.showAsHighlight %}btn-danger bg-color border-color bg-hover-white{% else %}btn-outline-dark{% endif %}"
+                                        title="{{ card.linkField.title }}"
+                                        target="{{ card.linkField.target }}"
+                                    >
+                                        {{ card.linkField.label }}
+                                        <i class="bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            
+            {% case "layout4" %}
+                {% set pricingCards = entry.pricingCards.all() %}
+                {% if pricingCards|length %}
+                    <div class="row pricing block-pricing-10 justify-content-center align-items-stretch">
+                        {% for card in pricingCards %}
+                        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                            <div class="pricing-box d-flex flex-column justify-content-between align-items-center h-100 pricing-simple px-5 py-0 border border text-center overflow-visible {% if card.showAsHighlight %}border-color{% endif %}">
+                                <h3 class="pricing-title ls-0 bg-white fw-normal">{{ card.header.mainTitle }}</h3>
+                                <span>{{ card.header.subTitle }}</span>
+                                <div class="pricing-price fw-semibold font-secondary"><span class="price-unit">&euro;</span>{{ card.price }}<span class="price-tenure font-body">{{ card.unit }}</span></div>
+                                {% set features = card.pricingFeaturesTable %}
+                                {% if features is not empty %}
+                                <div class="pricing-features">
+                                    <ul>
+                                        {% for feature in features %}
+                                            <li>
+                                                {% if card.iconField is not empty %}<i class="fa-solid fa-{{ card.iconField }} color text-smaller"></i>{% endif %}
+                                                {{ feature.text }}
+                                            </>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                {% endif %}
+                                <a 
+                                    href="{{ card.linkField}}"
+                                    {% if card.showAsHighlight %}
+                                        class="btn btn-action btn-danger bg-color border-color btn-lg px-4"
+                                    {% else %}
+                                        class="btn btn-action btn-outline-success border-contrast-400 bg-white h-bg-dark text-dark h-text-light h-border-transparent btn-lg px-4"    
+                                    {% endif %}
+                                    title="{{ card.linkField.title }}"
+                                    target="{{ card.linkField.target }}"
+                                >
+                                    {{ card.linkField.label }}
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+            {% default %}
+                {% set pricingCards = entry.pricingCards.all() %}
+                {% if pricingCards|length %}
+                    <div class="row pricing col-mb-30 mb-4 g-0">
+                        {% for card in pricingCards %}
+                            <div class="col-sm-1 col-md col-lg">
+                                <div class="pricing-box text-center {% if card.showAsHighlight %}pricing-highlight{% endif %}">
+                                    <div class="pricing-title text-uppercase title-sm">
+                                        <h3>{{ card.header.mainTitle }}</h3>
+                                        <span> {{ card.header.subTitle }}</span>
+                                        {% if card.showAsHighlight %}
+                                            <div class="badge badge-default bg-color text-white text-transform-none fw-medium">
+                                                {{ card.highlightText }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="pricing-price">
+                                        <span class="price-unit">&euro;</span>{{ card.price }}<span class="price-tenure">{{ card.unit }}</span>
+                                    </div>
+                                    {% set features = card.pricingFeaturesTable %}
+                                    {% if features is not empty %}
+                                        <div class="pricing-features">
+                                            <ul>
+                                                {% for feature in features %}
+                                                    <li>
+                                                        {% if card.iconField is not empty %}<i class="fa-solid fa-{{ card.iconField }} color"></i>{% endif %}
+                                                        {{ feature.text }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    {% endif %}
+                                    {% if card.linkField is not empty %}
+                                        <div class="pricing-action px-4">
+                                            <a 
+                                                href="{{ card.linkField}}"
+                                                class="btn w-100 btn-lg {% if card.showAsHighlight %}btn-danger bg-color border-color bg-hover-white{% else %}btn-outline-dark{% endif %}"
+                                                title="{{ card.linkField.title }}"
+                                                target="{{ card.linkField.target }}"
+                                            >
+                                                {{ card.linkField.label }}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %} 
+            
+        
+        {% endswitch %}
+    </div>
+</div>
+
+    
+
+
+
+
+

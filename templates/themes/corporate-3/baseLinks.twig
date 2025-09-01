@@ -1,0 +1,27 @@
+{% if entry.links %}
+    {% set links = entry.links.all() %}
+    {% if entry.styleLink.showAsButton %}
+        {% for link in links %}
+            <a 
+                href="{{ link.linkField}}" 
+                class="button button-rounded button-large text-transform-none ls-0"
+                title="{{ link.linkField.title }}"
+                target="{{ link.linkField.target }}"
+            >
+                {{ link.linkField.label }}
+            </a>
+        {% endfor %}                        
+    {% else %}
+        <!-- hier kommen die normalen Links -->
+        {% for link in links %}
+            <a 
+                href="{{ link.linkField}}" 
+                class="btn btn-link"
+                title="{{ link.linkField.title }}"
+                target="{{ link.linkField.target }}"
+            >
+                {{ link.linkField.label }}
+            </a>
+        {% endfor %}
+    {% endif %}
+{% endif %}

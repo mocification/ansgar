@@ -1,0 +1,25 @@
+
+<address class="row">
+    <p class="mb-2">
+        {% if company.companyName %}
+            <strong>{{ company.companyName }}</strong><br>
+        {% endif %}
+        {% if company.companyName2 %}
+            {{ company.companyName2 }}<br>
+        {% endif %}
+        {% if company.street %}
+            {{ company.street }}<br>
+        {% endif %}
+        {% if company.zipCode %}{{ company.zipCode }}{% endif %} {% if company.city %}{{ company.city }}{% endif %}
+    </p>
+    <div class="mb-0">
+        {% if company.phone %}
+            <abbr title="Telefon">Telefon:</abbr>
+            <a href="tel:{{ company.phone }}">{{ company.phone }}</a> <br>
+        {% endif %}
+        {% if company.mail %}
+            <abbr title="E-Mail">E-Mail:</abbr>
+            <a href="mailto:{{ company.mail }}">{{ company.mail }}</a>
+        {% endif %}
+    </div>
+</address>

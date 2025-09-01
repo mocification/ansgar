@@ -1,0 +1,129 @@
+columnSuffix: null
+handle: styleColor
+instructions: 'Stelle hier die Schriftfarben des Inhaltblocks. Lasse die Felder leer, damit die Standard-Themefarben verwendet werden.'
+name: Schriftfarbe
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 9975c623-630e-4aaf-bf59-cdc46cc8f729
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 3ff757f9-2e72-4b91-8ec4-906db94632ba
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - mainTitle
+                            2:
+                              - label
+                              - Überschrift
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-01T18:52:17+00:00'
+                            11:
+                              - uid
+                              - 4478c5e4-dfd9-40fe-a8af-93d699c31e5e
+                            14:
+                              - fieldUid
+                              - cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - subTitle
+                            2:
+                              - label
+                              - Unterüberschrift
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-01T18:52:17+00:00'
+                            11:
+                              - uid
+                              - b8f88812-7560-4f02-ac4f-29bf41d5277e
+                            14:
+                              - fieldUid
+                              - cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - text
+                            2:
+                              - label
+                              - Text
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-01T18:52:17+00:00'
+                            11:
+                              - uid
+                              - 9a7ffa3a-d1a3-48a0-8d64-9ddb317e1553
+                            14:
+                              - fieldUid
+                              - cd2fd189-80e9-4cbd-b833-97e0a91c8bbc # Farbe
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

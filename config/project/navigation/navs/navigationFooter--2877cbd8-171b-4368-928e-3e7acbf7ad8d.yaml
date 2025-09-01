@@ -1,6 +1,7 @@
 defaultPlacement: end
 fieldLayouts:
   6eb38b6a-9098-4f60-a1e5-732f81cf822d:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -195,6 +196,8 @@ permissions:
 propagationMethod: none
 siteSettings:
   211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
+    enabled: true
+  8444ed32-3604-40aa-b2c9-d46f24f8d714: # Naturparklauf
     enabled: true
   1914165a-c550-4819-b74d-d56cf7f38ceb: # Testseite 01
     enabled: true

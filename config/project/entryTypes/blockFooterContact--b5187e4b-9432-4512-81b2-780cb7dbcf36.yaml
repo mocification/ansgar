@@ -1,0 +1,22 @@
+color: null
+description: 'Es werden automisch die hinterlegten Kontaktdaten eingefügt.'
+fieldLayouts:
+  91cbb6ec-1a8e-434c-8753-bd313dc83f66:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: f860ddfc-f299-44b5-b896-f0cbf347e8b4
+        userCondition: null
+handle: blockFooterContact
+hasTitleField: false
+icon: null
+name: Kontaktdaten
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,242 @@
+{% set textPart %}
+    {% include 'themes/'~ design.theme.value ~'/baseHeadingText.twig' %}
+{% endset %}
+
+<div class="section bg-transparent my-0"
+    {% include 'themes/'~ design.theme.value ~'/baseSection.twig' %}
+>
+    <div class="container">        
+        <div class="row">
+            <div class="col-12">
+                {{ textPart }}
+            </div>
+            
+            <div class="col-12">
+                {% set teasers = entry.pages
+                    .with([
+                        ['teaserImage', { withTransforms: ['imageFit_800x0'] }]   
+                    ]
+                    )
+                    .all()
+                %}
+                {% if teasers|length %}
+                    {% switch entry.layoutTeaserGrid %}
+                    
+                        {% case "layout1" %}
+                            <div class="row block-card-9 col-mb-10 row-small-gap">
+                                {% for teaser in teasers %}
+                                    <div class="col-lg-{{ entry.columns }} min-vh-50">
+                                        <div class="grid-inner h-100 rounded-3">
+                                            {% set image = teaser.teaserImage.one() %}
+                                            {% if image %}
+                                                <div class="grid-image lazy" data-bg="{{ image.getUrl('imageFit_800x0') }}"></div>
+                                            {% endif %}
+                                            <div class="bg-overlay">
+                                                <div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+                                                    <div class="grid-icon">
+                                                    </div>
+                                                    <div class="grid-content">
+                                                        <h5 class="fw-light font-body text-smaller mb-2 badge rounded-pill badge-default bg-color text-white">{{ teaser.teaserSubTitle }}</h5>
+                                                        <h3 class="fw-medium h2">{{ teaser.teaserTitle }}</h3>
+                                                        {{ teaser.teaserText|attr({class: 'fw-light text-small mb-2'}) }}
+                                                        <a href="{{ teaser.url }}" class="icon-stacked rounded-circle bg-color text-white text-center mb-0 btn-hover h5"><i class="bi-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-overlay-bg" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, #323334 150%);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                    
+                        {% case "layout2" %}
+                            <!-- block-content-cards.html -->
+                            <div class="row justify-content-center gutter-50 col-mb-50">
+                                {% for teaser in teasers %}
+                                    <div class="col-md-{{ entry.columns }}">
+                                        <div class="card">
+                                            {% set image = teaser.teaserImage.one() %}
+                                            {% if image %}
+                                                <img src="{{ image.getUrl('imageFit_800x0') }}" class="card-img-top" alt="{{ image.alt }}">
+                                            {% endif %}
+                                            <div class="card-body">
+                                                <h5 class="fw-light font-body text-smaller mb-2 badge rounded-pill badge-default">{{ teaser.teaserSubTitle }}</h5>
+                                                <h4 class="card-title">{{ teaser.teaserTitle }}</h4>
+                                                {{ teaser.teaserText|attr({class: 'card-text'}) }}
+                                                <a 
+                                                    href="{{ teaser.url }}" 
+                                                    class="btn btn-link ps-0"
+                                                    title="{{ teaser.title }}"
+                                                >
+                                                    {{ teaser.teaserLinkText }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+
+                        {% case "layout3" %}
+                            <!-- block-content-cards-2.html -->
+                            <div class="row col-mb-50 justify-content-center">
+                                {% for teaser in teasers %}
+                                    <div class="col-md-{{ entry.columns }}">
+                                        {% set image = teaser.teaserImage.one() %}
+                                        {% if image %}
+                                            <div class="card border-0 shadow-sm h-shadow shadow-ts p-3 dark" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,.3) 75%, rgba(0,0,0,0.9) 100%), url('{{ image.getUrl('imageFit_800x0') }}') no-repeat top center / cover;">
+                                        {% else %}
+                                            <div class="card border-0 dark shadow-sm h-shadow shadow-ts p-3 dark" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.4));">
+                                        {% endif %}                                            
+                                                <div class="card-body">
+                                                    <h6 class="fw-light font-body text-smaller mb-2 badge rounded-pill badge-default bg-color text-white">{{ teaser.teaserSubTitle }}</h6>
+                                                    <h3 class="card-title h2 fw-bold mb-4">{{ teaser.teaserTitle }}</h3>
+                                                    {{ teaser.teaserText|attr({class: 'card-text mb-5'}) }}
+                                                    <a href="{{ teaser.url }}" title="{{ teaser.title }}"><i class="bi-arrow-right h4 icon-stacked text-center rounded-circle bg-color text-white"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+
+                        {% case "layout4" %}
+                            <!-- block-content-cards-3.html -->
+                            <div class="row justify-content-center gutter-50 col-mb-50">
+                                {% for teaser in teasers %}
+                                    {% set image = teaser.teaserImage.one() %}
+                                    {% if image %}
+                                        <div class="col-lg-{{ entry.columns }}">
+                                            <div class="card imagescalein">
+                                                <div class="row g-0 align-items-center">
+                                                    <div class="col-md-4 d-flex align-self-stretch overflow-hidden">                                                    
+                                                        <img src="{{ image.getUrl('imageFit_800x0') }}" class="rounded-start" alt="{{ image.alt }}">
+                                                    </div>
+                                                    <div class="col-md-8 p-4">
+                                                        <div class="card-body">
+                                                            <h6 class="badge rounded-pill badge-default">{{ teaser.teaserSubTitle }}</h6>
+                                                            <h3 class="card-title">{{ teaser.teaserTitle }}</h3>
+                                                            {{ teaser.teaserText|attr({class: 'card-text mb-2'}) }}
+                                                            <a 
+                                                                href="{{ teaser.url }}" 
+                                                                class="btn btn-link ps-0"
+                                                                title="{{ teaser.title }}"
+                                                            >
+                                                                {{ teaser.teaserLinkText }}
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% else %}
+                                        <div class="col-lg-{{ entry.columns }}">
+                                            <div class="card imagescalein">
+                                                <div class="row g-0 align-items-center">
+                                                    <div class="p-4">
+                                                        <div class="card-body">
+                                                            <h6 class="badge rounded-pill badge-default">{{ teaser.teaserSubTitle }}</h6>
+                                                            <h3 class="card-title">{{ teaser.teaserTitle }}</h3>
+                                                            {{ teaser.teaserText|attr({class: 'card-text mb-2'}) }}
+                                                            <a 
+                                                                href="{{ teaser.url }}" 
+                                                                class="btn btn-link ps-0"
+                                                                title="{{ teaser.title }}"
+                                                            >
+                                                                {{ teaser.teaserLinkText }}
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+
+                        {% case "layout5" %}
+                            <!-- block-content-gallery-9.html -->
+                            {% if entry.columns is not empty %}
+                                {% set colMasonry = 12 // entry.columns.value|number_format %}
+                            {% else %}
+                                {% set colMasonry = 3 %}
+                            {% endif %}
+                            <div class="masonry-thumbs grid-container row row-cols-1 row-cols-md-2 row-cols-lg-{{ colMasonry }} block-gallery-9 masonry-gap-lg">
+                                {% for teaser in teasers %}
+                                    <div class="grid-item">
+                                        {% set image = teaser.teaserImage.one() %}
+                                        {% if image %}
+                                            <div class="grid-inner rounded-3" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,.3) 75%, rgba(0,0,0,0.9) 100%), url('{{ image.getUrl('imageFit_800x0') }}') no-repeat center center / cover; height: {{ random(400, 500) }}px;">
+                                        {% else %}
+                                            <div class="grid-inner rounded-3" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,.3) 75%, rgba(0,0,0,0.9) 100%);">
+                                        {% endif %}
+                                            <div class="bg-overlay position-relative">
+                                                <div class="bg-overlay-content flex-column justify-content-end align-items-start px-5 py-4 dark">                                                    
+                                                    <h6 class="badge rounded-pill badge-default bg-color text-white">{{ teaser.teaserSubTitle }}</h6>                                                   
+                                                    <div class="entry-title title-lg">
+                                                        <h3 class="h2"><a href="{{ teaser.url }}">{{ teaser.teaserTitle }}</a></h3>                                                        
+                                                    </div>
+                                                    {{ teaser.teaserText|attr({class: 'mb-2'}) }}
+                                                    <a href="{{ teaser.url }}"><i class="bi-arrow-right btn-more"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                    
+                        {% case "layout6" %}
+                            <div class="row gallery-categories gutter-20">
+                                {% for teaser in teasers %}
+                                    <div class="col-md-{{ entry.columns }}">
+                                        {% set image = teaser.teaserImage.one() %}
+                                        {% if image %}
+                                            <div class="rounded-3" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,.3) 75%, rgba(0,0,0,0.9) 100%), url('{{ image.getUrl('imageFit_800x0') }}') no-repeat center center / cover; height: 250px;">
+                                        {% else %}
+                                            <div class="rounded-3" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,.3) 75%, rgba(0,0,0,0.9) 100%); height: 250px;">
+                                        {% endif %}
+                                            <div class="vertical-middle p-4 dark">
+                                                <div class="heading-block m-0 border-0">
+                                                    <h6 class="badge rounded-pill badge-default bg-color text-white">{{ teaser.teaserSubTitle }}</h6> 
+                                                    <h3 class="text-capitalize text-transform-none fw-bold h2 mb-3">{{ teaser.teaserTitle }}</h3>
+                                                    {{ teaser.teaserText|attr({class: 'text-smaller text-white'}) }}
+                                                    <a href="#" class="more-link border-light text-light mb-0 stretched-link">{{ teaser.teaserLinkText }} <i class="bi-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        
+                        {% default %}
+                            <div class="row block-card-9 col-mb-10 row-small-gap">
+                                {% for teaser in teasers %}
+                                    <div class="col-lg-{{ entry.columns }} min-vh-50">
+                                        <div class="grid-inner h-100 rounded-3">
+                                            {% set image = teaser.teaserImage.one() %}
+                                            {% if image %}
+                                                <div class="grid-image lazy" data-bg="{{ image.getUrl('imageFit_800x0') }}"></div>
+                                            {% endif %}
+                                            <div class="bg-overlay">
+                                                <div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+                                                    <div class="grid-icon">
+                                                    </div>
+                                                    <div class="grid-content">
+                                                        <h5 class="fw-light font-body text-smaller mb-2 badge rounded-pill badge-default bg-color text-white">{{ teaser.teaserSubTitle }}</h5>
+                                                        <h3 class="fw-medium h2">{{ teaser.teaserTitle }}</h3>
+                                                        {{ teaser.teaserText|attr({class: 'fw-light text-small mb-2'}) }}
+                                                        <a href="{{ teaser.url }}" class="icon-stacked rounded-circle bg-color text-white text-center mb-0 btn-hover h5"><i class="bi-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-overlay-bg" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, #323334 150%);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                    
+                    {% endswitch %}
+                                        
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

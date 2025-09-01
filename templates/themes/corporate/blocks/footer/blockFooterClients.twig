@@ -1,0 +1,61 @@
+{% set clients = entry.clients.all() %}
+
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col">
+                {% if entry.clientColumns is not empty %}
+                    {% set colCarousel = 12 // entry.clientColumns.value|number_format %}
+                    {% set colTable = 'row-cols-md-' ~ colCarousel %}
+                {% else %}
+                    {% set colCarousel = 4 %}
+                    {% set colTable = 'row-cols-md-12' %}
+                {% endif %}
+                
+                {% switch entry.clientGalleryView %}
+                
+                    {% case "carousel" %}
+                        {% if clients|length %}
+                            <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="20" data-loop="true" data-autoplay="5000" data-nav="true" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="{{ colCarousel }}" data-items-lg="{{ colCarousel }}" data-items-xl="{{ colCarousel }}">
+                                {% for client in clients %}
+                                    {% set image = client.image.one() %}
+                                    {% if image is not empty %}
+                                        <div class="oc-item">
+                                            <a href="{{ client.linkField }}" title="{{ entry.heading }}">
+                                                <img src="{{ image.getUrl('imageFit_0x400') }}" title="{{ entry.heading }}" alt="{{ entry.heading }}">
+                                            </a>
+                                        </div>
+                                    {% endif %}                                    
+                                {% endfor %}
+                            </div>
+                        {% endif %} 
+                
+                    {% case "table" %}                        
+                        {% if clients|length %}
+                            <ul class="clients-grid row row-cols-2 {{ colTable }}">
+                                {% for client in clients %}
+                                    {% set image = client.image.one() %}
+                                    {% if image is not empty %}
+                                        <li class="col">
+                                            <a href="{{ client.linkField }}" title="{{ entry.heading }}">
+                                                <img src="{{ image.getUrl('imageFit_0x400') }}" title="{{ entry.heading }}" alt="{{ entry.heading }}" class="img-carousel">
+                                            </a>
+                                        </li>
+                                    {% endif %}                                    
+                                {% endfor %}
+                            </ul>
+                        {% endif %}                        
+                
+                    {% default %}
+                
+                {% endswitch %}
+                               
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+

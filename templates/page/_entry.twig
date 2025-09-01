@@ -1,14 +1,38 @@
-{% extends "_layouts/main" %}
 
-{% block content %}
+{% extends 'themes/'~ design.theme.value ~'/base.twig' %}
 
-	<section id="content">
-		<div class="content-wrap">
-			{% for contentBlock in entry.contentBuilder.all() %}
-				{{ contentBlock.render() }}
-			{% endfor %}
-		</div>
-	</section>
-
+{% block header %}
+	{% for headerBlock in entry.headerBuilder.all() %}
+		{{ headerBlock.render() }}
+	{% endfor %}
 {% endblock %}
 
+{% block content %}
+	{% for contentBlock in entry.contentBuilder.all() %}
+		{{ contentBlock.render() }}
+	{% endfor %}
+{% endblock %}
+
+{% block footerArea1 %}
+	{% for footerArea1 in footer.footerBuilderArea1.all() %}
+		{{ footerArea1.render() }}
+	{% endfor %}
+{% endblock %}
+
+{% block footerArea2 %}
+	{% for footerArea2 in footer.footerBuilderArea2.all() %}
+		{{ footerArea2.render() }}
+	{% endfor %}
+{% endblock %}
+
+{% block footerArea3 %}
+	{% for footerArea3 in footer.footerBuilderArea3.all() %}
+		{{ footerArea3.render() }}
+	{% endfor %}
+{% endblock %}
+
+{% block footerArea4 %}
+	{% for footerArea4 in footer.footerBuilderArea4.all() %}
+		{{ footerArea4.render() }}
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  a5559d2f-aad5-4995-959b-e79aebea5dc3:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 32e6865c-7237-44ab-8e19-f0c9494fd17a
+        userCondition: null
+handle: blockFooterLine
+hasTitleField: false
+icon: null
+name: Trennlinie
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

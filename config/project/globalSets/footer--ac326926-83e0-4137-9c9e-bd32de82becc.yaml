@@ -1,0 +1,255 @@
+fieldLayouts:
+  c0cc8dac-4bff-424f-98d5-c0c1eb24db11:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            content: 'Gestalte hier deine Fußzeile. Die 4 Bereiche werden in der Fußzeile meist in 4 Spaltenbereiche aufgeteilt und angezeigt.'
+            dateAdded: '2025-08-26T13:54:28+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: 09f8c28f-43ae-4713-b948-15059c8f1040
+            userCondition: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T13:47:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8e2805ff-737c-4a9e-b9ea-8325406440a5 # Footer Builder Area 1
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 688cd9f5-7d13-4c2c-bc94-2d3dc7b3ca97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T13:52:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: d864af5b-5882-4ab5-baef-5b6a8a042bf6
+            userCondition: null
+          -
+            dateAdded: '2025-08-26T13:47:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2972affb-fd93-4aa0-ac36-d7648f489715 # Footer Builder Area 2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0538c21-d9bd-4e98-ba0a-f5583e646f73
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T13:52:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1b1ae8e9-cdb2-4041-9c07-da011af0d179
+            userCondition: null
+          -
+            dateAdded: '2025-08-26T13:47:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4510ec4c-667f-4059-a32c-b2d6f9b08e2a # Footer Builder Area 3
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b080656-5680-471c-bdb3-475a2b83da43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T13:52:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: cf76c7ac-c487-4af7-bc2d-c09a8674020e
+            userCondition: null
+          -
+            dateAdded: '2025-08-26T13:47:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fcac6695-ff3e-4c35-81cb-af382760b3e3 # Footer Builder Area 4
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 4'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2584b10-b9e5-40c4-be93-d03c6c68724c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c2bc84c2-2ca9-453a-a700-473795880b46
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-26T14:09:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4f04fa9b-e0e1-4c4b-a083-f5772e74ece4 # Hintergrund
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c738c85-765b-4c18-82cb-6052a9469121
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T20:41:33+00:00'
+            elementCondition: null
+            heading: 'Breite der Bereiche'
+            type: craft\fieldlayoutelements\Heading
+            uid: b1f2a7dd-8478-4b8b-81e7-76e48a105af8
+            userCondition: null
+          -
+            content: "Gib hier die Spaltenbreite der einzelnen Bereiche an. 12 entspricht einer gesamten Inhaltsbreite.\r\nWenn bspw. 2 Bereiche die Summe von 12 erreichen, wird der nächste Bereich in einer neuen Zeile angezeigt."
+            dateAdded: '2025-08-26T20:41:33+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: 92217478-689e-4313-9147-6a87c0373028
+            userCondition: null
+            width: 100
+          -
+            dateAdded: '2025-08-26T21:08:28+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\ElementCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\EmptyFieldConditionRule
+                  fieldUid: 8e2805ff-737c-4a9e-b9ea-8325406440a5 # Footer Builder Area 1
+                  layoutElementUid: 688cd9f5-7d13-4c2c-bc94-2d3dc7b3ca97
+                  operator: notempty
+                  uid: 25dc40eb-32be-4f7a-b4ea-c60d6b974c91
+              elementType: craft\elements\GlobalSet
+              fieldContext: global
+            fieldUid: 89b12e2f-b81c-45a0-a28b-366510a572d6 # Breite
+            handle: columnsCountArea1
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16a9282d-56ae-4baf-b33c-1b88ba134a85
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-26T21:08:28+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\ElementCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\EmptyFieldConditionRule
+                  fieldUid: 2972affb-fd93-4aa0-ac36-d7648f489715 # Footer Builder Area 2
+                  layoutElementUid: a0538c21-d9bd-4e98-ba0a-f5583e646f73
+                  operator: notempty
+                  uid: ee0838f2-e3cb-495f-97c4-e16c58366e1f
+              elementType: craft\elements\GlobalSet
+              fieldContext: global
+            fieldUid: 89b12e2f-b81c-45a0-a28b-366510a572d6 # Breite
+            handle: columnsCountArea2
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d22751ec-aabe-4695-ba5d-0c5dddf1e0cf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-26T21:08:28+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\ElementCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\EmptyFieldConditionRule
+                  fieldUid: 4510ec4c-667f-4059-a32c-b2d6f9b08e2a # Footer Builder Area 3
+                  layoutElementUid: 1b080656-5680-471c-bdb3-475a2b83da43
+                  operator: notempty
+                  uid: 81aa7f57-93b2-439e-86ae-ff9a494b29e0
+              elementType: craft\elements\GlobalSet
+              fieldContext: global
+            fieldUid: 89b12e2f-b81c-45a0-a28b-366510a572d6 # Breite
+            handle: columnsCountArea3
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92e52b3f-98a7-4e7b-8707-eb139bf9ef65
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-26T21:08:28+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\ElementCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\EmptyFieldConditionRule
+                  fieldUid: fcac6695-ff3e-4c35-81cb-af382760b3e3 # Footer Builder Area 4
+                  layoutElementUid: d2584b10-b9e5-40c4-be93-d03c6c68724c
+                  operator: notempty
+                  uid: 5e6746b3-8214-4233-a8a2-ef734d0d859b
+              elementType: craft\elements\GlobalSet
+              fieldContext: global
+            fieldUid: 89b12e2f-b81c-45a0-a28b-366510a572d6 # Breite
+            handle: columnsCountArea4
+            includeInCards: false
+            instructions: null
+            label: 'Bereich 4'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e2eee6b-07d4-4640-adee-c247cf13e112
+            userCondition: null
+            warning: null
+            width: 25
+        name: Erscheinungsbild
+        uid: 079a8a10-64fd-41dd-8ca1-b70bf3df66ea
+        userCondition: null
+handle: footer
+name: Fußzeile
+sortOrder: 4

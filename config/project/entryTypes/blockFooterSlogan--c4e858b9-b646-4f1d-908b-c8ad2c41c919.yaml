@@ -1,0 +1,22 @@
+color: null
+description: 'Es wird automisch der hinterlegte Slogan/Claim eingefügt.'
+fieldLayouts:
+  ae26f7d9-d2ea-453e-b17f-87a8081f6164:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 0180acca-2a54-4a77-8656-6eddbf6e9799
+        userCondition: null
+handle: blockFooterSlogan
+hasTitleField: false
+icon: null
+name: Slogan
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

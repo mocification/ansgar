@@ -1,0 +1,6 @@
+<div class="header-misc">
+    {% set buttons = craft.navigation.nodes('navigationMainButton').level(1).all() %}
+    {% for button in buttons %}
+        <a href="{{ button.url }}" class="button button-rounded ms-3 d-none d-sm-block">{{ button.title }}</a>
+    {% endfor %}
+</div>

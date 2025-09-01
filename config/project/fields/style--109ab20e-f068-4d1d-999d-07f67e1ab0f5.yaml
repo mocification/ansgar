@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: style
 instructions: null
-name: Style
+name: Erscheinungsbild
 searchable: false
 settings:
   fieldLayouts:
@@ -76,6 +76,32 @@ settings:
                             14:
                               - fieldUid
                               - 4f04fa9b-e0e1-4c4b-a083-f5772e74ece4 # Hintergrund
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-01T18:54:04+00:00'
+                            11:
+                              - uid
+                              - 1732376f-be8c-4efe-9e02-55542438b4b9
+                            14:
+                              - fieldUid
+                              - f3326d64-1a0a-4924-a8fb-f7a08ac6587c # Schriftfarbe
             3:
               - cardThumbAlignment
               - end

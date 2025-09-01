@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  27bfea2a-81bc-4051-9cf8-a5d50fb3dea5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: d3f6cfe7-6bac-42de-abe8-349ac86c82a2
+        userCondition: null
+handle: blockFooterNavigation
+hasTitleField: false
+icon: null
+name: Navigation
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

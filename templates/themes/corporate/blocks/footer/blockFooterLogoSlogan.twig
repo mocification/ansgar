@@ -1,0 +1,11 @@
+{% set image = design.logo.one() %}
+<div class="row">
+    <div class="d-flex align-items-center">
+        {% if image %}
+            <img src="{{ image.getUrl('imageFit_400x0') }}" alt="{{ image.alt }}" class="alignleft img-fluid" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD; height: {{ entry.imageHeight }}vh !important;">
+        {% endif %}
+        {% if design.slogan is not empty%}
+            {{ design.slogan }}
+        {% endif %}
+    </div>
+</div>

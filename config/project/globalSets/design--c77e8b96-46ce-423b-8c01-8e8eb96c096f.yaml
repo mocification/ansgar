@@ -68,10 +68,10 @@ fieldLayouts:
             uid: da49fcbb-c8e3-4384-9520-32e44cc2860a
             userCondition: null
           -
-            dateAdded: '2025-04-02T15:01:00+00:00'
+            dateAdded: '2025-08-27T11:07:39+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
+            fieldUid: a6e0f712-9e96-4733-a77e-312d06827acd # Text
             handle: slogan
             includeInCards: false
             instructions: null
@@ -80,7 +80,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bfab3dfa-7c6b-4db0-b9d2-51aa2c2149c6
+            uid: 949865ba-629c-4e12-880f-0f7186df0085
             userCondition: null
             warning: null
             width: 100
@@ -120,23 +120,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a22ac77d-8a63-4a4e-acdf-08d2c3e20f1b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-04-02T15:01:45+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 284a9db4-65fd-4347-86cf-659736c23205 # Layout Fußzeile
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b423454d-e340-4001-ab19-5fb6815f58bf
             userCondition: null
             warning: null
             width: 100

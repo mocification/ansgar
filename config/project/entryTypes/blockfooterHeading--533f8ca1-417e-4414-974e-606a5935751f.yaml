@@ -1,0 +1,53 @@
+color: null
+description: 'Es werden automisch die hinterlegten Social Media Links eingefügt.'
+fieldLayouts:
+  755b7f2c-7c5d-4663-af16-0c933045ca36:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-26T13:44:30+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a196101f-2c38-45bc-b8e7-4f24dc1a5473
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2e07cc9c-1615-4f8a-80b0-c1b66c2e1fc0
+        userCondition: null
+handle: blockfooterHeading
+hasTitleField: true
+icon: null
+name: Überschrift
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,130 @@
+{% set image = entry.image.one() %}
+
+{% set textPart %}
+    <div class="{{ entry.style.styleHeader.alignment }}">
+        {% include 'themes/'~ design.theme.value ~'/baseHeadingText.twig' %}
+
+        {% set features = entry.featuresWithIconText.all() %}
+        {% if features|length %}
+            <div class="row col-mb-30 mb-0"
+                {% if entry.style.styleColor.text is not empty %}
+                    style="color: {{ entry.style.styleColor.text }} !important;"
+                {% endif %}
+            >
+                {% for feature in features %}
+                <div class="{% if entry.featureColumns is not empty %}col-md-{{ entry.featureColumns }}{% else %}col-md-12{% endif %}">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon bounceIn animated" data-animate="bounceIn">
+                            <i class="fa-solid fa-{{ feature.iconField }}"></i>
+                        </div>
+                        <div class="fbox-content">
+                            <h3>{{ feature.heading }}</h3>
+                            
+                            {{ feature.text }}                          
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% include 'themes/'~ design.theme.value ~'/baseLinks.twig' %}
+
+    </div>
+{% endset %}
+
+<div class="section bg-transparent my-0"
+    {% include 'themes/'~ design.theme.value ~'/baseSection.twig' %}
+>
+    {% switch entry.imagePosition %}
+
+        {% case "left" %}        
+            <div class="container">        
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-6 order-first">
+                        {% if image is not empty %}
+                            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded-6 shadow h-100 img-fluid object-fit-cover">
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6 order-last">
+                        {{ textPart }}
+                    </div>
+                </div>
+            </div>
+            
+        {% case "right" %}
+            <div class="container">
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-6 order-last order-md-first">
+                        {{ textPart }}
+                    </div>
+                    <div class="col-md-6 order-first order-md-last">
+                        {% if image is not empty %}
+                            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded-6 shadow h-100 img-fluid object-fit-cover">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        
+        {% case "top" %}
+            <div class="container">
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-12 order-first">
+                        {% if image is not empty %}
+                            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded-6 shadow w-100 img-fluid object-fit-cover"
+                                style="height: {{ entry.imageHeight }}vh !important;"
+                            >
+                        {% endif %}
+                    </div>
+                    <div class="col-md-12 order-last">
+                        {{ textPart }}
+                    </div>
+                </div>
+            </div>
+
+        {% case "bottom" %}
+            <div class="container">
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-12 order-first">
+                        {{ textPart }}
+                    </div>
+                    <div class="col-md-12 order-last">
+                        {% if image is not empty %}
+                            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded-6 shadow w-100 img-fluid object-fit-cover"
+                                style="height: {{ entry.imageHeight }}vh !important;"
+                            >
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+        {% case "background" %}
+            <div class="container">
+                <div class="parallax scroll-detect min-vh-50 align-items-center justify-content-center d-flex text-white">
+                    <div class="bg-overlay-parallax">
+                        {% if image is not empty %}
+                            <img src="{{ image.getUrl('imageFit_1920x0') }}" alt="{{ image.alt }}" class="rounded-6 shadow w-100 img-fluid object-fit-cover parallax-bg"
+                                style="height: {{ entry.imageHeight }}vh !important;"
+                            >
+                        {% endif %}
+                        <div class="col-md-12 p-6">
+                            {{ textPart }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        {% default %}
+            <div class="container">        
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-6 order-first">
+                        {{ imagePart }}
+                    </div>
+                    <div class="col-md-6 order-last">
+                        {{ textPart }}
+                    </div>
+                </div>
+            </div>
+
+    {% endswitch %}
+</div>

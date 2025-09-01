@@ -1,0 +1,12 @@
+{% set nodes = craft.navigation.nodes('navigationFooter').level(1).all() %}
+{% if nodes|length %}
+    <div class="row">
+        <div class="widget_links pb-4">
+            <ul>
+                {% for firstLevelNode in nodes %}
+                    <li><a href="{{ firstLevelNode.url }}" target="{{ firstLevelNode.target }}">{{ firstLevelNode.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endif %}
