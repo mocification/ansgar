@@ -1,4 +1,4 @@
-dateModified: 1756757440
+dateModified: 1756761268
 elementSources:
   craft\elements\Entry:
     -
@@ -50,6 +50,7 @@ meta:
     0d6781e0-d456-46c9-8723-480d8fd5a4e6: Kunden # Kunden
     0ea378fd-b7a4-446a-b36f-951d78786afa: Link # Link
     1b1aeafc-f612-4ec0-be74-1e965a661226: Kundenlogos # Kundenlogos
+    1e3e58eb-b7d9-4af2-80bd-318084c84cac: Fidel # Fidel
     1ef9b21b-31e1-4206-b006-05146a783dde: 'Social Media Links' # Social Media Links
     1f0ba122-7b45-4e01-80b5-f388978b5342: Bild # Bild
     2ae4ed8d-3c40-4129-9ee7-323929a67bcc: Navigation # Navigation
@@ -156,6 +157,7 @@ meta:
     c991f779-0383-4f93-b52c-ab8717ff4349: 'Call To Action' # Call To Action
     c9425a6d-ea36-4583-9fcc-18eb8f4b5c09: Kunden # Kunden
     c801945c-293e-4139-b0dd-a028ce04fe80: Kundenmeinungen # Kundenmeinungen
+    c3921001-feb9-4c02-9356-b708269947c1: Fidel # Fidel
     cd2fd189-80e9-4cbd-b833-97e0a91c8bbc: Farbe # Farbe
     cff7104f-fab7-452a-a505-f58112002642: 'Feature with Image, Text & Link' # Feature with Image, Text & Link
     d5bb6513-9cb6-465b-a500-a9b1fde5c26d: Land # Land

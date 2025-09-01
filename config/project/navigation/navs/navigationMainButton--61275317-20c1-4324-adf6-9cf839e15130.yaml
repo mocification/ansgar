@@ -97,6 +97,8 @@ permissions:
     enabled: '1'
 propagationMethod: none
 siteSettings:
+  1e3e58eb-b7d9-4af2-80bd-318084c84cac: # Fidel
+    enabled: true
   211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
     enabled: true
   8444ed32-3604-40aa-b2c9-d46f24f8d714: # Naturparklauf

@@ -1,5 +1,6 @@
 fieldLayouts:
   5c8a0563-f835-4ecd-91cf-a7dfbf70c3c3:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -13,6 +14,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: companyName
@@ -29,6 +31,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: companyName2
@@ -52,6 +55,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: street
@@ -68,6 +72,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: d5bb6513-9cb6-465b-a500-a9b1fde5c26d # Land
             handle: null
@@ -84,6 +89,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: zipCode
@@ -100,6 +106,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: city
@@ -122,6 +129,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: ustID
@@ -145,6 +153,7 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: phone
@@ -161,6 +170,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: mail
@@ -177,6 +187,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-03-29T13:29:29+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 406dc2e0-2fac-4dd3-944e-c29ad54cd3f5 # Text
             handle: web

@@ -1,0 +1,80 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  9769638d-0675-41a0-be6c-42745ca6aa65:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:809c48e2-728e-4066-9557-9e1d901e534a'
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-01T20:54:25+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 7865bc8d-55f1-4897-9a5c-fb147cf31205
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-09-01T20:57:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: true
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 809c48e2-728e-4066-9557-9e1d901e534a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2d3a7562-c00e-491b-aafe-3f21660d0e65
+        userCondition: null
+fs: hardDiskAnsgar
+handle: fidel
+name: Fidel
+sortOrder: 5
+subpath: fidel
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+transformFs: ''
+transformSubpath: fidel

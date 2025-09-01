@@ -18,12 +18,21 @@
 							<!-- Top Social
 							============================================= -->
 							<ul id="top-social">
-								<li><a href="https://facebook.com/semicolonweb" class="h-bg-facebook" target="_blank"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a></li>
-								<li><a href="https://twitter.com/__semicolon" class="h-bg-x-twitter" target="_blank"><span class="ts-icon"><i class="fa-brands fa-x-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
-								<li><a href="https://youtube.com/semicolonweb" class="h-bg-youtube" target="_blank"><span class="ts-icon"><i class="fa-brands fa-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
-								<li><a href="https://instagram.com/semicolonweb" class="h-bg-instagram" target="_blank"><span class="ts-icon"><i class="fa-brands fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
-								<li><a href="tel:+10.11.85412542" class="h-bg-call"><span class="ts-icon"><i class="fa-solid fa-phone"></i></span><span class="ts-text">+10.11.85412542</span></a></li>
-								<li><a href="mailto:info@canvas.com" class="h-bg-email3"><span class="ts-icon"><i class="bi-envelope-fill"></i></span><span class="ts-text">info@canvas.com</span></a></li>
+								{% if socialMedia.facebook is not empty %}
+									<li><a href="{{ socialMedia.facebook }}" class="h-bg-facebook" target="_blank"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a></li>
+								{% endif %}
+								{% if socialMedia.twitter is not empty %}
+									<li><a href="{{ socialMedia.twitter }}" class="h-bg-x-twitter" target="_blank"><span class="ts-icon"><i class="fa-brands fa-x-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+								{% endif %}
+								{% if socialMedia.instagram is not empty %}								
+									<li><a href="{{ socialMedia.instagram }}" class="h-bg-instagram" target="_blank"><span class="ts-icon"><i class="fa-brands fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
+								{% endif %}
+								{% if company.phone %}
+									<li><a href="tel:{{ company.phone }}" class="h-bg-call"><span class="ts-icon"><i class="fa-solid fa-phone"></i></span><span class="ts-text">{{ company.phone }}</span></a></li>
+								{% endif %}
+								{% if company.mail %}
+									<li><a href="mailto:{{ company.mail }}" class="h-bg-email3"><span class="ts-icon"><i class="bi-envelope-fill"></i></span><span class="ts-text">{{ company.mail }}</span></a></li>
+								{% endif %}
 							</ul><!-- #top-social end -->
 
 						</div>

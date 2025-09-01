@@ -20,6 +20,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  1e3e58eb-b7d9-4af2-80bd-318084c84cac: # Fidel
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: __home__
   211b7452-9fab-4f37-b59a-dd5a6a8c2177: # ansgar
     enabledByDefault: true
     hasUrls: true

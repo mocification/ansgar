@@ -1,0 +1,9 @@
+baseUrl: $FIDEL_URL
+enabled: '1'
+handle: fidel
+hasUrls: true
+language: de
+name: Fidel
+primary: false
+siteGroup: 819b6ce6-402f-4084-bb7d-c1d2f8792ded # Kunden
+sortOrder: 4
