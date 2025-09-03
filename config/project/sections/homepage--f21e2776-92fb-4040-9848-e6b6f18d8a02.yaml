@@ -40,4 +40,9 @@ siteSettings:
     hasUrls: true
     template: page/_entry.twig
     uriFormat: __home__
+  a1061811-7c44-429d-b615-ed48e1efc394: # Regauer
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: __home__
 type: single

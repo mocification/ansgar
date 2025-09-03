@@ -203,6 +203,8 @@ siteSettings:
     enabled: true
   1914165a-c550-4819-b74d-d56cf7f38ceb: # Testseite 01
     enabled: true
+  a1061811-7c44-429d-b615-ed48e1efc394: # Regauer
+    enabled: true
 sortOrder: 2
 structure:
   maxLevels: 1

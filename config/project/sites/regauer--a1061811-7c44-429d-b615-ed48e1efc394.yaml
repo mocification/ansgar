@@ -1,0 +1,9 @@
+baseUrl: $REGAUER_URL
+enabled: '1'
+handle: regauer
+hasUrls: true
+language: de
+name: Regauer
+primary: false
+siteGroup: 819b6ce6-402f-4084-bb7d-c1d2f8792ded # Kunden
+sortOrder: 5

@@ -40,6 +40,11 @@ siteSettings:
     hasUrls: true
     template: page/_entry.twig
     uriFormat: '{parent.uri}/{slug}'
+  a1061811-7c44-429d-b615-ed48e1efc394: # Regauer
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
 structure:
   maxLevels: 3
   uid: 2d0e0ace-ecc3-4f02-adc9-a7ace00c26e7

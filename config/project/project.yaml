@@ -1,4 +1,4 @@
-dateModified: 1756764465
+dateModified: 1756889697
 elementSources:
   craft\elements\Entry:
     -
@@ -135,6 +135,7 @@ meta:
     a17a90bc-b2ca-48bb-8c61-14997e41991f: 'Pricing Feature' # Pricing Feature
     a20c2e3f-537e-438b-a0c6-0b150ceaf065: Bildposition # Bildposition
     a3769b71-8bd5-41fa-9c15-6928ab790816: 'Externer Link' # Externer Link
+    a1061811-7c44-429d-b615-ed48e1efc394: Regauer # Regauer
     aa8f2c61-b663-4628-8c34-4d12ad9fc03f: Client # Client
     ac0c441c-23c2-44cf-ac5a-a58bef4202b3: 'Client Gallery View' # Client Gallery View
     ac884f9a-72ff-4a27-af57-66a7e9c8a7e0: image_fit_0x1920 # image_fit_0x1920
@@ -158,6 +159,7 @@ meta:
     c9425a6d-ea36-4583-9fcc-18eb8f4b5c09: Kunden # Kunden
     c801945c-293e-4139-b0dd-a028ce04fe80: Kundenmeinungen # Kundenmeinungen
     c3921001-feb9-4c02-9356-b708269947c1: Fidel # Fidel
+    ccdc57c3-f2f2-4c10-97f0-f5c5f12b1ce2: Regauer # Regauer
     cd2fd189-80e9-4cbd-b833-97e0a91c8bbc: Farbe # Farbe
     cff7104f-fab7-452a-a505-f58112002642: 'Feature with Image, Text & Link' # Feature with Image, Text & Link
     d5bb6513-9cb6-465b-a500-a9b1fde5c26d: Land # Land
