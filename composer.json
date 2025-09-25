@@ -4,7 +4,7 @@
   "require": {
     "craftcms/ckeditor": "4.10.1",
     "craftcms/cms": "5.8.17",
-    "verbb/navigation": "3.0.12",
+    "verbb/navigation": "3.0.13",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
